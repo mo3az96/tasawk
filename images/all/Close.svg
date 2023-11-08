@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Arrows/Action/Close</title>
+    <g id="Icons/Arrows/Action/Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="keyboard-arrow-down-round-24px">
+            <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+            <path d="M10.8333333,20 L16.0066667,14.8266667 L21.18,20 C21.7,20.52 22.54,20.52 23.06,20 C23.58,19.48 23.58,18.64 23.06,18.12 L16.94,12 C16.42,11.48 15.58,11.48 15.06,12 L8.94,18.12 C8.42,18.64 8.42,19.48 8.94,20 C9.46,20.5066667 10.3133333,20.52 10.8333333,20 Z" id="Path" fill="#4C34BB"></path>
+        </g>
+    </g>
+</svg>
