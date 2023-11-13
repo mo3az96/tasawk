@@ -153,7 +153,7 @@ header{
         &:hover{
             background-color: var(--bglight-color);
         }
-        img.link-img{
+        .svg.link-img{
             width: 24px;
             height: 24px;
             display: flex;
@@ -200,6 +200,7 @@ header{
     z-index: 11;
     opacity: 0;
     visibility: hidden;
+    transition: all ease-in-out .2s;
 }
 
 .overflow-hidden{
@@ -319,7 +320,7 @@ header{
 }
 
 .logo-img {
-    img{
+    .svg{
         display: block;
     }
 }
@@ -376,7 +377,7 @@ header{
     .header-main-nav-li .header-main-nav-a{
         font-size: 0.9375rem;
     }
-    .logo-img img {
+    .logo-img .svg {
         width: 40px;
     }
     .search-contact-div .tasawk-btn{
@@ -449,7 +450,7 @@ header{
     .header-main-nav-li{
         margin-inline-end: 0;
         margin-bottom: 25px;
-        width: 100%;
+        // width: 100%;
     }
     .tasawk-btn{
         margin-inline-start: 0;
@@ -508,6 +509,10 @@ header{
 
 @include max-768 {
 
+    header {
+        padding: 10px 0 ;
+    }
+
     .search-nav-item{
         width: 100%;
     }
@@ -517,13 +522,13 @@ header{
     }
     
     .search-overlay{
-        top: 82px;
-        height: calc(100vh - 82px);
+        top: 62px;
+        height: calc(100vh - 62px);
     }
     .header-main-nav{
         width: 100%;
     }
-    .logo-img img{
+    .logo-img .svg{
         width: 35px;
     }
     .header-main-content{

@@ -1,4 +1,20 @@
 $(document).ready(function () {
+
+  function addClassToSvgImages() {
+    const svgImages = document.querySelectorAll('img[src$=".svg"]');
+    svgImages.forEach( svgImage => svgImage.classList.add('svg'));
+  }
+  
+  addClassToSvgImages();
+
+
+
+  // tooltip
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+  // top header
   $(window).on("scroll resize", function () {
     if ($(window).width() > 992 && $(window).scrollTop() > 136) {
       $(".top-header").addClass("fixed-topheader");
@@ -7,6 +23,9 @@ $(document).ready(function () {
       $(".top-header").removeClass("fixed-topheader");
     }
   });
+
+
+// ************************************************************************************************
   // open tasawk btn menu
 
   if ($(window).width() > 992) {
@@ -20,7 +39,7 @@ $(document).ready(function () {
     });
   }
 
-  //************************************************************************************************* */
+// ************************************************************************************************ 
   // open and close sidebar
 
   $(".bars").on("click", function () {
@@ -38,7 +57,10 @@ $(document).ready(function () {
     $(".tasawk-btn-arrow-div").toggleClass("rotate-icon_change-bg");
   });
 
-  // open seach box
+  // ************************************************************************************************ 
+
+
+  //  seach box
   $(".search-btn").click(function () {
     $(".search-overlay").toggleClass("open-search-box");
     $("body").toggleClass("overflow-hidden");
@@ -46,6 +68,8 @@ $(document).ready(function () {
       .children(".search-btn-icon")
       .toggleClass("fa-xmark fa-magnifying-glass");
   });
+
+//************************************************************************************************ 
 
   //  open and close footer navigation
   $(".footer-nav-item-title , .search-nav-item-title").on("click", function () {
@@ -58,22 +82,23 @@ $(document).ready(function () {
       .slideUp(300);
   });
 
-  //************************************************************************************************ */
+// ************************************************************************************************ 
+
+  // to top 
 
   $(".up-btn").on("click", function () {
-    $("html , body").animate(
-      {
-        scrollTop: 0,
-      },
-      500
-    );
+    $("html , body").animate( { scrollTop: 0 } , 0 );
   });
 
+
+// ************************************************************************************************ 
+
+    // swipers
+
+// client Sildes Swiper 
   const clientSildesSwiper = new Swiper(".workSamples-swiper .swiper", {
     loop: true,
-    autoplay: {
-      delay: 1000, // Set the autoplay delay in milliseconds
-    },
+   autoplay : true ,
     navigation: {
       nextEl: ".workSamples-swiper .swiper-button-next",
       prevEl: ".workSamples-swiper .swiper-button-prev",
@@ -94,11 +119,10 @@ $(document).ready(function () {
     },
   });
 
+
+  // thumbs swiper
   var swiper = new Swiper(".thumbs-swiper", {
-    // centeredSlides : true ,
     grabCursor: true,
-    // loop:true,
-    // slidesPerGroupSkip: 1,
     slidesPerView: "auto",
     breakpoints: {
       350: {
@@ -114,33 +138,16 @@ $(document).ready(function () {
         spaceBetween: 75,
       },
     },
-    // spaceBetween: 75,
-    // slidesPerView: 6,
-    // freeMode: true,
-    // watchSlidesProgress: true,
   });
 
+
+  // clients Review swiper
   const clientsReview = new Swiper(".main-swiper", {
     loop: true,
-
-    //   autoplay: {
-    //     delay: 4000, // Set the autoplay delay in milliseconds
-    //   },
     navigation: {
       nextEl: ".clients-review-swiper .swiper-button-next",
       prevEl: ".clients-review-swiper .swiper-button-prev",
     },
-    //   pagination: {
-    //     el: '.mySwiper2 .swiper-pagination',
-    //     clickable: true,
-    //   },
-    //   a11y: {
-    //     enabled: false, // Disable accessibility (if needed)
-    //   },
-    // spaceBetween: 10,
-    // slidesPerView: 1,
-    //   loop: true,
-    //   loopedSlides: 2,
     thumbs: {
       swiper: swiper,
     },
@@ -153,36 +160,131 @@ $(document).ready(function () {
     },
   });
 
+//************************************************************************************************ 
+
+// Marquee
+
   // block 1 marquee
 
-  $(".block1-marquee").marquee({
+  $(" #workSamples .block1-marquee").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,
     direction: "up",
     duplicated: true,
-    pauseOnHover: true,
   });
 
   // block 2 marquee
 
-  $(".block2-marquee").marquee({
+  $("#workSamples .block2-marquee").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,
     direction: "down",
     duplicated: true,
-    pauseOnHover: true,
   });
 
   // block 3 marquee
 
-  $(".block3-marquee").marquee({
+  $(" #workSamples .block3-marquee").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,
     direction: "up",
     duplicated: true,
-    pauseOnHover: true,
+  });
+
+
+  //************************************************************************************************
+
+//  partneres marquee
+
+
+  $(" #partners .block1-marquee").marquee({
+    duration: 35000,
+    // gap: 24,
+    gap  : 12 ,
+    delayBeforeStart: 0,
+    direction: "right",
+    duplicated: true,
+  });
+
+
+  $(" #partners .block2-marquee").marquee({
+    duration: 17000,
+    gap  : 24 ,
+    delayBeforeStart: 0,
+    direction: "right",
+    duplicated: true,
+  });
+
+
+ 
+
+
+
+
+
+  const draggables = document.querySelectorAll('.draggable'),
+      containers = document.querySelectorAll('.wrapper-cont');
+
+draggables.forEach(draggable => {
+  draggable.addEventListener('dragstart', () => {
+    draggable.classList.add('dragging');
+    draggable.classList.add('dragDone');
+  });
+
+  
+
+  draggable.addEventListener('dragend', () => {
+    draggable.classList.remove('dragging');
+    draggable.classList.add('dragDone');
+
+    
+
+
+    // let oldSrc = draggable.querySelector(".darggable-cont img").getAttribute("src")
+    // if(draggable.classList.contains("dragDone")){
+    //   var childElement = draggable.querySelector(".darggable-cont img");
+    //   if (childElement) {
+    //       childElement.setAttribute("src", "images/software-dev/special-soft-sec/Solid-check.svg");
+    //   }
+    // }else{
+    //   childElement.setAttribute("src", oldSrc);
+    // }
+   
   });
 });
+
+const getDragAfterElement = (container, y) => {
+  const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')];
+  return draggableElements.reduce((closest, child) => {
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height / 2;
+    if (offset < 0 && offset > closest.offset) {
+      return {offset: offset, element: child};
+    } else {
+      return closest;
+    }
+  }, {offset: Number.NEGATIVE_INFINITY}).element;
+}
+
+containers.forEach(container => {
+  container.addEventListener('dragover', e => {
+    e.preventDefault();
+    const afterElement = getDragAfterElement(container, e.clientY);
+    const draggable = document.querySelector('.dragging');
+    if (afterElement == null) {      
+      container.appendChild(draggable);
+    } else {   
+      container.insertBefore(draggable, afterElement);
+    }
+  });
+});
+
+
+});
+
+
+
+
