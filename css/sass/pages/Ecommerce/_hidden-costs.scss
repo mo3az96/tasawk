@@ -1,0 +1,168 @@
+.hidden-costs{
+    .hidden-costs-parent{
+        background-color: #4C34BB;
+        padding: 96px 0 ;
+        .freq-headline{
+            color: #ffffff;
+        }
+        .quote-sec{
+            width: 1037px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .freq-desc , .freq-span {
+            color: rgba(255,255,255,0.8);
+        }
+        .quote-sec .quote-box-div{
+            height: 304px;
+            width: 765px;
+            background-color: #FFFFFF;
+            padding-bottom: 52px;
+            padding-top: 52px;
+            padding-inline-start: 64px;
+            margin-inline-start: 45px;
+        }
+        .quote-sec .quote-box-div p{
+            width: 487px;
+            color: #4938A1;
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .quote-sec .employee-sec{
+            inset-inline-end: 18px;
+        }
+        .quote-sec .employee-sec .img-hold::before{
+            background-color: rgba(122,206,240,0.6);
+            inset-inline-end: -20px;
+        }
+        .quote-sec .employee-sec .employee-role p , .quote-sec .employee-sec .employee-role span{
+            color: #FFFFFF;
+        }
+        .quote-sec .employee-sec .employee-role span{
+            margin-inline-start: 12px;
+        }
+        .quote-sec .employee-sec .employee-role{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 43px;
+            margin-inline-start: 115px;
+            line-height: 24px;
+        }
+        .quote-sec .employee-sec .img-hold::after{
+            inset-inline-start: -10px;
+        }
+        
+      
+    }
+}
+
+
+@include max-1200{
+    .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
+        margin-inline-start: 20px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec{
+        width: 100%;
+       
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .img-hold::before{
+        inset-inline-end: -35px;
+        bottom: -26px;
+    }
+   
+}
+
+@include max-992 {
+    .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
+        height: auto;
+        width: 82%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-inline-start: 50px;
+        margin-inline-start: 0;
+    }
+
+    .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div p{
+        width: 76%;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec{
+        inset-inline-end: 23px;
+        top: -52px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .img-hold::after{
+        inset-inline-start: 0px;
+        bottom: -18px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .employee-role{
+        margin-inline-start: 0;
+    }
+}
+
+@include max-768 {
+    .hidden-costs .hidden-costs-parent{
+        padding: 50px 0 70px 0;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
+        width: 100%;
+        padding-top: 80px;
+        padding-inline-start: 15px;
+        padding-inline-end: 15px;
+        height: 375px;
+    }
+    .hidden-costs-parent .quote-sec .quote-box-div .quote-sign{
+        top: 5px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec{
+        margin-top: 45px;
+    margin-bottom: 0;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec{
+        width: calc(100% - 35px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        transform: unset;
+        left: unset;
+        inset-inline-start: 35px;
+        bottom: 2px;
+        top: unset;
+    }
+    .quote-sec .employee-sec .img-hold{
+        width: 120px;
+        height: auto;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .img-hold::before{
+        bottom: -12px;
+        height: 20px;
+        inset-inline-start: 30px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .img-hold::after{
+        bottom: -5px;
+        height: 12px;
+        inset-inline-start: -20px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec .employee-sec .employee-role{
+        margin-inline-start: 15px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       span{
+        margin-inline-start: 0;
+       }
+        p , span{
+            color:  #4938A1;
+        }
+    }
+
+    .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}

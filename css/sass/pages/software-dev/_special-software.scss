@@ -56,6 +56,7 @@
     transition: 500ms;
     column-gap: 40px;
     // min-height: 696px;
+    
     margin-top: 56px;
     // margin-bottom: 56px;
   }
@@ -76,6 +77,7 @@
         width: 100%;
         padding-inline-start: 13px;
         cursor: grab;
+        cursor: url("../images/pages/software-dev/special-soft-sec/Grab.svg")  , auto  ;
       &.dragging {
         opacity: 0.5;
       }

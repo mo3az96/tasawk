@@ -25,7 +25,7 @@
     padding: 0;
     // margin-top: -56px;
   }
-  .top-header {
+  .top-header , .blog-top-header {
     position: absolute;
     // position: sticky;
     top: 0;
@@ -249,28 +249,28 @@
       display: none;
     }
     .svg-signs {
-      bottom: -5px;
+      bottom: -25px;
       left: 50%;
       transform: translateX(-50%);
       inset-inline-start: unset;
       top: unset;
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
     }
     .page-desc {
       width: 100%;
-      margin-top: 20px;
+      margin-top:15px;
     }
     .main-banner-content {
       padding: 0 20px;
       margin-top: 50px;
     }
     .page-heading {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.5;
     }
     .main-parent  {
-      height: calc(100vh - 62px);
+      height: 100vh ;
       .svgs-parent{
         height: calc(100vh - 62px);
       }

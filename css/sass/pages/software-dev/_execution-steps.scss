@@ -90,6 +90,7 @@
     .quote-box-div{
         position: relative;
         align-self: center;
+        margin-inline-start: 45px;
         &::after{
             content: "";
             position: absolute;
@@ -221,12 +222,13 @@
     .quote-sec .employee-sec .img-hold::after , .quote-sec .employee-sec .img-hold::before{
         width: 75%;
     }
-    .quote-sec .quote-box-div{
+    .quote-sec .quote-box-div {
         height: auto;
         width: 86%;
         padding-bottom: 40px;
         padding-top: 40px;
         padding-inline-start: 50px;
+        margin-inline-start: 0;
     }
     .quote-sec .employee-sec{
         top: -61px;
@@ -245,7 +247,7 @@
         width: 100px;
         height: 100px;
         top: -50px;
-        inset-inline-start: -30px;
+        inset-inline-start: -17px;
     }
     .quote-sec .employee-sec .img-hold::after{
         inset-inline-start: -20px;
@@ -336,7 +338,7 @@
         margin-top: 0;
     }
     .quote-sec .employee-sec{
-        width: 90%;
+        width: calc(100% - 35px);
         display: flex;
         align-items: center;
         justify-content: flex-start;

@@ -107,7 +107,7 @@ footer{
         margin-inline-start: 25px;
     }
 }
-.book-from{
+.book-form{
     form{
         display: flex;
         align-items: center;
@@ -183,7 +183,7 @@ footer{
 .social-links{
     display: flex;
     align-items: center;
-    .socila-links-anchor{
+    .social-links-anchor{
         margin-inline-end: 32px;
         .icon{
             font-size: 26px;
@@ -200,7 +200,7 @@ footer{
             display: block;
         }
     }
-    .socila-links-anchor:last-of-type{
+    .social-links-anchor:last-of-type{
         margin-inline-end: 0;
     }
 }
@@ -317,7 +317,7 @@ footer{
 
 @include max-768 {
 
-    .book-from .book-input{
+    .book-form .book-input{
         width: 95%;
     }
     .free-book-sec::before{
@@ -359,11 +359,11 @@ footer{
         margin : 12px 0 30px 0 ;
         font-size: 0.875rem;
     }
-    .book-from form{
+    .book-form form{
         flex-direction: column;
         align-items: center;
     }
-    .book-from .download-book{
+    .book-form .download-book{
         margin-inline-start: 0;
         margin-top: 25px;
     }

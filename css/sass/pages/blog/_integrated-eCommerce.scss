@@ -1,0 +1,161 @@
+.integrated-eCommerce{
+    overflow-y: visible;
+}
+.integrated-parent{
+    padding-top: 73px;
+    padding-bottom: 67px;
+    height: 608px;
+    background: linear-gradient(180deg, #3B279C 0%, #4C34BB 100%);
+    .tasawk-btn{
+        justify-content: center;
+        margin-top: 40px;
+        &:hover{
+            background-color: $third-color;
+            color: $text-color;
+        }
+    }
+    .blog-page-title{
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .desc{
+        width: 487px;
+        color: rgba(255,255,255,0.8);
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .list{
+        margin-top: 36px;
+        li .svg{
+            margin-inline-end : 16px;
+        }
+       li p{
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        .img-item{
+            position: relative;
+            .thin  , .shipping , .dollarSign{
+                position: absolute;
+            }
+            .thin{
+                position: absolute;
+                width: 850px;
+                height: 850px;
+                inset-inline-end: -17%;
+                top: -46px;
+            }
+            .shipping{
+                position: absolute;
+                inset-inline-end: 0;
+                width: 200px;
+                height: 200px;
+                top: -10px;
+            }
+            .dollarSign{
+                width: 230px;
+                height: 230px;
+                top: -30px;
+                inset-inline-start: 0;
+            }
+        }
+    }
+}
+
+
+@include max-1300{
+    .integrated-parent .items .img-item .thin{
+        width: 750px;
+        height: 750px;
+        top: 30px;
+    }
+}
+
+@include max-1200{
+    .integrated-parent .items .img-item .thin{
+        width: 700px;
+        height: 700px;
+        top: 60px;
+    }
+    .integrated-parent .items .img-item .shipping{
+        inset-inline-end: -48px;
+        top: 0px;
+    }
+    .integrated-parent .items .img-item .dollarSign{
+        top: -15px;
+    }
+}
+
+
+@include max-992 {
+    .integrated-parent{
+        height: auto;
+    }
+    .integrated-parent .items{
+        grid-template-columns: 1fr;
+    }
+    .integrated-parent .items .img-item{
+        min-height: 330px;
+        margin-top: 40px;
+    }
+    .integrated-parent .items .img-item .thin{
+        width: 600px;
+        height: 600px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .integrated-parent .items .img-item .dollarSign{
+        top: 0;
+    }
+    .integrated-parent .items .img-item .shipping{
+        inset-inline-end: 0;
+    }
+    .integrated-parent .desc{
+        text-align: center;
+        width: 100%;
+    }
+    .integrated-parent .tasawk-btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include max-768{
+    .integrated-parent{
+        padding: 0;
+        padding-top: 50px;
+    }
+    .integrated-eCommerce{
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    .integrated-parent .desc{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .integrated-parent .list li p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .integrated-parent .list li .svg{
+        margin-inline-end: 12px;
+    }
+    .integrated-parent .items .img-item .dollarSign , .integrated-parent .items .img-item .shipping{
+        width: 150px;
+        height: 150px;
+    }
+    .integrated-parent .items .img-item .thin{
+        width: 400px;
+        height: 400px;
+        top: 10%;
+    }
+    .integrated-parent .items .img-item{
+        min-height: 285px;
+        margin-top: 30px;
+    }
+}

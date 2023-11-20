@@ -9,6 +9,10 @@
         column-gap: 22px;
         row-gap: 40px;
     }
+    .general-item{
+        width: 385px;
+        margin-inline-end: 0;
+    }
 }
 
 .num-line{
@@ -34,8 +38,9 @@
         }
     }
     .expertise-fields{
-        .public-view-item{
-            margin-inline-end: 20px;
+        .general-item{
+            // margin-inline-end: 20px;
+            width: 100%;
         }
     }
     
@@ -46,7 +51,7 @@
         grid-template-columns: repeat(2 , 1fr);
     }
     .expertise-fields{
-        .public-view-item:last-of-type{
+        .general-item:last-of-type{
             margin-top: 0;
         }
     }
@@ -66,7 +71,7 @@
     .num-line{
         margin-bottom: 5px;
     }
-    .expertise-fields .public-view-item{
+    .expertise-fields .general-item{
         margin-inline-end: 0;
         margin-bottom: 0;
     }

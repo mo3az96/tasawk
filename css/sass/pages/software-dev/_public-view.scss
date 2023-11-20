@@ -1,6 +1,6 @@
 
 
-.public-view-item{
+.general-item{
     .imgs-holder{
         position: relative;
         width: 160px;
@@ -40,8 +40,7 @@
     --bs-tooltip-max-width  : 124px ; 
     --bs-tooltip-padding-y  : 5px ; 
     --bs-tooltip-font-size  : 11px ; 
-    
-  }
+}
 
 
   @include max-1200{
@@ -56,38 +55,38 @@
     .softwareDev-public-view .freq-headline{
         width: 100%;
     }
-    .public-view-item .imgs-holder .ruler-img{
+    .general-item .imgs-holder .ruler-img{
         inset-inline-start: 7px;
         top: 21px;
         width: 120px;
         height: 120px;
     }
-    .public-view-item .public-item-desc , .list li p {
+    .general-item .public-item-desc , .list li p {
         font-size: 15px;
     }
-    .public-view-item .imgs-holder{
+    .general-item .imgs-holder{
         width: 120px;
         height: 120px;
         margin-bottom: 10px;
     }
-    .public-view-item .imgs-holder .angle-img{
+    .general-item .imgs-holder .angle-img{
         width: 90px;
     }
     .softwareDev-public-view{
-        .public-view-item .blue-line{
+        .general-item .blue-line{
             margin-top: 25px;
         }
-        .public-view-item .list{
+        .general-item .list{
             margin-top: 25px;
             min-width: 90%;
             max-width: 100%;
         }
-        .public-view-item {
+        .general-item {
             margin-bottom: 20px;
         }
     }
     .readyMade-software{
-        .public-view-item{
+        .general-item{
             margin-bottom: 15px;
         }
     }

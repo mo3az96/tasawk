@@ -211,7 +211,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
   $(" #partners .block2-marquee").marquee({
-    duration: 17000,
+    duration: 20000,
     gap  : 24 ,
     delayBeforeStart: 0,
     direction: "right",
@@ -247,7 +247,7 @@ draggables.forEach(draggable => {
     // if(draggable.classList.contains("dragDone")){
     //   var childElement = draggable.querySelector(".darggable-cont img");
     //   if (childElement) {
-    //       childElement.setAttribute("src", "images/software-dev/special-soft-sec/Solid-check.svg");
+    //       childElement.setAttribute("src", "images/pages/software-dev/special-soft-sec/Solid-check.svg");
     //   }
     // }else{
     //   childElement.setAttribute("src", oldSrc);

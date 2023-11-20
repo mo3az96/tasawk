@@ -15,10 +15,10 @@
             width: 385px;
         }
     }
-    .public-view-item{
+    .general-item{
         margin-inline-end: 225px;
     }
-    .public-view-item:last-of-type{
+    .general-item:last-of-type{
         margin-inline-end: 0;
     }
 }
@@ -51,6 +51,21 @@
             margin-bottom: 16px;
             line-height: 24px;
         }
+        .left-anchor{
+            width: 32px;
+            display: block;
+            height: 32px;
+            &:hover{
+                .svg{
+                    filter: brightness(0) saturate(100%) invert(35%) sepia(66%) saturate(2758%) hue-rotate(353deg) brightness(93%) contrast(90%);
+                }
+            }
+            .svg{
+                width: 100%;
+                height: 100%;
+              
+            }
+        }
         p {
             width: 399px;
             color: rgba(73,56,161,0.8);
@@ -82,7 +97,7 @@
         padding-inline-start: 0;
         justify-content: space-between;
     }
-    .ready-soft-parent .public-view-item{
+    .ready-soft-parent .general-item{
         margin-inline-end: 0;
     }
     .more-services .more-service-item p{
@@ -98,7 +113,7 @@
         flex-wrap: nowrap;
         align-items: flex-start;
     }
-    .ready-soft-parent .public-view-item:last-of-type{
+    .ready-soft-parent .general-item:last-of-type{
         margin-top: 0;
     }
     .ready-soft-parent .myitems .public-item-desc{
@@ -107,7 +122,7 @@
     .freq-item-title{
         font-size: 20px;
     }
-    .public-view-item .public-item-img{
+    .general-item .general-item-img{
         width: 140px;
     }
     .more-services .more-service-item{
@@ -150,7 +165,7 @@
         width: 300px;
         top: 50px;
     }
-    .public-view-item .public-item-img{
+    .general-item .general-item-img{
         width: 110px;
     }
 }

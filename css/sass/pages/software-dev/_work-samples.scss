@@ -198,11 +198,16 @@
             .logo{
                 height: 54px;
                 width: 115.04px;
+                // border: 1px solid  #4C34BB;
                 background-color: #4C34BB;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .svg{
+                    width: 100%;
+                    height: 100%;
+                }
+                img{
                     width: 100%;
                     height: 100%;
                 }
@@ -288,6 +293,22 @@
 
 
 @include max-992{
+
+   
+    .softwareDiv-work-samples ,  .ecommerce-work-samples{
+        .work-samples-parent .freq-div{
+            margin-bottom: 45px;
+        }
+        .freq-div , .freq-headline , .freq-desc{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .ecommerce-work-samples ,  .softwareDiv-work-samples{
+        .work-samples-parent .freq-div{
+            top: 0;
+        }
+    } 
     .rakman-proj-shape , .rakman-proj-cont{
         margin: auto;
     }
@@ -295,7 +316,6 @@
         padding: 0 20px;
     }
     .softwareDiv-work-samples .work-samples-parent .freq-div{
-        top: 0;
         margin-bottom: 80px;
     }
     .rakman-parent{
@@ -307,7 +327,7 @@
     .softwareDiv-work-samples .work-samples-parent .freq-div{
         margin-bottom: 45px;
     }
-    .softwareDiv-work-samples .freq-desc{
+    .softwareDiv-work-samples .freq-desc , .ecommerce-work-samples .freq-desc{
         text-align: center;
         line-height: 1.7;
         font-size: 16px;
@@ -315,7 +335,7 @@
     .softwareDiv-work-samples .freq-div, .softwareDiv-work-samples .freq-headline, .softwareDiv-work-samples .freq-desc{
         width: 100%;
     }
-    .softwareDiv-work-samples .freq-headline{
+    .softwareDiv-work-samples .freq-headline , .ecommerce-work-samples .freq-headline{
         font-size: 18px;
     }
     .softwareDiv-work-samples{
@@ -430,6 +450,7 @@
     .rakman-proj-shape .shape .upper .logo{
         width: 80px;
         height: 40px;
+        
     }
     .rakman-proj-shape .shape .upper .logo h3{
         font-size: 20px;
