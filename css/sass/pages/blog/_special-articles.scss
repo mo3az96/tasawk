@@ -148,11 +148,15 @@
             text-align: center;
         }
     }
-    .stage-item .more-articles{
-      width: 121px;
-      margin: auto;
-      display: block;
+    .more-articles-div{
+        display: flex;
+        justify-content: center;
     }
+    // .stage-item .more-articles{
+    //   width: 121px;
+    //   margin: auto;
+    //   display: block;
+    // }
     .stage-item-img{
         width: 600px;
         margin: auto;
@@ -203,7 +207,8 @@
         height: 370px;
         width: 370px;
     }
-    .stage-item .more-articles{
+   
+    .more-articles-div{
         margin-top: 40px;
     }
 }

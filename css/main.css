@@ -6895,10 +6895,9 @@ section {
   .special-articles .freq-span {
     text-align: center;
   }
-  .stage-item .more-articles {
-    width: 121px;
-    margin: auto;
-    display: block;
+  .more-articles-div {
+    display: flex;
+    justify-content: center;
   }
   .stage-item-img {
     width: 600px;
@@ -6949,12 +6948,12 @@ section {
     height: 370px;
     width: 370px;
   }
-  .stage-item .more-articles {
+  .more-articles-div {
     margin-top: 40px;
   }
 }
 .integrated-eCommerce {
-  overflow-y: visible;
+  overflow: visible;
 }
 
 .integrated-parent {
