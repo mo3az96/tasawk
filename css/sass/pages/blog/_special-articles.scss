@@ -9,22 +9,22 @@
     column-gap: 0;
 }
 
+.more-articles-btn{
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #4938A1;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    padding: 11px 16px;
+    transition: ease-in-out all .2s;
+    &:hover{
+        background-color: var(--third-color);
+        color: var(--text-color);
+    }
+}
 .stage-item{
     align-self: flex-end;
-    .more-articles{
-        display: inline-block;
-        border-radius: 8px;
-        background-color: #4938A1;
-        color: #FFFFFF;
-        font-size: 12px;
-        text-align: center;
-        padding: 11px 16px;
-        transition: ease-in-out all .2s;
-        &:hover{
-            background-color: var(--third-color);
-            color: var(--text-color);
-        }
-    }
 .stage-num{
     color: #24156D;
     font-size: 48px;
