@@ -225,7 +225,13 @@
     .clients-review{
       padding-top: 50px;
     }
+    .main-swiper{
+      padding-top: 15px ;
+    }
     .client-review-div .svg {
+      position: absolute;
+      top: -42px;
+      inset-inline-start: -6px;
       width: 70px;
       height: 70px;
       margin-bottom: 10px;
@@ -242,6 +248,8 @@
       line-height: 1.6;
       margin-inline-start: 0;
       text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
     .client-review-div .img-holder {
       width: 120px;
@@ -267,10 +275,10 @@
       padding: 20px 10px;
       // height: 370px;
     }
-    // .client-review-div .img-holder::after,
-    // .client-review-div .img-holder::before {
-    //   display: none;
-    // }
+    .client-review-div .img-holder::after,
+    .client-review-div .img-holder::before {
+      display: none;
+    }
    
   }
   

@@ -107,17 +107,19 @@
     }
     .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
         width: 100%;
-        padding-top: 80px;
+        padding-top: 30px;
         padding-inline-start: 15px;
         padding-inline-end: 15px;
-        height: 375px;
+        height: auto;
+        min-height: 325px;
     }
     .hidden-costs-parent .quote-sec .quote-box-div .quote-sign{
-        top: 5px;
+        top: -35px;
+        inset-inline-start: -13px;
     }
     .hidden-costs .hidden-costs-parent .quote-sec{
         margin-top: 45px;
-    margin-bottom: 0;
+        margin-bottom: 0;
     }
     .hidden-costs .hidden-costs-parent .quote-sec .employee-sec{
         width: calc(100% - 35px);

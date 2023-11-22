@@ -310,10 +310,10 @@
     .quote-sec .quote-box-div .quote-sign{
         width: 70px;
         height: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 10px;
-        inset-inline-start: unset;
+        left: unset;
+        top: -35px;
+        inset-inline-start: -11px;
+        transform: unset;
     }
     .quote-sec .employee-sec .img-hold img{
         height: 120px;
@@ -323,7 +323,7 @@
     }
     .quote-sec .quote-box-div {
       width: 100%;
-        padding-top: 85px;
+        padding-top: 30px;
         padding-inline-start: 15px;
         padding-inline-end: 15px;
     }
@@ -398,5 +398,11 @@
     .expertise-fields{
         padding: 0;
         padding-top: 20px;
+    }
+    .soft-execution-steps{
+        .quote-sec .quote-box-div{
+            height: auto;
+            min-height: 280px;
+        }
     }
 }

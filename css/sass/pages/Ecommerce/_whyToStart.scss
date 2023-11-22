@@ -136,7 +136,8 @@
     .whyToStart{
         padding-bottom: 70px;
         .quote-sec .quote-box-div{
-            height: 380px;
+            height: auto;
+            min-height: 325px;
         }
     }
     .whyToStart .quote-sec{

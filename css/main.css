@@ -1691,7 +1691,13 @@ section {
   .clients-review {
     padding-top: 50px;
   }
+  .main-swiper {
+    padding-top: 15px;
+  }
   .client-review-div .svg {
+    position: absolute;
+    top: -42px;
+    inset-inline-start: -6px;
     width: 70px;
     height: 70px;
     margin-bottom: 10px;
@@ -1708,6 +1714,8 @@ section {
     line-height: 1.6;
     margin-inline-start: 0;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .client-review-div .img-holder {
     width: 120px;
@@ -1729,6 +1737,10 @@ section {
     align-items: center;
     height: auto;
     padding: 20px 10px;
+  }
+  .client-review-div .img-holder::after,
+  .client-review-div .img-holder::before {
+    display: none;
   }
 }
 .time-cost-sec {
@@ -4259,10 +4271,10 @@ section {
   .quote-sec .quote-box-div .quote-sign {
     width: 70px;
     height: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 10px;
-    inset-inline-start: unset;
+    left: unset;
+    top: -35px;
+    inset-inline-start: -11px;
+    transform: unset;
   }
   .quote-sec .employee-sec .img-hold img {
     height: 120px;
@@ -4271,7 +4283,7 @@ section {
   }
   .quote-sec .quote-box-div {
     width: 100%;
-    padding-top: 85px;
+    padding-top: 30px;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
   }
@@ -4345,6 +4357,10 @@ section {
   .expertise-fields {
     padding: 0;
     padding-top: 20px;
+  }
+  .soft-execution-steps .quote-sec .quote-box-div {
+    height: auto;
+    min-height: 280px;
   }
 }
 .rakman-parent {
@@ -5107,7 +5123,8 @@ section {
     padding-bottom: 70px;
   }
   .whyToStart .quote-sec .quote-box-div {
-    height: 380px;
+    height: auto;
+    min-height: 325px;
   }
   .whyToStart .quote-sec {
     margin-top: 50px;
@@ -5721,13 +5738,15 @@ section {
   }
   .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
-    height: 375px;
+    height: auto;
+    min-height: 325px;
   }
   .hidden-costs-parent .quote-sec .quote-box-div .quote-sign {
-    top: 5px;
+    top: -35px;
+    inset-inline-start: -13px;
   }
   .hidden-costs .hidden-costs-parent .quote-sec {
     margin-top: 45px;
@@ -5913,6 +5932,7 @@ section {
 .packages-details .accordion-item:last-of-type .accordion-button.collapsed {
   border-radius: 0;
   border: none;
+  border-bottom: 1px solid #fff;
 }
 .packages-details .accordion-button::after {
   color: #fff;
