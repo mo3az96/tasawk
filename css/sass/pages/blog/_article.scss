@@ -16,6 +16,9 @@
     height: 8px;
     background: linear-gradient(244.89deg, #D29326 0%, #FBEA82 100%);
 }
+strong{
+    font-weight: bolder ;
+}
 
 
 
@@ -163,11 +166,16 @@
     margin-bottom: 32px;
     margin-top: 64px;
 }
-.article-para{
+.article-text-cont div{
     color: #4938A1;
     font-size: 20px;
     line-height: 32px;
 }
+// .article-para{
+//     color: #4938A1;
+//     font-size: 20px;
+//     line-height: 32px;
+// }
 .article-img-holder{
     height: 344px;
     margin: 56px 0;
@@ -184,12 +192,14 @@
         top: 2%;
     }
 }
-.text-orange{
-    color: #E14E1D;
+.stages-list{
+    mark {
+        color: #E14E1D;
+        background-color: #fff;
+    }
 }
-.text-bold{
-    font-weight: 700;
-}
+
+
 .stages-list{
     li{
         margin-bottom: 32px;
@@ -335,7 +345,7 @@
     .article-img-holder{
         width: 100%;
     }
-    .article-para{
+    .article-text-cont div{
         font-size: 16px;
         text-align: center;
     }
@@ -396,12 +406,16 @@
     .text-start-sm{
         text-align: start;
     }
+    .stages-list div , .numbered-list div{
+        text-align: start;
+    }
     .stages-list li .svg{
         margin-inline-end: 5px;
         width: 35px;
         height: 35px;
     }
     .numbered-list .num-box{
+        margin-top: 5px;
         min-width: 30px;
         height: 30px;
         font-size: 16px;

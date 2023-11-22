@@ -6740,6 +6740,10 @@ section {
   }
 }
 @media only screen and (max-width: 768px) {
+  .article-item .img-holder .positioned-text {
+    top: 20px;
+    inset-inline-start: 20px;
+  }
   .articles-parent {
     grid-template-columns: 1fr;
   }
@@ -7363,6 +7367,10 @@ section {
   background: linear-gradient(244.89deg, #D29326 0%, #FBEA82 100%);
 }
 
+strong {
+  font-weight: bolder;
+}
+
 .article-items {
   display: grid;
   grid-template-columns: 690px 385px;
@@ -7507,7 +7515,7 @@ section {
   margin-top: 64px;
 }
 
-.article-para {
+.article-text-cont div {
   color: #4938A1;
   font-size: 20px;
   line-height: 32px;
@@ -7530,12 +7538,9 @@ section {
   top: 2%;
 }
 
-.text-orange {
+.stages-list mark {
   color: #E14E1D;
-}
-
-.text-bold {
-  font-weight: 700;
+  background-color: #fff;
 }
 
 .stages-list li {
@@ -7666,7 +7671,7 @@ section {
   .article-img-holder {
     width: 100%;
   }
-  .article-para {
+  .article-text-cont div {
     font-size: 16px;
     text-align: center;
   }
@@ -7727,12 +7732,16 @@ section {
   .text-start-sm {
     text-align: start;
   }
+  .stages-list div, .numbered-list div {
+    text-align: start;
+  }
   .stages-list li .svg {
     margin-inline-end: 5px;
     width: 35px;
     height: 35px;
   }
   .numbered-list .num-box {
+    margin-top: 5px;
     min-width: 30px;
     height: 30px;
     font-size: 16px;
