@@ -271,6 +271,21 @@
     }
 }
 @include max-992 {
+    .blog-article-main .main-banner-content{
+        margin-top: 50px;
+    }
+    .main-item-cont .article-holder{
+        width: 130px;
+        height: 130px;
+    }
+     .blog-article-main .main-parent{
+        padding-bottom: 60px;
+    }
+    .blog-article-main .text-item .title{
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.6;
+    }
     .blog-top-header{
         display: none;
     }
@@ -299,6 +314,17 @@
 
 
 @include max-768 {
+    .main-item-cont .article-holder{
+        width: 120px;
+        height: 120px;
+    }
+    .blog-article-main .main-banner-content{
+        margin-top: 20px;
+    }
+    .blog-article-main .text-item .title{
+        font-size: 20px;
+        margin-top: 20px;
+    }
     .main-blog-items .text-item .title{
         font-size: 18px;
         line-height: 1.6;   
