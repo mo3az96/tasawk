@@ -291,17 +291,22 @@ containers.forEach(container => {
 
    let $article = $("#Article");
    let $progressBar = $(".progress");
-   let articleHeight = $article.prop("scrollHeight")    ;
-   
-   $(window).scroll(function () {
-     let scrollTop = $(window).scrollTop() -  $article.offset().top ;
-     console.log(scrollTop)
-     if (scrollTop > 0) {
-       let progress = Math.floor( Math.min(scrollTop / articleHeight , 1) * 100);
-       $progressBar.css("width", progress + "%");
-     }
-   });
+   let articleHeight = $article.prop("scrollHeight") ;
 
+
+   if($article.length && $progressBar.length ){
+    $(window).scroll(function () {
+      let scrollTop = $(window).scrollTop() -  $article.offset().top ;
+      console.log(scrollTop)
+      if (scrollTop > 0) {
+        let progress = Math.floor( Math.min(scrollTop / articleHeight , 1) * 100);
+        $progressBar.css("width", progress + "%");
+      }
+    });
+ 
+ 
+   }
+   
 
 
 
