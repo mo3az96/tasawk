@@ -3536,7 +3536,6 @@ section {
   background-color: #4938A1;
   width: 100%;
   padding-inline-start: 13px;
-  cursor: grab;
   cursor: url("../images/pages/software-dev/special-soft-sec/Grab.svg"), auto;
 }
 .wrapper-cont .draggable.dragging {
@@ -5825,15 +5824,10 @@ section {
   color: #E14E1D;
 }
 
-.packages .myitems {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 894px;
-  margin-inline-start: auto;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+.packages .item {
+  width: 284px;
 }
-.packages .myitems .item .price {
+.packages .item .price {
   height: 48px;
   color: #E14E1D;
   font-size: 16px;
@@ -5841,48 +5835,47 @@ section {
   display: flex;
   align-items: baseline;
 }
-.packages .myitems .item .price .num {
+.packages .item .price .num {
   font-size: 35px;
   margin-inline-end: 8px;
 }
-.packages .myitems .item .title {
+.packages .item .title {
   color: #24156D;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 7px;
 }
-.packages .myitems .item .text {
-  width: 284px;
+.packages .item .text {
   color: #4938A1;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
-.packages .myitems .item .text span {
+.packages .item .text span {
   font-weight: 700;
 }
-.packages .myitems .item .img {
+.packages .item .img {
   width: 125px;
   height: 125px;
 }
-.packages .myitems .item .img img, .packages .myitems .item .img .svg {
+.packages .item .img img, .packages .item .img .svg {
   width: 100%;
   height: 100%;
 }
-.packages .myitems .item .pink-para {
+.packages .item .pink-para {
   color: #E14E1D;
   font-size: 12px;
   line-height: 20px;
   display: block;
 }
-.packages .myitems .item .para {
+.packages .item .para {
   color: #4938A1;
   font-size: 16px;
   line-height: 24px;
   display: block;
   margin-top: 52px;
 }
-.packages .myitems .item .order-now {
+.packages .item .order-now {
   height: 48px;
   width: 140px;
   margin-top: 16px;
@@ -5894,22 +5887,20 @@ section {
   align-items: center;
   justify-content: center;
   transition: all ease-in-out 0.2s;
+  margin-bottom: 15px;
 }
-.packages .myitems .item .order-now:hover {
+.packages .item .order-now:hover {
   background-color: var(--third-color);
   color: var(--text-color);
 }
-.packages .myitems .item:first-of-type .text {
+.packages .item:first-of-type .text {
   margin-bottom: 32px;
 }
 .packages .items-down {
   margin-top: 16px;
 }
 
-.packages-details {
-  margin-top: 32px;
-}
-.packages-details .accordion-button {
+.packages-details .table tbody tr th {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-inline-start: 16px;
@@ -5917,24 +5908,11 @@ section {
   padding-inline-end: 15px;
   border-radius: 0;
 }
-.packages-details .accordion-button .title {
+.packages-details .table tbody tr th .title {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
 }
-.packages-details .accordion-body {
-  padding: 0;
-}
-.packages-details .accordion-item {
-  border: none;
-}
-.packages-details .accordion-item:last-of-type .accordion-button.collapsed {
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid #fff;
-}
-.packages-details .accordion-button::after {
-  color: #fff;
-}
+
 .packages-details .package-topic {
   display: flex;
   flex-direction: column;
@@ -6039,6 +6017,9 @@ section {
   color: #24156D;
   font-size: 16px;
 }
+.packages-details .table-striped > tbody > tr:nth-of-type(even) > * {
+  --bs-table-bg-type: rgba(243,242,251,0.1) ;
+}
 .packages-details .table-striped > tbody > tr > td:first-of-type {
   padding: 16px;
   min-width: 304px;
@@ -6046,68 +6027,46 @@ section {
 .packages-details .table tbody tr {
   height: 88px;
 }
+.packages-details .table tbody tr.packages-tr {
+  height: auto;
+}
+.packages-details .table-striped > tbody > tr.packages-tr > * {
+  --bs-table-bg-type: rgba(243,242,251,0.1);
+}
+.packages-details .table tbody .title-tr {
+  height: auto;
+}
 .packages-details .table-striped > tbody > tr > td {
   vertical-align: middle;
   text-align: start;
+  min-width: 304px;
 }
 .packages-details .table-striped > tbody > tr > td .right, .packages-details .table-striped > tbody > tr > td .wrong {
   width: 32px;
   height: 32px;
 }
-.packages-details .table-striped > tbody > tr > td {
-  min-width: 304.66px;
-}
 .packages-details .table-striped > tbody > tr > td:last-of-type {
-  min-width: 284.68px;
+  min-width: 286px;
 }
 
 @media only screen and (max-width: 1300px) {
   .packages-details .table-striped > tbody > tr > td:first-of-type {
-    min-width: 222px;
+    min-width: 290px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .packages .myitems {
-    margin-inline-start: 300px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    width: auto;
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-bottom: 30px;
-  }
-  .packages .myitems::-webkit-scrollbar {
-    display: none;
-  }
-  .packages-details .table-striped > tbody > tr > td {
-    min-width: 318.65px;
-  }
-  .packages .myitems .item .text {
-    width: 100%;
-  }
-  .packages .myitems .item {
-    min-width: 298.66px;
-  }
   .packages-details .table-striped > tbody > tr > td:first-of-type {
-    min-width: 300px;
-  }
-  .packages-details .table-striped > tbody > tr > td:last-of-type {
-    min-width: 298.65px;
+    min-width: 288px;
   }
   .table-responsive::-webkit-scrollbar {
     display: none;
   }
-  #accordionExample2 {
-    margin-top: 20px;
-  }
 }
 @media only screen and (max-width: 992px) {
-  .packages .myitems .item .title {
+  .packages .item .title {
     font-size: 20px;
   }
-  .packages .myitems .item .text {
+  .packages .item .text {
     font-size: 15px;
   }
   .packages .text-cont, .packages .text-cont p, .packages .text-cont h3 {
@@ -6116,28 +6075,36 @@ section {
 }
 @media only screen and (max-width: 768px) {
   .packages .text-cont h3 {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 10px;
   }
   .packages .text-cont {
     margin-bottom: 35px;
   }
-  .packages .myitems {
-    margin-top: 0;
-  }
   .packages .text-cont p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
   }
-  .packages .myitems {
-    margin-inline-start: 0;
+  .packages .item .title {
+    font-size: 20px;
+  }
+  .packages .item .text {
+    font-size: 14px;
+  }
+  .packages .item .price .num {
+    font-size: 30px;
+  }
+  .packages-details .topic-title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6;
   }
   .packages-details .table-striped > tbody > tr > td:first-of-type {
     min-width: 220px;
   }
-  .packages-details .topic-title {
-    font-size: 14px;
+  .packages-details .payment-holder {
+    width: 100%;
   }
 }
 .questions {
