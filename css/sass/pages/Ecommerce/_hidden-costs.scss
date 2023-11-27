@@ -9,6 +9,7 @@
             width: 1037px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 56px;
         }
         .freq-desc , .freq-span {
             color: rgba(255,255,255,0.8);
@@ -58,6 +59,104 @@
 }
 
 
+//******************************************************************************************
+// Eraser
+.eraser-sec{
+    margin-top: 56px;
+}
+
+.eye-btn{
+    position: absolute;
+    bottom: 30px;
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    .svg{
+        width: 100%;
+        display: block;
+        filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(105%) hue-rotate(21deg) brightness(113%) contrast(100%);
+    }
+}
+.eraser{
+    position: relative;
+    // height: 848px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 790px;
+    background-color: #4938A1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.eraser-container {
+    position: relative;
+    width: 588px;
+    // height: 513px;
+    // cursor: url("../images/pages/ecommerce/hidden-costs/Eraser.svg"), auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .components-list{
+    padding: 0 20px;
+  }
+  .components-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 28px;
+    position: relative;
+    .text{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &::after{
+        content: "....................................................................................................................................................................";
+        margin-inline-start: 10px;
+        color: rgba(255,255,255,0.8);
+      }
+    }
+     .icon{
+      margin-inline-start: 30px;
+      display:block;
+    }
+    
+  }
+  .eraser-title{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+  }
+ 
+  #redux {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 90%;
+    cursor: url("../images/pages/ecommerce/hidden-costs/Eraser.svg"), auto;
+  }
+
+
+  .clear-overlay{
+    display: none;
+  }
+//******************************************************************************************
+
+
+
 @include max-1200{
     .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
         margin-inline-start: 20px;
@@ -74,6 +173,21 @@
 }
 
 @include max-992 {
+    .eraser{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hidden-costs .hidden-costs-parent .quote-sec{
+        margin-top: 120px;
+    }
+    .hidden-costs{
+        .quote-sec .quote-box-div .quote-sign , .quote-sec .quote-box-div::after{
+            inset-inline-start: -18px;
+        }
+      
+    }
+    
     .hidden-costs .hidden-costs-parent .quote-sec .quote-box-div{
         height: auto;
         width: 82%;
@@ -102,6 +216,30 @@
 }
 
 @include max-768 {
+    .components-list li{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .components-list{
+        padding: 0;
+    }
+    .components-list li .icon{
+        margin-inline-start: 15px;
+    }
+    .eraser{
+       padding-left: 12px;
+       padding-right: 12px;
+       padding-top: 50px;
+       padding-bottom: 75px;
+    }
+    .eraser-title{
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .eraser-container{
+        width: 100%;
+        margin-top: 35px;
+    }
     .hidden-costs .hidden-costs-parent{
         padding: 50px 0 70px 0;
     }
@@ -118,7 +256,7 @@
         inset-inline-start: -13px;
     }
     .hidden-costs .hidden-costs-parent .quote-sec{
-        margin-top: 45px;
+        margin-top: 60px;
         margin-bottom: 0;
     }
     .hidden-costs .hidden-costs-parent .quote-sec .employee-sec{
@@ -166,5 +304,8 @@
         font-size: 16px;
         line-height: 1.6;
         text-align: center;
+    }
+    .eye-btn{
+        bottom: 25px;
     }
 }

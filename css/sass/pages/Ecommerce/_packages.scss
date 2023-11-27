@@ -28,18 +28,7 @@
 }
 
 .packages{
-    // .myitems{
-    //     display: grid;
-    //     grid-template-columns: repeat(3 , 1fr);
-    //     width: 894px;
-    //     margin-inline-start: auto;
-    //     column-gap: 20px;
-    // }
-    // .middle-item{
-    //     margin: 0 21px;
-    // }
     .item{
-        // padding-inline-end: 20px;
         width: 284px;
         .price{
             height: 48px;
@@ -65,7 +54,6 @@
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
-            // margin-bottom: 52px;
             span{
                 font-weight: 700;
             }
@@ -119,9 +107,6 @@
     }
 }
 
-// .packages .middle-item{
-//     margin: 0 20px;
-// }
 
 
 .packages-details .table tbody tr th {
@@ -274,17 +259,6 @@
     .table-striped>tbody>tr>td:last-of-type{
         min-width: 286px;
     }
-    // .table-striped > tbody > tr > td{
-    //     max-width: 304.66px;
-    // }
-    // .table-striped > tbody > tr > td:last-of-type{
-    //     // width: 25%;
-    //     // width: max-content;
-    //     min-width: 284.68px;
-    // }
-   
-   
-   
 }
 
 
@@ -298,32 +272,6 @@
     .packages-details .table-striped > tbody > tr > td:first-of-type{
         min-width: 288px;
     }
-    // .packages .myitems{
-    //     margin-inline-start: 300px;
-    //     overflow-x: auto;
-    //     flex-wrap: nowrap;
-    //     width: auto;
-    //     // width: 100%;
-    //     flex-direction: row;
-    //     display: flex;
-    //     justify-content: flex-start;
-    //     align-items: flex-start;
-    //     padding-bottom: 30px;
-    //     &::-webkit-scrollbar{
-    //         display: none;
-    //         // height: 8px;
-    //     }
-    // }
-    // .packages-details .table-striped > tbody > tr > td{
-    //     min-width: 318.65px;
-    // }
-    // .packages .myitems .item .text{
-    //     width: 100%;
-    // }
-    // .packages .myitems .item{
-    //     min-width: 298.66px;
-    // }
-    
     .table-responsive{
         // padding-bottom: 20px;
         &::-webkit-scrollbar{
@@ -355,25 +303,12 @@
     .packages .text-cont{
         margin-bottom: 35px;
     }
-    // .packages .myitems{
-    //     margin-top: 0;
-    // }
+  
     .packages .text-cont p{
         font-size: 16px;
         line-height: 1.6;
     }
-    // .packages .myitems{
-    //     margin-inline-start: 0;
-    // }
-   
-    // .packages-details .table-striped > tbody > tr > td:first-of-type{
-    //     min-width: unset;
-    //     max-width: 214px;
-    // }
-    // .packages-details .topic-title{
-    //     font-size: 13px;
-    //     font-weight: 600;
-    // }
+  
     .packages .item .title{
         font-size: 20px;
     }
@@ -395,9 +330,5 @@
         width: 100%;
     }
 
-
-
-    }
-    // .packages-details .topic-desc{
-    //     font-size: 13px;
-    // }
+}
+  
