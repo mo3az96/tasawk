@@ -2656,7 +2656,7 @@ section {
     display: none;
   }
   .svg-signs {
-    bottom: 0;
+    bottom: -4%;
     left: 50%;
     transform: translateX(-50%);
     inset-inline-start: unset;
@@ -3060,7 +3060,7 @@ section {
   .software-dev-main .svgs-parent .svg-Website {
     width: 250px;
     height: 250px;
-    bottom: -15%;
+    bottom: -8%;
     left: 50%;
     transform: translateX(-50%);
     inset-inline-start: unset;
