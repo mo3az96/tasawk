@@ -38,7 +38,7 @@
         .heading{
             width: 298.46px;
             background-color: rgba(234,231,249,0.8);
-            color: #4938A1;
+            color: $text-color;
             font-size: 16px;
             font-weight: 700;
             padding: 16px 0 ;
@@ -52,7 +52,7 @@
             margin-top: 16px;
             margin-inline-start: 33px;
             a{
-                color: #E14E1D;
+                color: $primary-color;
             }
         }
         .stage-activ{
@@ -60,7 +60,7 @@
             margin-inline-start: 33px;
             .stage-activ-title{
                 width: 182px;
-                color: #4938A1;
+                color: $text-color;
                 font-size: 12px;
                 font-weight: 700;
                 margin-bottom: 16px;
@@ -98,7 +98,7 @@
             inset-inline-start: -20px;
             height: 16px;
             width: 124px;
-            background-color: #7ACEF0;
+            background-color: $third-color;
         }
         .quote-sign{
             width: 120px;
@@ -115,7 +115,7 @@
         padding-inline-start: 64px;
         p{
             width: 487px;
-            color: #4938A1;
+            color: $text-color;
             font-size: 24px;
             line-height: 40px;
         }
@@ -133,7 +133,7 @@
                 position: absolute;
                 height: 24px;
                 width: 265px;
-                background-color: #7ACEF0;
+                background-color: $third-color;
                 bottom: -16px;
                 inset-inline-start: 0;
             }
@@ -142,7 +142,7 @@
                 position: absolute;
                 height: 32px;
                 width: 265px;
-                background-color: #4C34BB;
+                background-color: $secondary-color;
                 bottom: -32px;
                 inset-inline-end: 0;
             }
@@ -155,13 +155,13 @@
         .employee-role{
             margin-top: 30px;
             p{
-                color: #4938A1;
+                color: $text-color;
                 font-size: 16px;
                 line-height: 24px;
                 text-align: right;
             }
             span{
-                color: #4938A1;
+                color: $text-color;
                 font-size: 12px;
             }
         }

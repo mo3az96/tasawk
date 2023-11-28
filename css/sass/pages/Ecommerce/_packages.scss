@@ -8,7 +8,7 @@
         margin-right: auto;
         h3 {
             width: 654px;
-            color: #24156D;
+            color: $heading-color;
             font-size: 32px;
             font-weight: 700;
             line-height: 48px;
@@ -16,12 +16,12 @@
         }
         p{
             width: 690px;
-            color: #4938A1;
+            color: $text-color;
             font-size: 24px;
             line-height: 40px;
             text-align: center;
             a{
-                color: #E14E1D;
+                color: $primary-color;
             }
         }
     }
@@ -32,8 +32,7 @@
         width: 284px;
         .price{
             height: 48px;
-            // width: 180px;
-            color: #E14E1D;
+            color: $primary-color;
             font-size: 16px;
             line-height: 48px;
             display: flex;
@@ -44,13 +43,13 @@
             }
         }
         .title{
-            color: #24156D;
+            color: $heading-color;
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 7px;
         }
         .text{
-            color: #4938A1;
+            color: $text-color;
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
@@ -67,13 +66,13 @@
             }
         }
         .pink-para{
-            color: #E14E1D;
+            color: $primary-color;
             font-size: 12px;
             line-height: 20px;
             display: block;
         }
         .para{
-            color: #4938A1;
+            color: $text-color;
             font-size: 16px;
             line-height: 24px;
             display: block;
@@ -84,8 +83,8 @@
             width: 140px;
             margin-top: 16px;
             border-radius: 8px;
-            background-color: #E14E1D;
-            color: #FFFFFF;
+            background-color: $primary-color;
+            color: $white-color;
             font-size: 16px;
             display: flex;
             align-items: center;
@@ -130,7 +129,7 @@
        
     }
     .topic-title{
-        color: #24156D;
+        color: $heading-color;
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
@@ -164,10 +163,10 @@
     .free{
         height: 39px;
         width: 55px;
-        border: 4px solid #FFFFFF;
-        background-color: #FFC914;
+        border: 4px solid $white-color;
+        background-color: $yellow-color;
         box-shadow: -3px 3px 0 0 rgba(36,21,109,0.9);
-        color: #24156D;
+        color: $heading-color;
         font-size: 16px;
         font-weight: 700;
         display: flex;
@@ -217,12 +216,12 @@
         }
     }
     .topic-desc.pink{
-        color: #E14E1D;
+        color: $primary-color;
     }
     .table{
         --bs-table-striped-bg : rgba(234,231,249,0.4);
         .sub-title{
-            color: #24156D;
+            color: $heading-color;
             font-size: 16px;
         }
         margin-bottom: 0; 

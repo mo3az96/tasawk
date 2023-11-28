@@ -12,20 +12,18 @@
             height: 453px;
             position: relative;
             overflow: hidden;
-            // width: 589px;
-            background-color: #F3F2FB;
+            background-color: $bglight-color;
             padding-top: 55px;
             padding-inline-start: 48px;
             h3{
-                // width: 256px;
-                color: #4938A1;
+                color: $text-color;
                 font-size: 24px;
                 font-weight: 700;
                 margin-bottom: 8px;
             }
             p{
-                // width: 347px;
-                color: #4938A1;
+              
+                color: $text-color;
                 font-size: 20px;
             }
            

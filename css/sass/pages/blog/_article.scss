@@ -38,9 +38,6 @@ strong{
 }
 
 .article-nav{
-    // position: -webkit-sticky;
-    // position: sticky;
-    // top: 30px;
     height: 389px;
     width: 324px;
     direction: ltr;
@@ -56,20 +53,20 @@ strong{
         direction: rtl;
     }
     &::-webkit-scrollbar-thumb{
-        background-color: #4938A1;
+        background-color: $text-color;
         border-radius: 0;
     }
     &::-webkit-scrollbar-track{
         background-color: #F3F2FC ;
     }
     .title{
-        color: #4938A1;
+        color: $text-color;
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 32px;
     }
     a{
-        color: #4938A1;
+        color: $text-color;
         font-size: 16px;
         margin-bottom: 16px;
         display: block;
@@ -80,7 +77,7 @@ strong{
     }
 }
 .article-nav a.active{
-    color: #E14E1D;
+    color: $primary-color;
 }
 
 .download-article{
@@ -88,7 +85,7 @@ strong{
     width: 385px;
     .keepIt{
         .title{
-            color: #4938A1;
+            color: $text-color;
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 16px;
@@ -98,7 +95,6 @@ strong{
         align-items: center;
         margin-bottom: 16px;
         span{
-            // width: 245px;
             color: rgba(73,56,161,0.8);
             font-size: 16px;
         }
@@ -119,21 +115,21 @@ strong{
             position: absolute;
             top: -9px;
             inset-inline-start: 10px;
-            background-color: #fff;
+            background-color: $white-color;
              color: rgba(73,56,161,0.8);
             font-size: 12px;
         }
         input{
-            color: #4938A1;
+            color: $text-color;
             height: 57px;
             width: 100%;
             display: inline-block;
-            border: 1px solid #4C34BB;
+            border: 1px solid $secondary-color;
             padding-inline-start: 16px;
             border-radius: 4px;
             transition: all ease-in-out .2s;
             &::placeholder{
-                color: #4938A1;
+                color: $text-color;
                 font-size: 16px;
             }
             &:focus{
@@ -145,8 +141,8 @@ strong{
         min-width: 112px;
         padding: 9px 16px;
         border-radius: 8px;
-        background-color: #4938A1;
-        color: #FFFFFF;
+        background-color: $text-color;
+        color: $white-color;
         font-size: 12px;
         margin-top: 16px;
         transition: all ease-in-out .2s;
@@ -159,7 +155,7 @@ strong{
 
 
 .article-heading{
-    color: #24156D;
+    color: $heading-color;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -167,20 +163,16 @@ strong{
     margin-top: 64px;
 }
 .article-text-cont div{
-    color: #4938A1;
+    color: $text-color;
     font-size: 20px;
     line-height: 32px;
 }
-// .article-para{
-//     color: #4938A1;
-//     font-size: 20px;
-//     line-height: 32px;
-// }
+
 .article-img-holder{
     height: 344px;
     margin: 56px 0;
     width: 690px;
-    background-color: #4C34BB;
+    background-color: $secondary-color;
     position: relative;
     overflow: hidden;
     .img{
@@ -194,8 +186,8 @@ strong{
 }
 .stages-list{
     mark {
-        color: #E14E1D;
-        background-color: #fff;
+        color: $primary-color;
+        background-color: $white-color;
     }
 }
 
@@ -220,12 +212,12 @@ strong{
     }
     .num-box{
         min-width: 40px;
-        background-color: #7ACEF0;
+        background-color: $third-color;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #4938A1;
+        color: $text-color;
         font-size: 20px;
         z-index: 1;
         position: relative;
@@ -237,7 +229,7 @@ strong{
             position: absolute;
             top: -5px;
             inset-inline-end: 5px;
-            background-color: #7ACEF0;
+            background-color: $third-color;
         }
     }
     .article-para{
@@ -247,7 +239,7 @@ strong{
 
 
 .article-sub-heading{
-    color: #24156D;
+    color: $heading-color;
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
@@ -295,9 +287,6 @@ strong{
     }
 }
 
-// .article{
-//     position: relative;
-// }
 
 
 
@@ -320,10 +309,6 @@ strong{
     .article-items{
         grid-template-columns: 1fr;
     }
-    // .download-article{
-    //     margin-left: auto;
-    //     margin-right: auto;
-    // }
     .article-quote-sec .quote-box-div{
         margin-inline-start: 0;
     }

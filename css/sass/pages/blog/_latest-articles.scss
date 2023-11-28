@@ -5,7 +5,7 @@
 }
 
 .blog-page-title{
-    color: #24156D;
+    color: $heading-color;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -26,7 +26,7 @@
         overflow: hidden;
         height: 248px;
         position: relative;
-        background: linear-gradient(180deg, #3B279C 0%, #4C34BB 100%);
+        background: linear-gradient(180deg, #3B279C 0%, $secondary-color 100%);
         .item-img{
             position: absolute;
             inset-inline-end: -81px;
@@ -39,10 +39,10 @@
             position: absolute;
             top: 34px;
             inset-inline-start: 40px;
-            color: #4938A1;
+            color: $text-color;
             font-size: 12px;
             line-height: 20px;
-            background-color: #fff;
+            background-color: $white-color;
             padding: 2px 7px;
         }
         
@@ -51,9 +51,9 @@
         padding: 0 32px;
         padding-top: 32px;
         padding-bottom: 40px;
-        background-color: #fff;
+        background-color: $white-color;
         h3{
-            color: #24156D;
+            color: $heading-color;
             transition: color ease-in-out .2s;
             font-size: 16px;
             font-weight: 700;
@@ -81,10 +81,10 @@
     inset-inline-start: 32px;
     height: 24px;
     width: 24px;
-    background-color: #24156D;
+    background-color: $heading-color;
     display: flex;
     align-items: center;
-    // padding: 5px;
+   
     justify-content: center;
     .tooltip-span{
         display: block;
@@ -102,7 +102,7 @@
 
 
 .trendy-tooltip {
-    --bs-tooltip-bg: #24156D;
+    --bs-tooltip-bg: $heading-color;
     --bs-tooltip-border-radius : 0 ;
     --bs-tooltip-max-width  : 160px ; 
     --bs-tooltip-padding-y  : 5px ; 

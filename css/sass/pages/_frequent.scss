@@ -1,6 +1,6 @@
 // frequent
 .freq-span {
-    color: #4938a1;
+    color: $text-color;
     font-size: 16px;
     line-height: 24px;
     text-align: start;
@@ -9,7 +9,7 @@
   }
   .freq-headline {
     width: 589px;
-    color: #24156d;
+    color: $heading-color;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
@@ -18,14 +18,14 @@
   }
   .freq-desc {
     width: 589px;
-    color: #4938a1;
+    color: $text-color;
     font-size: 24px;
     letter-spacing: 0;
     line-height: 40px;
     text-align: right;
   }
   .freq-item-title {
-    color: #24156d;
+    color: $heading-color;
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
@@ -54,13 +54,13 @@
       inset-inline-start: 0;
       height: 8px;
       width: 160.53px;
-      background-color: #7acef0;
+      background-color: $third-color;
       &::before {
         position: absolute;
         content: "";
         height: 4px;
         width: 160.53px;
-        background-color: #4c34bb;
+        background-color: $secondary-color;
         bottom: 0;
         inset-inline-start: 100%;
       }
@@ -68,14 +68,14 @@
   }
   .qoute-text {
     width: 337px;
-    color: #4938a1;
+    color: $text-color;
     font-size: 16px;
     line-height: 24px;
     text-align: start;
     margin-bottom: 16px;
   }
   .qoute-author {
-    color: #4938a1;
+    color: $text-color;
     letter-spacing: 0;
     line-height: 24px;
     text-align: start;

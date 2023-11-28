@@ -45,7 +45,7 @@
   
   .topheader-cont {
     .page-name {
-      color: #ffffff;
+      color: $white-color;
       font-size: 16px;
       font-weight: 700;
     }
@@ -61,10 +61,10 @@
       padding: 16px 0;
       a {
         transition: color ease-in-out 0.2s;
-        color: #ffffff;
+        color: $white-color;
         font-size: 12px;
         &:hover {
-          color: #7acef0;
+          color: $third-color;
         }
       }
     }
@@ -96,7 +96,7 @@
     margin-bottom: 16px;
   }
   .page-heading {
-    color: #ffffff;
+    color: $white-color;
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
@@ -180,7 +180,7 @@
     background-color: rgba(36, 21, 109, 0.9);
   }
   .topheader-cont li a.active {
-    color: #7acef0;
+    color: $third-color;
   }
   
   @include max-1300 {
@@ -224,6 +224,10 @@
   }
   
   @include max-992 {
+   
+    .main-parent .svgs-parent{
+      height: 900px;
+    }
     .love-box-svg {
       display: none;
     }
@@ -270,7 +274,7 @@
       line-height: 1.5;
     }
     .main-parent  {
-      height: 100vh ;
+      height: calc(100vh - 62px) ;
       .svgs-parent{
         height: calc(100vh - 62px);
       }

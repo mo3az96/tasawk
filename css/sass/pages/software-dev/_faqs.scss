@@ -9,7 +9,7 @@
    
     .heading{
         width: 672px;
-        color: #24156D;
+        color: $heading-color;
         font-weight: 700;
         text-align: center;
         margin-left: auto;
@@ -28,7 +28,7 @@
         padding-inline-end: 32px
     }
     .step-title{
-        color: #4938A1;
+        color: $text-color;
         font-size: 24px;
         font-weight: 400;
         margin-inline-start: 0;

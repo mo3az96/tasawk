@@ -17,20 +17,20 @@
       display: flex;
       align-items: center;
       .price {
-        color: #24156d;
+        color: $heading-color;
         font-size: 48px;
         font-weight: 700;
         line-height: 72px;
       }
       .currency {
-        color: #4938a1;
+        color: $text-color;
         font-size: 16px;
         line-height: 24px;
         margin-inline-start: 11px;
       }
     }
     .heading {
-      color: #24156d;
+      color: $heading-color;
       font-size: 24px;
       font-weight: 700;
       line-height: 40px;
@@ -39,7 +39,7 @@
     }
     .desc {
       width: 385px;
-      color: #4938a1;
+      color: $text-color;
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 40px;
@@ -54,7 +54,7 @@
       align-items: center;
       margin-bottom: 23px;
       p {
-        color: #4938a1;
+        color: $text-color;
         font-size: 16px;
         line-height: 24px;
       }
@@ -70,12 +70,12 @@
     position: relative;
   }
   .bgDark {
-    background-color: #efedfa;
+    background-color: $bgmedium-color;
     &::before {
       content: "";
       width: 100%;
       height: 10px;
-      background-color: #efedfa;
+      background-color: $bgmedium-color;
       position: absolute;
       top: -10px;
       left: 0;
@@ -94,7 +94,7 @@
     }
   }
   .note {
-    background-color: #fff;
+    background-color: $white-color;
     width: 386px;
     height: 95px;
     display: flex;
@@ -106,7 +106,7 @@
     transform: translateX(-50%);
     p {
       width: 325px;
-      color: #4938a1;
+      color: $text-color;
       font-size: 16px;
       line-height: 24px;
       text-align: center;
@@ -118,7 +118,7 @@
       height: 7px;
       top: -7px;
       right: 0;
-      background-color: #fff;
+      background-color: $white-color;
     }
     &::before {
       content: "";
@@ -127,7 +127,7 @@
       width: 50%;
       bottom: -7px;
       left: 0;
-      background-color: #fff;
+      background-color: $white-color;
     }
   }
   

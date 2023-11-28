@@ -14,32 +14,32 @@
         padding: 96px 0 ;
         padding-inline-start: 70px;
         h3 {
-            color: #24156D;
+            color: $heading-color;
             font-size: 32px;
             font-weight: 700;
             margin-bottom: 32px;
         }
         p{
             width: 488px;
-            color: #4938A1;
+            color: $text-color;
             font-size: 20px;
             line-height: 32px;
             margin-bottom: 48px;
         }
         .newsletter-form .book-input{
             width: 283.5px;
-            border: 2px solid #4938A1;
+            border: 2px solid $text-color;
             &:focus{
-                border-color: var(--third-color);
+                border-color: $third-color;
             }
         }
         .newsletter-form .subscribe-now{
             transition: all ease-in-out .2s;
             width: 182px;
-            background-color: #4938A1;
+            background-color: $text-color;
             &:hover{
-                background-color: var(--third-color);
-                color: var(--text-color);
+                background-color: $third-color;
+                color: $text-color;
             }
         }
         .social-links .social-links-anchor .icon{

@@ -1,6 +1,6 @@
 
 header{
-    background-color: #fff;
+    background-color: $white-color;
     padding: 40px 0 ;
     position: relative;
 }
@@ -22,11 +22,11 @@ header{
     margin-inline-end: 40px;
     &:hover{
         .header-main-nav-a{
-            color: var(--primary-color);
+            color: $primary-color;
         }
     }
   .header-main-nav-a{
-    color: var(--text-color);
+    color: $text-color;
     font-size: 1rem;
     transition: color linear .2s;
     display: block;
@@ -45,15 +45,15 @@ header{
     transition: 0.3s ease-in-out;
     transition-property: background-color, color;
     justify-content: space-between;
-    color: #FFFFFF;
+    color: $white-color;
     font-size: 1rem;
     line-height: 24px;
     text-align: center;
     border-radius: 8px;
     margin-inline-start: 38px;
     &:hover{
-        background-color: var(--primary-color);
-        color: #fff;
+        background-color: $primary-color;
+        color: $white-color;
     }
     
     span{
@@ -72,7 +72,7 @@ header{
     }
    
     i.search-btn-icon{
-        color: #4C34BB;
+        color: $secondary-color;
         font-size: 20px;
         transform: scaleX(-1);
         transition: color ease-in-out .2s;
@@ -82,7 +82,7 @@ header{
     }
     &:hover{
         i.search-btn-icon{
-            color: var(--primary-color);
+            color: $primary-color;
         }
     }
 }
@@ -136,8 +136,7 @@ header{
 
 .sub-menu-div{
     border-radius: 8px;
-    background-color: #fff;
-    // background-color: cadetblue;
+    background-color: $white-color;
     padding: 18px 16px;
 }
 
@@ -151,7 +150,7 @@ header{
         border-radius: 4px;
         transition: background-color linear .2s;
         &:hover{
-            background-color: var(--bglight-color);
+            background-color: $bglight-color;
         }
         .svg.link-img{
             width: 24px;
@@ -173,7 +172,7 @@ header{
 }
 .link{
     .link-span{
-        color: var(--text-color);
+        color: $text-color;
         font-size: 1rem;
         line-height: 24px;
         text-align: start;
@@ -185,17 +184,12 @@ header{
     }
 }
 
- 
-// .tasawk-btn .show-sub-menu{
-//     opacity: 1 ;
-//     visibility: visible ;
-// }
+
 
 .sub-menu-overlay{
     position: fixed;
     inset: 0;
     height: 100vw;
-    // width: 100%;
     background-color: rgba(76,52,187,0.9);
     z-index: 11;
     opacity: 0;
@@ -206,10 +200,6 @@ header{
 .overflow-hidden{
     overflow: hidden;
 }
-// .tasawk-arrow-bg{
-//     background-color: #F8683D;
-//     // background: black;
-// }
 
 
 
@@ -217,10 +207,7 @@ header{
     margin-top: 56px;
     margin-left: auto;
     margin-right: auto;
-    // width: 100%;
     max-width: 1215px;
-    // column-gap: 65px;
-    // justify-content: flex-start;
 }
  .search-nav-ul li{
     margin-bottom: 25px;
@@ -231,13 +218,12 @@ header{
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    // display: none;
     position: fixed;
     top: 136px;
     height:  calc(100vh - 136px) ;
     width: 100%;
     width: 100%;
-    background-color: #4C34BB;
+    background-color: $secondary-color;
     z-index: 15;
 }
 .open-search-box{
@@ -253,7 +239,7 @@ header{
         width: 100%;
         position: relative;
         input{
-            color: #fff;
+            color: $white-color;
             padding: 0 16px 0 50px;
             display: inline-block;
             width: 100%;
@@ -262,7 +248,7 @@ header{
             border-radius: 4px;
             background-color: transparent;
             &:focus{
-                border-color: #FFFFFF;
+                border-color: $white-color;
             }
             &::placeholder{
                 color: rgba(255,255,255,0.9);
@@ -270,9 +256,9 @@ header{
             }
         }
         .search-span{
-            background-color: #4C34BB;
+            background-color: $secondary-color;
             height: 20px;
-            color: #FFFFFF;
+            color: $white-color;
             font-size: 12px;
             line-height: 20px;
             position: absolute;
@@ -287,8 +273,7 @@ header{
         transform: translateY(-50%) scaleX(-1);
         inset-inline-end: 16px;
         font-size: 20px;
-        color: #FFFFFF;
-        // transform: ;
+        color: $white-color;
     }
 }
 
@@ -297,7 +282,7 @@ header{
     margin-top: 8px;
     padding: 10px 16px;
     .lower-link-span{
-        color:var(--text-color);
+        color:$text-color;
         font-size: 0.75rem;
         line-height: 20px;
         text-align: start;
@@ -313,7 +298,7 @@ header{
 .bars{
     display: none;
     font-size: 24px;
-    color: var(--text-color);
+    color: $text-color;
     .barsIcon{
         display: block;
     }
@@ -328,9 +313,7 @@ header{
     display: none;
 }
 
-// .rotate-icon{
-//     transform: rotate(180deg);
-// }
+
 
 .lower-spans-div{
     margin-inline-start: 8px;
@@ -450,7 +433,6 @@ header{
     .header-main-nav-li{
         margin-inline-end: 0;
         margin-bottom: 25px;
-        // width: 100%;
     }
     .tasawk-btn{
         margin-inline-start: 0;
@@ -467,8 +449,7 @@ header{
         justify-content: flex-end;
         .closeIcon{
             font-size: 24px;
-            color: var(--text-color);
-            display: var(--bs-light);
+            color: $text-color;
         }
     }
     header {
@@ -492,7 +473,7 @@ header{
         width: 100%;
         height: 100%;
         padding: 30px 20px;
-        background-color: #fff;
+        background-color: $white-color;
         // opacity: 0;
         // visibility: hidden;
         transition: 0.4s;
@@ -505,6 +486,7 @@ header{
             visibility: visible;
         }
     }
+
 }
 
 @include max-768 {

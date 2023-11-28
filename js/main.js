@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+  $(".preloader-progress").fadeOut();
+});
+
+
 $(document).ready(function () {
 
   function addClassToSvgImages() {
@@ -558,16 +563,16 @@ containers.forEach(container => {
 
 addEventListener( "load", init, false );
 function init( event ) {
-  $("#redux").eraser();
-  //  $("#redux").eraser({size: 5});
+  $("#eraser-overlay").eraser();
+  //  $("#eraser-overlay").eraser({size: 5});
 }
 
 
 
 
 $(".eye-btn").click(function(){
-  $("#redux").toggleClass("clear-overlay");
-  if( $("#redux").hasClass("clear-overlay") ){
+  $("#eraser-overlay").toggleClass("clear-overlay");
+  if( $("#eraser-overlay").hasClass("clear-overlay") ){
     $(this).children(".svg").attr("src" , "images/pages/ecommerce/hidden-costs/Eye-Show.svg")
   }else{
     $(this).children(".svg").attr("src" , "images/pages/ecommerce/hidden-costs/Eye-Hide.svg")

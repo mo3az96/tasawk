@@ -2,12 +2,12 @@
 
 .work-samples-parent {
     position: relative;
-    background-color: #4c34bb;
+    background-color: $secondary-color;
     .freq-span {
       color: rgba(255, 255, 255, 0.8);
     }
     .freq-headline {
-      color: #ffffff;
+      color: $white-color;
     }
     .freq-desc {
       color: rgba(255, 255, 255, 0.8);
@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: $white-color;
         flex-shrink: 0;
       }
     }
@@ -179,7 +179,7 @@
         opacity: 0.4;
       }
       .swiper-pagination-bullet-active {
-        background-color: #fff;
+        background-color: $white-color;
         opacity: 1;
       }
     }

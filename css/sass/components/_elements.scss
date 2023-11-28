@@ -1,20 +1,13 @@
 main {
-  // padding: $main-padidng 0;
   max-width: 100%;
   overflow: hidden;
 }
 
 section {
-  // padding: $section-padding 0;
   max-width: 100%;
-  background-color: #fff;
+  background-color: $white-color;
   overflow: hidden;
 }
 
 
 
-// @include max-768 {
-//   section{
-//     padding: calc(var(--px-base) * 7) 0;
-//   }
-// }

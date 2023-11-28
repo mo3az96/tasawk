@@ -38,14 +38,14 @@
             top: 89px;
             inset-inline-end: -60px;
         }
-        background-color: #FFFFFF;
+        background-color: $white-color;
         height: 264px;
         padding-top: 52px;
         padding-inline-start: 61px;
         // padding-bottom: 100px;
         padding-inline-end: 47px;
         h3{
-            color: #24156D;
+            color: $heading-color;
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 16px;
@@ -163,7 +163,7 @@
     }
     .more-services .more-service-item .thin-svg{
         width: 300px;
-        top: 50px;
+        top: 54px;
     }
     .general-item .general-item-img{
         width: 110px;

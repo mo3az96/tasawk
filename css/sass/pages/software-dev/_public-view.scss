@@ -20,7 +20,7 @@
     .blue-line{
         height: 8px;
         width: 56px;
-        background-color: #4C34BB;
+        background-color: $secondary-color;
         margin-top: 32px;
     }
     .list{
@@ -30,12 +30,12 @@
 
 
 .tooltip-anchor{
-    color: #E14E1D;
+    color: $primary-color;
 }
 
 
 .custom-tooltip {
-    --bs-tooltip-bg: #24156D;
+    --bs-tooltip-bg: $heading-color;
     --bs-tooltip-border-radius : 0 ;
     --bs-tooltip-max-width  : 124px ; 
     --bs-tooltip-padding-y  : 5px ; 

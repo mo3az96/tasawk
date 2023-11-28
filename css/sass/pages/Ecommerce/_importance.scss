@@ -20,7 +20,7 @@
         margin-bottom: 72px;
         p {
             width: 453px;
-            color: #4938A1;
+            color: $text-color;
             font-size: 20px;
             line-height: 32px;
             margin-inline-start: 48px;
@@ -33,7 +33,7 @@
        align-items: center;
        justify-content: flex-start;
         h3 {
-            color: #24156D;
+            color: $heading-color;
             font-size: 24px;
             font-weight: 700;
             line-height: 40px;
@@ -68,7 +68,7 @@
             height: 24px;
             width: 24px;
             border-radius: 4px;
-            background-color: #EFEDFA;
+            background-color: $bgmedium-color;
         }
        
     }
@@ -120,7 +120,7 @@
 }
 
 .checkbox input:checked + .checkmark{
-     background-color: #4C34BB;
+     background-color: $secondary-color;
 }
 
 

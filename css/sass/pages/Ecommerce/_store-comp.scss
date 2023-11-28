@@ -1,8 +1,8 @@
 .store-components-parent{
-    background-color: #4C34BB;
+    background-color: $secondary-color;
     padding: 96px 0 ;
     .freq-headline{
-        color: #ffffff;
+        color: $white-color;
     }
     .myitems{
         display: grid;
@@ -59,11 +59,11 @@
         // }
     }
     .freq-item-title{
-        color: #FFFFFF;
+        color: $white-color;
         text-align: center;
     }
     .public-item-anchor{
-        color: #7ACEF0;
+        color: $third-color;
         font-size: 16px;
         text-align: center;
         margin-top: 16px;
@@ -107,7 +107,7 @@
         margin-right: auto;
         margin-left: auto;
         h3 {
-            color: #FFFFFF;
+            color: $white-color;
             font-size: 24px;
             font-weight: 700;
             line-height: 40px;
@@ -140,12 +140,12 @@
     .versus{
         height: 66px;
         width: 66px;
-        background-color: #24156D;
+        background-color: $heading-color;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 16px;
         font-weight: 700;
         position: absolute;

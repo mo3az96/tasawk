@@ -1,6 +1,6 @@
 .articles-departments{
     padding: 96px 0 ;
-    background-color: #fff;
+    background-color: $white-color;
 }
 .departments-items{
     display: grid;
@@ -10,7 +10,7 @@
 }
 .department-item{
     a{
-        color: #24156D;
+        color: $heading-color;
         font-size: 24px;
         font-weight: 700;
         line-height: 40px;

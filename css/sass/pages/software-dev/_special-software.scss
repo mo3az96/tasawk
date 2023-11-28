@@ -1,15 +1,15 @@
 .special-software-parent{
-    background-color: #4C34BB;
+    background-color: $secondary-color;
     padding: 96px 0 ;
     .freq-span , .freq-desc{
         color: rgba(255,255,255,0.8);
     }
     .freq-headline{
-        color: #ffffff;
+        color: $white-color;
     }
     .modern-tech{
         .title{
-            color: #FFFFFF;
+            color: $white-color;
             font-size: 16px;
             font-weight: 700;
             margin: 0;
@@ -73,7 +73,7 @@
     width: 100%;
     .draggable {
         height: 56px;
-        background-color: #4938A1;
+        background-color: $text-color;
         width: 100%;
         padding-inline-start: 13px;
         cursor: url("../images/pages/software-dev/special-soft-sec/Grab.svg")  , auto  ;
@@ -105,7 +105,7 @@
         &.dragDone{
             border: none;
             padding-inline-start: 0;
-            background-color: #24156D;
+            background-color: $heading-color;
             padding-inline-start: 13px;
             .darggable-cont .svg{
                 filter: opacity(1) brightness(0) saturate(100%) invert(39%) sepia(66%) saturate(4310%) hue-rotate(124deg) brightness(95%) contrast(87%);
@@ -114,7 +114,7 @@
     }
     .para{
         width: 226px;
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 16px;
         font-weight: 700;
         text-align: center;
@@ -132,7 +132,7 @@
     height: 100%;
     align-items: center;
     p{
-        color: #FFFFFF;
+        color: $white-color;
         font-size: 16px;
         line-height: 24px;
         margin-inline-start: 8px;

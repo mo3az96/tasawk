@@ -4,7 +4,7 @@
   }
   
   .slide-title {
-    color: #4938a1;
+    color: $text-color;
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
@@ -16,7 +16,7 @@
     width: 995px;
     position: relative;
     height: 360px;
-    background-color: #f3f2fb;
+    background-color: $bglight-color;
     padding-top: 48px;
     padding-inline-start: 48px;
     display: flex;
@@ -36,7 +36,7 @@
         content: "";
         width: 50%;
         height: 8px;
-        background-color: #fff;
+        background-color: $white-color;
         bottom: 0;
         inset-inline-start: 0;
       }
@@ -45,7 +45,7 @@
         content: "";
         width: 50%;
         height: 8px;
-        background-color: #f3f2fb;
+        background-color: $bglight-color;
         top: 0px;
         inset-inline-end: 0;
       }
@@ -61,7 +61,7 @@
       content: "";
       width: 50%;
       height: 8px;
-      background-color: #f3f2fb;
+      background-color: $bglight-color;
       bottom: -8px;
       inset-inline-end: 0;
     }
@@ -70,7 +70,7 @@
       content: "";
       width: 50%;
       height: 8px;
-      background-color: #f3f2fb;
+      background-color: $bglight-color;
       top: -8px;
       inset-inline-start: 0;
     }
@@ -78,7 +78,7 @@
   .review-text {
     margin-bottom: 58px;
     width: 690px;
-    color: #4938a1;
+    color: $text-color;
     font-size: 24px;
     line-height: 40px;
     margin-inline-start: 43px;
@@ -91,7 +91,7 @@
       color: #b7b7b7;
     }
     .star.active {
-      color: #ffc914;
+      color: $yellow-color;
     }
   }
   .review-client-cont {
@@ -102,14 +102,14 @@
     display: flex;
     align-items: center;
     .client-name {
-      color: #4938a1;
+      color: $text-color;
       font-size: 16px;
       line-height: 24px;
       text-align: right;
       margin: 0;
     }
     .client-role {
-      color: #4938a1;
+      color: $text-color;
       font-size: 12px;
       text-align: right;
       margin: 4px 0 6px 0;
@@ -143,7 +143,7 @@
       }
       .icon {
         font-size: 22px;
-        color: #4c34bb;
+        color: $secondary-color;
         display: block;
       }
     }
