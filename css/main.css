@@ -4978,12 +4978,15 @@ section {
   }
 }
 @media only screen and (max-width: 768px) {
+  .Ecommerce-main .myitems .general-item {
+    margin: 0;
+  }
   .Ecommerce-main .main-banner-content .container {
     padding: 0;
   }
   .Ecommerce-main .myitems {
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .Ecommerce-main .general-item .general-item-img {
     width: 130px;
