@@ -563,9 +563,7 @@ containers.forEach(container => {
 
 addEventListener( "load", init, false );
 function init( event ) {
-  $("#eraser-overlay").eraser();
-  //  $("#eraser-overlay").eraser({size: 5});
-}
+  $("#eraser-overlay").eraser();}
 
 
 
