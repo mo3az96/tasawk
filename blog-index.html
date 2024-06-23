@@ -1,964 +1,880 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-    />
-    <title>تسوق</title>
-    <link rel="shortcut icon" type="img/png" href="images/favicon.png" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>تسوق</title>
+  <link rel="shortcut icon" type="img/png" href="images/favicon.png" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-     <!--  Start preloader -->
-     <div class="preloader-progress">
-      <div class="progress-bar"></div>
-    </div>
-    <!-- End preloader -->
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+  <!--  Start preloader -->
+  <div class="preloader-progress">
+    <div class="progress-bar"></div>
+  </div>
+  <!-- End preloader -->
 
 
-    <!-- Start Header -->
-    <header>
-      <div class="container">
-        <div class="header-main-content">
-          <nav class="header-main-nav">
-            <div class="closeNavBtn-holder">
-              <button class="closeNavBtn">
-                <i class="fa-solid closeIcon fa-xmark"></i>
-              </button>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <div class="header-main-content">
+        <nav class="header-main-nav">
+          <div class="closeNavBtn-holder">
+            <button class="closeNavBtn">
+              <i class="fa-solid closeIcon fa-xmark"></i>
+            </button>
+          </div>
+
+          <ul class="header-main-nav-ul">
+            <li class="header-main-nav-li">
+              <a class="header-main-nav-a" href="#">المتاجر الإلكترونية</a>
+            </li>
+            <li class="header-main-nav-li">
+              <a class="header-main-nav-a" href="#">المواقع & تطبيقات الجوال
+              </a>
+            </li>
+            <li class="header-main-nav-li">
+              <a class="header-main-nav-a" href="#">التسويق الإلكتروني </a>
+            </li>
+            <li class="header-main-nav-li">
+              <a class="header-main-nav-a" href="#">أعمالنا </a>
+            </li>
+            <li class="header-main-nav-li">
+              <a class="header-main-nav-a" href="#">اتعلم & المصادر </a>
+            </li>
+          </ul>
+          <button class="tasawk-btn main-btn">
+            <span> تحدث الآن للمبيعات</span>
+            <div class="tasawk-btn-arrow-div">
+              <i class="fa-solid tasawk-btn-arrow-icon fa-angle-down"></i>
             </div>
-
-            <ul class="header-main-nav-ul">
-              <li class="header-main-nav-li">
-                <a class="header-main-nav-a" href="#">المتاجر الإلكترونية</a>
-              </li>
-              <li class="header-main-nav-li">
-                <a class="header-main-nav-a" href="#"
-                  >المواقع & تطبيقات الجوال
+            <div class="sub-menu">
+              <div class="upper sub-menu-div">
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Email.svg" alt="" />
+                  <span class="link-span">أرسل لنا رسالة</span>
                 </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Location.svg" alt="" />
+                  <span class="link-span">تعال لزيارة مكتبنا في الرياض</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Phone.svg" alt="" />
+                  <span class="link-span">إحجز مكالمة استشارية مجاناً</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Offer.svg" alt="" />
+                  <span class="link-span">أطلب عرض سعر لشركتك</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Support.svg" alt="" />
+                  <span class="link-span">مركز الدعم الفني</span>
+                </a>
+              </div>
+              <div class="lower sub-menu-div">
+                <a class="link" href="#">
+                  <i class="fa-brands link-img fa-whatsapp"></i>
+                  <div class="lower-spans-div">
+                    <span class="link-span">واتس آب تسوق</span>
+                    <span class="lower-link-span">تواصل مباشرة عبر حسابنا على What’sApp</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </button>
+        </nav>
+
+        <!-- <div class="nav-overlay"></div> -->
+
+        <a href="#" class="logo-img" aria-label="logo">
+          <img class="svg" src="images/logo.svg" alt="" />
+        </a>
+        <div class="search-contact-div">
+          <button class="search-btn" aria-label="searchBtn">
+            <i class="fa-solid search-btn-icon fa-magnifying-glass"></i>
+          </button>
+
+          <button class="tasawk-btn main-btn">
+            <span> تحدث الآن للمبيعات</span>
+            <div class="tasawk-btn-arrow-div">
+              <i class="fa-solid fa-angle-down tasawk-btn-arrow-icon"></i>
+            </div>
+            <div class="sub-menu">
+              <div class="upper sub-menu-div">
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Email.svg" alt="" />
+                  <span class="link-span">أرسل لنا رسالة</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Location.svg" alt="" />
+                  <span class="link-span">تعال لزيارة مكتبنا في الرياض</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Phone.svg" alt="" />
+                  <span class="link-span">إحجز مكالمة استشارية مجاناً</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Offer.svg" alt="" />
+                  <span class="link-span">أطلب عرض سعر لشركتك</span>
+                </a>
+                <a class="link" href="#">
+                  <img class="link-img svg" src="images/header/btn-menu/Support.svg" alt="" />
+                  <span class="link-span">مركز الدعم الفني</span>
+                </a>
+              </div>
+              <div class="lower sub-menu-div">
+                <a class="link" href="#">
+                  <i class="fa-brands link-img fa-whatsapp"></i>
+                  <div class="lower-spans-div">
+                    <span class="link-span">واتس آب تسوق</span>
+                    <span class="lower-link-span">تواصل مباشرة عبر حسابنا على What’sApp</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </button>
+          <div class="sub-menu-overlay"></div>
+        </div>
+        <button class="bars">
+          <i class="fa-solid barsIcon fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="search-overlay">
+      <div class="container">
+        <div class="search-input-holder">
+          <div class="search-input">
+            <input type="search" placeholder="إبحث في موقع أو مدونة تسوق …" />
+            <i class="fa-solid search-icon fa-magnifying-glass"></i>
+            <span class="search-span">البحث</span>
+          </div>
+        </div>
+        <div class="search-nav">
+          <div class="search-nav-item">
+            <h3 class="search-nav-item-title">خدماتنا الأخرى</h3>
+            <span class="search-nav-item-span">ما الذي تحتاج تنفيذة اليوم ؟</span>
+            <ul class="search-nav-ul">
+              <li>
+                <a href="#">المتاجر الإلكترونية</a>
               </li>
-              <li class="header-main-nav-li">
-                <a class="header-main-nav-a" href="#">التسويق الإلكتروني </a>
+              <li>
+                <a href="#"> المواقع الإلكترونية والبرمجيات الخاصة</a>
               </li>
-              <li class="header-main-nav-li">
-                <a class="header-main-nav-a" href="#">أعمالنا </a>
+              <li>
+                <a href="#">تطبيقات الموبايل/ اندرويد وآيفون </a>
               </li>
-              <li class="header-main-nav-li">
-                <a class="header-main-nav-a" href="#">اتعلم & المصادر </a>
+              <li>
+                <a href="#">التصميم والشعارات </a>
+              </li>
+              <li>
+                <a href="#">التسويق الالكتروني </a>
+              </li>
+              <li>
+                <a href="#">الاستضافة </a>
+              </li>
+              <li>
+                <a href="#">الاستشارات </a>
               </li>
             </ul>
-            <button class="tasawk-btn main-btn">
-              <span> تحدث الآن للمبيعات</span>
-              <div class="tasawk-btn-arrow-div">
-                <i class="fa-solid tasawk-btn-arrow-icon fa-angle-down"></i>
-              </div>
-              <div class="sub-menu">
-                <div class="upper sub-menu-div">
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Email.svg"
-                      alt=""
-                    />
-                    <span class="link-span">أرسل لنا رسالة</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Location.svg"
-                      alt=""
-                    />
-                    <span class="link-span">تعال لزيارة مكتبنا في الرياض</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Phone.svg"
-                      alt=""
-                    />
-                    <span class="link-span">إحجز مكالمة استشارية مجاناً</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Offer.svg"
-                      alt=""
-                    />
-                    <span class="link-span">أطلب عرض سعر لشركتك</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Support.svg"
-                      alt=""
-                    />
-                    <span class="link-span">مركز الدعم الفني</span>
-                  </a>
-                </div>
-                <div class="lower sub-menu-div">
-                  <a class="link" href="#">
-                    <i class="fa-brands link-img fa-whatsapp"></i>
-                    <div class="lower-spans-div">
-                      <span class="link-span">واتس آب تسوق</span>
-                      <span class="lower-link-span"
-                        >تواصل مباشرة عبر حسابنا على What’sApp</span
-                      >
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </button>
-          </nav>
-
-          <!-- <div class="nav-overlay"></div> -->
-
-          <a href="#" class="logo-img">
-            <img class="svg" src="images/logo.svg" alt="" />
-          </a>
-          <div class="search-contact-div">
-            <button class="search-btn">
-              <i class="fa-solid search-btn-icon fa-magnifying-glass"></i>
-            </button>
-
-            <button class="tasawk-btn main-btn">
-              <span> تحدث الآن للمبيعات</span>
-              <div class="tasawk-btn-arrow-div">
-                <i class="fa-solid fa-angle-down tasawk-btn-arrow-icon"></i>
-              </div>
-              <div class="sub-menu">
-                <div class="upper sub-menu-div">
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Email.svg"
-                      alt=""
-                    />
-                    <span class="link-span">أرسل لنا رسالة</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Location.svg"
-                      alt=""
-                    />
-                    <span class="link-span">تعال لزيارة مكتبنا في الرياض</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Phone.svg"
-                      alt=""
-                    />
-                    <span class="link-span">إحجز مكالمة استشارية مجاناً</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Offer.svg"
-                      alt=""
-                    />
-                    <span class="link-span">أطلب عرض سعر لشركتك</span>
-                  </a>
-                  <a class="link" href="#">
-                    <img
-                      class="link-img svg"
-                      src="images/header/btn-menu/Support.svg"
-                      alt=""
-                    />
-                    <span class="link-span">مركز الدعم الفني</span>
-                  </a>
-                </div>
-                <div class="lower sub-menu-div">
-                  <a class="link" href="#">
-                    <i class="fa-brands link-img fa-whatsapp"></i>
-                    <div class="lower-spans-div">
-                      <span class="link-span">واتس آب تسوق</span>
-                      <span class="lower-link-span"
-                        >تواصل مباشرة عبر حسابنا على What’sApp</span
-                      >
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </button>
-            <div class="sub-menu-overlay"></div>
           </div>
-          <button class="bars">
-            <i class="fa-solid barsIcon fa-bars"></i>
-          </button>
+          <div class="search-nav-item">
+            <h3 class="search-nav-item-title">المتاجر المتخصصة</h3>
+            <span class="search-nav-item-span">مجال متجرك يحدد بوصلة تنفيذة</span>
+            <ul class="search-nav-ul">
+              <li>
+                <a href="#"> الغذاء والدواء</a>
+              </li>
+              <li>
+                <a href="#">الموضة والملابس</a>
+              </li>
+              <li>
+                <a href="#"> الالكترونيات والخدمات الرقمية </a>
+              </li>
+              <li>
+                <a href="#"> مستلزمات المنزل </a>
+              </li>
+              <li>
+                <a href="#"> المتنوعة </a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-nav-item">
+            <h3 class="search-nav-item-title">خدمات تناسب حجم مشروعك</h3>
+            <span class="search-nav-item-span">ما يحتاجة مشروعك فعلاً يرتبط بحجمه</span>
+            <ul class="search-nav-ul">
+              <li>
+                <a href="#"> للأفراد </a>
+              </li>
+              <li>
+                <a href="#"> للمؤسسات</a>
+              </li>
+              <li>
+                <a href="#"> للشركات</a>
+              </li>
+              <li>
+                <a href="#"> أطلب عرض سعر للشركة التي تعمل بها</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-nav-item">
+            <h3 class="search-nav-item-title">تعلم & المصادر</h3>
+            <span class="search-nav-item-span">نشاركك الخبرات التي جمعناها لتنمو اسرع</span>
+            <ul class="search-nav-ul">
+              <li>
+                <a href="#"> دراسة حالة </a>
+              </li>
+              <li>
+                <a href="#">مدونة تسوق (طريق الثراء) </a>
+              </li>
+              <li>
+                <a href="#"> ويبينار تسوق </a>
+              </li>
+              <li>
+                <a href="#"> النشرة البريدية </a>
+              </li>
+              <li>
+                <a href="#"> الأدلة الارشادية </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="search-overlay">
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start blog-index-main  -->
+  <main class="blog-index-main">
+    <div class="main-parent">
+      <div class="blog-top-header">
         <div class="container">
-          <div class="search-input-holder">
-            <div class="search-input">
-              <input type="search" placeholder="إبحث في موقع أو مدونة تسوق …" />
-              <i class="fa-solid search-icon fa-magnifying-glass"></i>
-              <span class="search-span">البحث</span>
+          <div class="topheader-cont">
+            <h4 class="page-name">مدونة طريق الثراء</h4>
+            <ul class="top-header-list" id="navbar-example">
+              <li>
+                <a href="#whyTOStart">تطوير خدمة العملاء </a>
+              </li>
+              <li>
+                <a href="">قصص نجاح التجار </a>
+              </li>
+              <li>
+                <a href="">خدمات الطرف الثالث </a>
+              </li>
+              <li>
+                <a href="">مستقبل المتاجر الإلكترونية </a>
+              </li>
+              <li>
+                <a href="#partners"> التخطيط لبناء المتاجر الإلكترونية</a>
+              </li>
+            </ul>
+            <button class="blog-menu-btn">
+              <img src="images/pages/blog/main/Open.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner-content">
+        <div class="container">
+          <div class="main-blog-items">
+            <div class="text-item">
+              <div class="name-date">
+                <span class="name"> التخطيط لبناء المتاجر الإلكترونية </span>
+                <div class="white-dash"></div>
+                <span class="date">13 يناير 2021</span>
+              </div>
+              <h2 class="title">
+                مرحلة تسليم أعمال الهوية البصرية: ٦ أمور يجب ان تنتبه لها
+                جيداً
+              </h2>
+              <p class="desc">
+                الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام
+                الشعار في التطبيقات المختلفه حتى لا يفقد الشعار الرسالة التي
+                يريد ايصالها للزبائن …
+              </p>
+              <a class="continue-article" href="#"> أكمل المقالة </a>
+            </div>
+            <div class="img-item">
+              <img class="comment1" src="images/pages/blog/main/Comment.svg" alt="" />
+              <img class="article-img" src="images/pages/blog/main/Article.svg" alt="" />
+              <img class="comment2" src="images/pages/blog/main/Comment.svg" alt="" />
             </div>
           </div>
-          <div class="search-nav">
-            <div class="search-nav-item">
-              <h3 class="search-nav-item-title">خدماتنا الأخرى</h3>
-              <span class="search-nav-item-span"
-                >ما الذي تحتاج تنفيذة اليوم ؟</span
-              >
-              <ul class="search-nav-ul">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--  End blog-index-main  -->
+
+
+  <!-- Start latest-articles  -->
+  <section class="latest-articles">
+    <div class="container">
+      <h2 class=" blog-page-title">أحدث المقالات</h2>
+      <div class="articles-parent">
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/Balance.svg" alt="" />
+            <div class="positioned-text">
+              الخدمات المكملة للمتاجر الإلكترونية
+            </div>
+            <div class="trendy-box">
+              <span href="#" class="tooltip-span" data-bs-custom-class="trendy-tooltip" data-bs-toggle="tooltip"
+                data-bs-title="الأكثر قراءة على مدونة تسوق">
+                <img src="images/pages/blog/latest-articles/Trendy.svg" alt="" />
+              </span>
+            </div>
+          </div>
+          <div class="item-desc">
+            <h3>
+              اعمل أقل ، واكسب المزيد: 11 فكرة للدخل السلبي لبناء ثروة طويلة
+              الأجل
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/DollarSign.svg" alt="" />
+            <div class="positioned-text">
+              الخدمات المكملة للمتاجر الإلكترونية
+            </div>
+
+          </div>
+          <div class="item-desc">
+            <h3>
+              اعمل أقل ، واكسب المزيد: 11 فكرة للدخل السلبي لبناء ثروة طويلة
+              الأجل
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/Testing-Step.svg" alt="" />
+            <div class="positioned-text">
+              التخطيط لبناء المتاجر الإلكترونية
+            </div>
+
+          </div>
+          <div class="item-desc">
+            <h3>
+              من القمصان إلى آخر صيحات الموضة: كيف تبدأ مشروع ملابس في عام 2021
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/Comment.svg" alt="" />
+            <div class="positioned-text">
+              مستقبل التجارة الإلكترونية
+            </div>
+            <div class="trendy-box">
+              <span href="#" class="tooltip-span" data-bs-custom-class="trendy-tooltip" data-bs-toggle="tooltip"
+                data-bs-title="الأكثر قراءة على مدونة تسوق">
+                <img src="images/pages/blog/latest-articles/Trendy.svg" alt="" />
+              </span>
+            </div>
+
+          </div>
+          <div class="item-desc">
+            <h3>
+              الدعم الفني بإستخدام روبوتات الذكاء الاصطناعي يغزو متاجر العالم الإلكترونية
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/Book.svg" alt="" />
+            <div class="positioned-text">
+              التسويق الإلكتروني
+            </div>
+
+          </div>
+          <div class="item-desc">
+            <h3>
+              الكتب الإلكترونية التفاعلية أداة مجربة لتقديم قيمة عالية لجذب زبائن جدد
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+        <a href="#" class="article-item">
+          <div class="img-holder">
+            <img class="item-img" src="images/pages/blog/latest-articles/DollarSign.svg" alt="" />
+            <div class="positioned-text">
+              كواليس تنفيذ المشاريع
+            </div>
+
+          </div>
+          <div class="item-desc">
+            <h3>
+              3250 عملية بيع بعد إطلاق المتجر بزيادة نسبتها 18% بدون زيادة ميزانية التسويق ريال واحد!
+            </h3>
+            <p>
+              على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
+              السلبية هي نتيجة العمل الجاد: بناء جمهور...
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <!-- End latest-articles  -->
+
+  <!-- Start articles-departments  -->
+  <section class="articles-departments">
+    <div class="container">
+      <h2 class=" blog-page-title"> أقسام المقالات</h2>
+      <div class="departments-items">
+        <div class="department-item">
+          <a href="#">التخطيط لبناء المتجر الإلكتروني</a>
+          <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق،
+            التخطيط للشحن والدفع وغيرها …</p>
+        </div>
+        <div class="department-item">
+          <a href="#">مستقبل التجارة الإلكترونية</a>
+          <p>كل جديد عن التجارة والمتاجر الإلكترونية؛ نستطلع الاتجاهات التي تتحرك فيها اسواق، وإمكانات التجارة
+            الإلكترونية نحو المستقبل.</p>
+        </div>
+        <div class="department-item">
+          <a href="#">الخدمات المكملة للمتاجر الإلكترونية</a>
+          <p>ما هي شركات الطرف الثالث وكيف تقيم المناسب منها لمتجرك، هذه المعرفة تجنبك المشاكل قبل وقوعها وتعظم صافي
+            ارباحك.</p>
+        </div>
+        <div class="department-item">
+          <a href="#">قصص نجاح التجار</a>
+          <p>تعلم من التجار والمتاجر الناجحة في السوق السعودي، اكتشف تفاصيل المراحل التى مروا بها وكيف يتغلب التاجر
+            الشاطر على المشاكل التي تواجهه كل يوم.</p>
+        </div>
+        <div class="department-item">
+          <a href="#">تطوير خدمة العملاء</a>
+          <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت تدير
+            المتجر بمفردك او لديك فريق متخصص.</p>
+        </div>
+        <div class="department-item">
+          <a href="#">التسويق الإلكتروني</a>
+          <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة
+            تجارية راقية. لأنك كذلك!</p>
+        </div>
+        <div class="department-item">
+          <a href="#">خدمات تسوق</a>
+          <p>خدمات تصميم وتطوير المواقع وتطبيقات الجوال، التسويق الإلكتروني، التصميم الجرافيكي، الإستضافة والاستشارات
+            وغيرها...</p>
+        </div>
+        <div class="department-item">
+          <a href="#">كواليس تنفيذ المشاريع</a>
+          <p>نطلعك على نظام عملنا وكواليس تنفيذ المشاريع والدروس التي نتعلمها كل يوم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End articles-departments  -->
+
+
+  <!-- Start special articles -->
+  <section class="special-articles">
+    <div class="container">
+      <span class="freq-span">مقالات مميزة</span>
+      <h2 class=" blog-page-title"> الخدمات المكملة للمتاجر الإلكترونية </h2>
+      <div class="stages-parent">
+        <div class="stage-item">
+          <div class="num-text-holder">
+            <div class="stage-num">01</div>
+            <div class="text">
+              <a href="#">مرحلة تسليم أعمال الهوية البصرية: ٦ أمور يجب ان تنتبه لها جيداً </a>
+              <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت
+                تدير المتجر بمفردك او لديك فريق متخصص.</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">02</div>
+            <div class="text">
+              <a href="#">معايير اختيار شريك الشحن والدفع للمتجر الالكتروني </a>
+              <p>الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام الشعار في التطبيقات المختلفه حتى لا يفقد
+                …</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">03</div>
+            <div class="text">
+              <a href="#">مشروع تجاري متكامل بدون صداع الإيجارات او الموظفين </a>
+              <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق،
+                التخطيط للشحن والدفع وغيرها …</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">04</div>
+            <div class="text">
+              <a href="#"> لاتترك شئ للصدفة أو التخمين: جمعنا كل الأساسيات لتبدأ متجر ناجح </a>
+              <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة
+                تجارية راقية. لأنك كذلك!</p>
+            </div>
+          </div>
+          <div class="more-articles-div">
+            <a href="#" class="more-articles-btn">المزيد من المقالات</a>
+          </div>
+
+        </div>
+        <div class="stage-item-img">
+          <div class="holder">
+            <img class="img" src="images/pages/blog/special-articles/Thin.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End special articles -->
+
+
+  <!-- Start special articles -->
+  <section class="special-articles white-special-articles">
+    <div class="container">
+      <span class="freq-span">مقالات مميزة</span>
+      <h2 class=" blog-page-title"> التخطيط لبناء المتاجر الإلكترونية </h2>
+      <div class="stages-parent">
+        <div class="stage-item">
+          <div class="num-text-holder">
+            <div class="stage-num">01</div>
+            <div class="text">
+              <a href="#">كيفية حساب تكاليف الشحن والدفع بدقة خلال ٦ أشهر الأولى لمتجرك </a>
+              <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت
+                تدير المتجر بمفردك او لديك فريق متخصص.</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">02</div>
+            <div class="text">
+              <a href="#">الدفع عند الاستلام: خدمة تقدم بمقابل يمكن ان تحصل عليها مجاناً </a>
+              <p>الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام الشعار في التطبيقات المختلفه حتى لا يفقد
+                …</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">03</div>
+            <div class="text">
+              <a href="#">كيف تتخلص من صداع المسترجعات بدون خسارة ريال واحد على الطلب؟ </a>
+              <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق،
+                التخطيط للشحن والدفع وغيرها …</p>
+            </div>
+          </div>
+          <div class="num-text-holder">
+            <div class="stage-num">04</div>
+            <div class="text">
+              <a href="#"> حلول طباعة أوراق اللصق المناسبة على طلبات الزبائن </a>
+              <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة
+                تجارية راقية. لأنك كذلك!</p>
+            </div>
+          </div>
+          <div class="more-articles-div">
+            <a href="#" class="more-articles-btn">المزيد من المقالات</a>
+          </div>
+        </div>
+        <div class="stage-item-img">
+          <div class="holder">
+            <img class="img" src="images/pages/blog/special-articles/Shipping.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End special articles -->
+
+  <!-- Start integrated-eCommerce  -->
+  <section class="integrated-eCommerce">
+    <div class="container-fluid">
+      <div class="integrated-parent">
+        <div class="container">
+          <div class="items">
+            <div class="item">
+              <h2 class=" blog-page-title"> إمتلك تجارة إلكترونية متكاملة </h2>
+              <p class="desc">خدمتنا المتخصصة في تصميم المتاجر الإلكترونية تضمن لك سلسلة كاملة من الشراكات والخدمات تبدأ
+                قبل المتجر الإلكتروني وتستمر الى ان يُعيد الزبون الشراء مرات ومرات …</p>
+              <ul class="list">
+                <li>
+                  <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
+                  <p>تصميم خاص - وغير مكرر لمتجرك الإلكتروني</p>
+                </li>
+                <li>
+                  <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
+                  <p>خدمات دفع، شحن وتوريد مدمجة بأقل سعر عمولة في السوق</p>
+                </li>
+                <li>
+                  <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
+                  <p>دعم فني لغاية 90 يوم بعد التسليم</p>
+                </li>
+                <li>
+                  <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
+                  <p>استشارات مجانية من اول مكالمة</p>
+                </li>
+              </ul>
+              <button class="tasawk-btn main-btn">
+                تحدث الآن للمبيعات
+              </button>
+            </div>
+            <div class="img-item">
+              <img class="dollarSign" src="images/pages/blog/integrated-eCommerce/DollarSign.svg" alt="">
+              <img class="shipping" src="images/pages/blog/integrated-eCommerce/Shipping.svg" alt="">
+              <img class="thin" src="images/pages/blog/integrated-eCommerce/Thin.svg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End integrated-eCommerce -->
+
+
+  <!--Start contact  us  -->
+  <section class="contactWithUs">
+    <div class="container-fluid">
+      <div class="contact-parent">
+        <div class="contact-item">
+          <h3>النشرة البريدية</h3>
+          <p>إشترك ليصل على بريدك جديد المصادر، الكتب والمقالات التي ننشرها، صباح الأحد من كل أسبوع. بدون إعلانات.</p>
+          <div class="book-form newsletter-form">
+            <form>
+              <input class="book-input" type="text" placeholder="اكتب بريدك الإلكتروني*">
+              <button class="download-book subscribe-now">إشترك الان </button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-item">
+          <h3>صفحاتنا على الشبكات الإجتماعية </h3>
+          <p>جرعات صغيرة، فريدة ومتنوعه عن التجارة الإلكترونية ننشرها كل يوم على الشبكات الإجتماعية.</p>
+          <div class="social-links">
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="icon fa-brands fa-instagram"></i>
+            </a>
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="fa-brands icon fa-x-twitter"></i>
+            </a>
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="icon fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact  us  -->
+
+
+
+
+  <!-- Start Breadcrumb -->
+  <div class="main-breadcrumb">
+    <button class="up-btn" aria-label="upBtn">
+      <img class="svg" src="images/breadcrumb/up-btn.svg" alt="" />
+    </button>
+    <div class="container-fluid">
+      <div class="breadcrumb-parent">
+        <div class="container">
+          <div class="breadcrumb-content">
+            <ul class="breadcrumb-ul">
+              <li class="breadcrumb-ul-li">
+                <a class="breadcrumb-anchor" href="index.html">الرئيسية </a>
+              </li>
+              <li class="breadcrumb-ul-li">
+                <a class="breadcrumb-anchor" href="index.html">الخدمات </a>
+              </li>
+              <li class="breadcrumb-ul-li active-li">
+                <span class="breadcrumb-current breadcrumb-anchor">
+                  الشعارات والتصميم الجرافيكي
+                </span>
+              </li>
+            </ul>
+            <a href="#" class="siteMap">خريطة الموقع</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+  <!-- Start Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="footer-parent">
+        <div class="container">
+          <div class="desc-cont">
+            <h2 class="desc-cont-title">
+              محطة واحدة للتـزود بكل خدمات المتاجر الإلكترونية، المواقع
+              وتطبيقات الجوال … خدمـة 5 نجوم تُفصل على مقاسك
+            </h2>
+            <div class="desc-cont-contact">
+              <button class="tasawk-btn main-btn">تحدث الآن للمبيعات</button>
+              <p class="desc-para">
+                في مكالمة تركز 100% على احتياجاتك بغض النظر عن تعاملك مع تسوق،
+                يستمع عبد الله - مطور الأعمال التجارية، بخبرة تزيد عن 5 سنوات
+                في المتاجر الالكترونية باهتمام لإحتياجاتك.
+              </p>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-item">
+              <h3 class="footer-nav-item-title">الخدمات الأكثر طلبا</h3>
+              <span class="footer-nav-item-span">ما الذي تحتاج تنفيذة اليوم ؟</span>
+              <ul class="footer-nav-ul">
+                <li>
+                  <a href="#">تطبيقات الجوال</a>
+                </li>
+                <li>
+                  <a href="#">البرمجيات الخاصة</a>
+                </li>
                 <li>
                   <a href="#">المتاجر الإلكترونية</a>
                 </li>
                 <li>
-                  <a href="#"> المواقع الإلكترونية والبرمجيات الخاصة</a>
-                </li>
-                <li>
-                  <a href="#">تطبيقات الموبايل/ اندرويد وآيفون </a>
-                </li>
-                <li>
-                  <a href="#">التصميم والشعارات </a>
-                </li>
-                <li>
-                  <a href="#">التسويق الالكتروني </a>
-                </li>
-                <li>
-                  <a href="#">الاستضافة </a>
-                </li>
-                <li>
-                  <a href="#">الاستشارات </a>
+                  <a href="#">مواقع الشركات</a>
                 </li>
               </ul>
             </div>
-            <div class="search-nav-item">
-              <h3 class="search-nav-item-title">المتاجر المتخصصة</h3>
-              <span class="search-nav-item-span"
-                >مجال متجرك يحدد بوصلة تنفيذة</span
-              >
-              <ul class="search-nav-ul">
+            <div class="footer-nav-item">
+              <h3 class="footer-nav-item-title">مشروعات تسوق</h3>
+              <span class="footer-nav-item-span">نستثمر في أفكار نكمل بها خدمتك</span>
+              <ul class="footer-nav-ul">
                 <li>
-                  <a href="#"> الغذاء والدواء</a>
+                  <a href="#"> دليل المتاجر</a>
                 </li>
                 <li>
-                  <a href="#">الموضة والملابس</a>
+                  <a href="#"> متجر +</a>
                 </li>
                 <li>
-                  <a href="#"> الالكترونيات والخدمات الرقمية </a>
-                </li>
-                <li>
-                  <a href="#"> مستلزمات المنزل </a>
-                </li>
-                <li>
-                  <a href="#"> المتنوعة </a>
+                  <a href="#">نسخة تسوق من أوبن كارت </a>
                 </li>
               </ul>
             </div>
-            <div class="search-nav-item">
-              <h3 class="search-nav-item-title">خدمات تناسب حجم مشروعك</h3>
-              <span class="search-nav-item-span"
-                >ما يحتاجة مشروعك فعلاً يرتبط بحجمه</span
-              >
-              <ul class="search-nav-ul">
+            <div class="footer-nav-item">
+              <h3 class="footer-nav-item-title">أعمالنا السابقة</h3>
+              <span class="footer-nav-item-span">وجبة دسمه من الأعمال المتنوعة منذ 2009</span>
+              <ul class="footer-nav-ul">
                 <li>
-                  <a href="#"> للأفراد </a>
+                  <a href="#"> معرض الأعمال </a>
                 </li>
                 <li>
-                  <a href="#"> للمؤسسات</a>
-                </li>
-                <li>
-                  <a href="#"> للشركات</a>
-                </li>
-                <li>
-                  <a href="#"> أطلب عرض سعر للشركة التي تعمل بها</a>
+                  <a href="#">ملف البورتفوليو .PDF</a>
                 </li>
               </ul>
             </div>
-            <div class="search-nav-item">
-              <h3 class="search-nav-item-title">تعلم & المصادر</h3>
-              <span class="search-nav-item-span"
-                >نشاركك الخبرات التي جمعناها لتنمو اسرع</span
-              >
-              <ul class="search-nav-ul">
+            <div class="footer-nav-item">
+              <h3 class="footer-nav-item-title">مدونة تسوق</h3>
+              <span class="footer-nav-item-span">نشارك الكواليس وما نتعلمه كل يوم في عملنا</span>
+              <ul class="footer-nav-ul">
                 <li>
-                  <a href="#"> دراسة حالة </a>
+                  <a href="#"> التجارة الإلكترونية </a>
                 </li>
                 <li>
-                  <a href="#">مدونة تسوق (طريق الثراء) </a>
+                  <a href="#">الاستشارات للنمو </a>
                 </li>
                 <li>
-                  <a href="#"> ويبينار تسوق </a>
-                </li>
-                <li>
-                  <a href="#"> النشرة البريدية </a>
-                </li>
-                <li>
-                  <a href="#"> الأدلة الارشادية </a>
+                  <a href="#"> قصص العملاء </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start blog-index-main  -->
-    <main class="blog-index-main">
-      <div class="main-parent">
-        <div class="blog-top-header">
-          <div class="container">
-            <div class="topheader-cont">
-              <h4 class="page-name">مدونة طريق الثراء</h4>
-              <ul class="top-header-list" id="navbar-example">
-                <li>
-                  <a href="#whyTOStart">تطوير خدمة العملاء </a>
-                </li>
-                <li>
-                  <a href="">قصص نجاح التجار </a>
-                </li>
-                <li>
-                  <a href="">خدمات الطرف الثالث </a>
-                </li>
-                <li>
-                  <a href="">مستقبل المتاجر الإلكترونية </a>
-                </li>
-                <li>
-                  <a href="#partners"> التخطيط لبناء المتاجر الإلكترونية</a>
-                </li>
-              </ul>
-              <button class="blog-menu-btn">
-                <img src="images/pages/blog/main/Open.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner-content">
-          <div class="container">
-            <div class="main-blog-items">
-              <div class="text-item">
-                <div class="name-date">
-                  <span class="name"> التخطيط لبناء المتاجر الإلكترونية </span>
-                  <div class="white-dash"></div>
-                  <span class="date">13 يناير 2021</span>
-                </div>
-                <h2 class="title">
-                  مرحلة تسليم أعمال الهوية البصرية: ٦ أمور يجب ان تنتبه لها
-                  جيداً
-                </h2>
-                <p class="desc">
-                  الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام
-                  الشعار في التطبيقات المختلفه حتى لا يفقد الشعار الرسالة التي
-                  يريد ايصالها للزبائن …
-                </p>
-                <a class="continue-article" href="#"> أكمل المقالة </a>
-              </div>
-              <div class="img-item">
-                <img
-                  class="comment1"
-                  src="images/pages/blog/main/Comment.svg"
-                  alt=""
-                />
-                <img
-                  class="article-img"
-                  src="images/pages/blog/main/Article.svg"
-                  alt=""
-                />
-                <img
-                  class="comment2"
-                  src="images/pages/blog/main/Comment.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--  End blog-index-main  -->
-
-
-    <!-- Start latest-articles  -->
-    <section class="latest-articles">
-      <div class="container">
-        <h2 class=" blog-page-title">أحدث المقالات</h2>
-        <div class="articles-parent">
-            <a href="#"  class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/Balance.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                    الخدمات المكملة للمتاجر الإلكترونية
-                    </div>
-                    <div class="trendy-box">
-                        <span href="#" class="tooltip-span" data-bs-custom-class="trendy-tooltip" data-bs-toggle="tooltip" data-bs-title="الأكثر قراءة على مدونة تسوق">
-                            <img src="images/pages/blog/latest-articles/Trendy.svg" alt="" />
-                        </span>
-                    </div>
-                </div>
-                <div class="item-desc">
-                    <h3>
-                    اعمل أقل ، واكسب المزيد: 11 فكرة للدخل السلبي لبناء ثروة طويلة
-                    الأجل
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-            <a href="#"  class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/DollarSign.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                    الخدمات المكملة للمتاجر الإلكترونية
-                    </div>
-                   
-                </div>
-                <div class="item-desc">
-                    <h3>
-                    اعمل أقل ، واكسب المزيد: 11 فكرة للدخل السلبي لبناء ثروة طويلة
-                    الأجل
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-            <a href="#"  class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/Testing-Step.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                        التخطيط لبناء المتاجر الإلكترونية
-                    </div>
-                   
-                </div>
-                <div class="item-desc">
-                    <h3>
-                        من القمصان إلى آخر صيحات الموضة: كيف تبدأ مشروع ملابس في عام 2021
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-            <a href="#" class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/Comment.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                        مستقبل التجارة الإلكترونية
-                    </div>
-                    <div class="trendy-box">
-                        <span href="#" class="tooltip-span" data-bs-custom-class="trendy-tooltip" data-bs-toggle="tooltip" data-bs-title="الأكثر قراءة على مدونة تسوق">
-                            <img src="images/pages/blog/latest-articles/Trendy.svg" alt="" />
-                        </span>
-                    </div>
-                   
-                </div>
-                <div class="item-desc">
-                    <h3>
-                        الدعم الفني بإستخدام روبوتات الذكاء الاصطناعي يغزو متاجر العالم الإلكترونية
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-            <a href="#"  class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/Book.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                        التسويق الإلكتروني
-                    </div>
-                   
-                </div>
-                <div class="item-desc">
-                    <h3>
-                        الكتب الإلكترونية التفاعلية أداة مجربة لتقديم قيمة عالية لجذب زبائن جدد
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-            <a href="#"  class="article-item">
-                <div class="img-holder">
-                    <img
-                    class="item-img"
-                    src="images/pages/blog/latest-articles/DollarSign.svg"
-                    alt=""
-                    />
-                    <div class="positioned-text">
-                        كواليس تنفيذ المشاريع
-                    </div>
-                   
-                </div>
-                <div class="item-desc">
-                    <h3>
-                        3250 عملية بيع بعد إطلاق المتجر بزيادة نسبتها 18% بدون زيادة ميزانية التسويق ريال واحد!
-                    </h3>
-                    <p>
-                    على الرغم من وصفها بأنها أموال سهلة ، إلا أن معظم تدفقات الدخل
-                    السلبية هي نتيجة العمل الجاد: بناء جمهور...
-                    </p>
-                </div>
-            </a>
-        
-        </div>
-      </div>
-    </section>
-    <!-- End latest-articles  -->
-
-<!-- Start articles-departments  -->
-<section class="articles-departments">
+    </div>
     <div class="container">
-        <h2 class=" blog-page-title"> أقسام المقالات</h2>
-        <div class="departments-items">
-            <div class="department-item">
-                <a href="#">التخطيط لبناء المتجر الإلكتروني</a>
-                <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق، التخطيط للشحن والدفع وغيرها …</p>
-            </div>
-            <div class="department-item">
-                <a href="#">مستقبل التجارة الإلكترونية</a>
-                 <p>كل جديد عن التجارة والمتاجر الإلكترونية؛ نستطلع الاتجاهات التي تتحرك فيها اسواق، وإمكانات التجارة الإلكترونية نحو المستقبل.</p>
-            </div>
-            <div class="department-item">
-                <a href="#">الخدمات المكملة للمتاجر الإلكترونية</a>
-                 <p>ما هي شركات الطرف الثالث وكيف تقيم المناسب منها لمتجرك، هذه المعرفة تجنبك المشاكل قبل وقوعها وتعظم صافي ارباحك.</p>
-            </div>
-            <div class="department-item">
-                <a href="#">قصص نجاح التجار</a>
-                 <p>تعلم من التجار والمتاجر الناجحة في السوق السعودي، اكتشف تفاصيل المراحل التى مروا بها وكيف يتغلب التاجر الشاطر على المشاكل التي تواجهه كل يوم.</p>
-            </div>
-            <div class="department-item">
-                <a href="#">تطوير خدمة العملاء</a>
-                 <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت تدير المتجر بمفردك او لديك فريق متخصص.</p>
-            </div>
-            <div class="department-item">
-                <a href="#">التسويق الإلكتروني</a>
-                 <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة تجارية راقية. لأنك كذلك!</p>
-            </div>
-            <div class="department-item">
-                <a href="#">خدمات تسوق</a>
-                 <p>خدمات تصميم وتطوير المواقع وتطبيقات الجوال، التسويق الإلكتروني، التصميم الجرافيكي، الإستضافة والاستشارات وغيرها...</p>
-            </div>
-            <div class="department-item">
-                <a href="#">كواليس تنفيذ المشاريع</a>
-                 <p>نطلعك على نظام عملنا وكواليس تنفيذ المشاريع والدروس التي نتعلمها كل يوم.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End articles-departments  -->
-
-
-<!-- Start special articles -->
-<section class="special-articles">
-    <div class="container">
-        <span class="freq-span">مقالات مميزة</span>
-        <h2 class=" blog-page-title"> الخدمات المكملة للمتاجر الإلكترونية </h2>
-        <div class="stages-parent">
-            <div class="stage-item">
-                <div class="num-text-holder">
-                    <div class="stage-num">01</div>
-                    <div class="text">
-                        <a href="#">مرحلة تسليم أعمال الهوية البصرية: ٦ أمور يجب ان تنتبه لها جيداً </a>
-                        <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت تدير المتجر بمفردك او لديك فريق متخصص.</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">02</div>
-                    <div class="text">
-                        <a href="#">معايير اختيار شريك الشحن والدفع للمتجر الالكتروني </a>
-                       <p>الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام الشعار في التطبيقات المختلفه حتى لا يفقد …</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">03</div>
-                    <div class="text">
-                        <a href="#">مشروع تجاري متكامل بدون صداع الإيجارات او الموظفين </a>
-                        <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق، التخطيط للشحن والدفع وغيرها …</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">04</div>
-                    <div class="text">
-                        <a href="#"> لاتترك شئ للصدفة أو التخمين: جمعنا كل الأساسيات لتبدأ متجر ناجح  </a>
-                      <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة تجارية راقية. لأنك كذلك!</p>
-                    </div>
-                </div>
-                <div class="more-articles-div">
-                  <a href="#" class="more-articles-btn">المزيد من المقالات</a>
-                </div>
-                
-            </div>
-            <div class="stage-item-img">
-                <div class="holder">
-                    <img class="img" src="images/pages/blog/special-articles/Thin.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End special articles -->
-
-
-<!-- Start special articles -->
-<section class="special-articles white-special-articles">
-    <div class="container">
-        <span class="freq-span">مقالات مميزة</span>
-        <h2 class=" blog-page-title"> التخطيط لبناء المتاجر الإلكترونية </h2>
-        <div class="stages-parent">
-            <div class="stage-item">
-                <div class="num-text-holder">
-                    <div class="stage-num">01</div>
-                    <div class="text">
-                        <a href="#">كيفية حساب تكاليف الشحن والدفع بدقة خلال ٦ أشهر الأولى لمتجرك  </a>
-                        <p>طرق وتكتيكات تقديم خدمة زبائن درجة أولى تتناسب مع ملاك المتاجر الأفراد، الشركات أو المؤسسات سواء كنت تدير المتجر بمفردك او لديك فريق متخصص.</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">02</div>
-                    <div class="text">
-                        <a href="#">الدفع عند الاستلام: خدمة تقدم بمقابل يمكن ان تحصل عليها مجاناً </a>
-                      <p>الملف الارشادي للهوية يوضح فيه المصمم الطريقة الصحيحة لاستخدام الشعار في التطبيقات المختلفه حتى لا يفقد …</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">03</div>
-                    <div class="text">
-                        <a href="#">كيف تتخلص من صداع المسترجعات بدون خسارة ريال واحد على الطلب؟ </a>
-                       <p>كل الخطوات التي يجب ان تسير فيها قبل اطلاق المتجر: اختيار المنتجات، سياسة التسعير، طرق اكتشاف السوق، التخطيط للشحن والدفع وغيرها …</p>
-                    </div>
-                </div>
-                <div class="num-text-holder">
-                    <div class="stage-num">04</div>
-                    <div class="text">
-                        <a href="#"> حلول طباعة أوراق اللصق المناسبة على طلبات الزبائن  </a>
-                    <p>نصائح وتكتيكات تسويقية لبناء حضور رقمي ذائع الصيت لضمان تدفق الزبائن لمتجرك كل يوم؛ لتضهر متجرك كعلامة تجارية راقية. لأنك كذلك!</p>
-                    </div>
-                </div>
-                <div class="more-articles-div">
-                  <a href="#" class="more-articles-btn">المزيد من المقالات</a>
-                </div>
-            </div>
-            <div class="stage-item-img">
-                <div class="holder">
-                    <img class="img" src="images/pages/blog/special-articles/Shipping.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End special articles -->
-
-<!-- Start integrated-eCommerce  -->
-<section class="integrated-eCommerce">
-  <div class="container-fluid">
-    <div class="integrated-parent">
-      <div class="container">
-        <div class="items">
-          <div class="item">
-            <h2 class=" blog-page-title"> إمتلك تجارة إلكترونية متكاملة </h2>
-            <p class="desc">خدمتنا المتخصصة في تصميم المتاجر الإلكترونية تضمن لك سلسلة كاملة من الشراكات والخدمات تبدأ قبل المتجر الإلكتروني وتستمر الى ان يُعيد الزبون الشراء مرات ومرات …</p>
-            <ul class="list">
-              <li>
-                <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
-                <p>تصميم خاص - وغير مكرر لمتجرك الإلكتروني</p>
-              </li>
-              <li>
-                <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
-                <p>خدمات دفع، شحن وتوريد مدمجة بأقل سعر عمولة في السوق</p>
-              </li>
-              <li>
-                <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
-                <p>دعم فني لغاية 90 يوم بعد التسليم</p>
-              </li>
-              <li>
-                <img class="svg" src="images/pages/blog/integrated-eCommerce/Right-Check.svg" alt="">
-                <p>استشارات مجانية من اول مكالمة</p>
-              </li>
-            </ul>
-            <button class="tasawk-btn main-btn">
-              تحدث الآن للمبيعات
-            </button>
-          </div>
-          <div class="img-item">
-            <img class="dollarSign" src="images/pages/blog/integrated-eCommerce/DollarSign.svg" alt="">
-            <img class="shipping" src="images/pages/blog/integrated-eCommerce/Shipping.svg" alt="">
-            <img class="thin" src="images/pages/blog/integrated-eCommerce/Thin.svg" alt="">
-          </div>
-      
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-</section>
-<!-- End integrated-eCommerce -->
-
-
-<!--Start contact  us  -->
-<section class="contactWithUs">
-<div class="container-fluid">
-  <div class="contact-parent">
-    <div class="contact-item">
-      <h3>النشرة البريدية</h3>
-      <p>إشترك ليصل على بريدك جديد المصادر، الكتب والمقالات التي ننشرها، صباح الأحد من كل أسبوع. بدون إعلانات.</p>
-      <div class="book-form newsletter-form">
-        <form>
-          <input class="book-input" type="text" placeholder="اكتب بريدك الإلكتروني*">
-          <button class="download-book subscribe-now">إشترك الان  </button>
-        </form>
-      </div>
-    </div>
-    <div class="contact-item">
-      <h3>صفحاتنا على الشبكات الإجتماعية </h3>
-      <p>جرعات صغيرة، فريدة ومتنوعه عن التجارة الإلكترونية ننشرها كل يوم على الشبكات الإجتماعية.</p>
-      <div class="social-links">
-        <a class="social-links-anchor" href="#">
-          <i class="icon fa-brands fa-instagram"></i>
-        </a>
-        <a class="social-links-anchor" href="#">
-          <i class="fa-brands icon fa-x-twitter"></i>
-        </a>
-        <a class="social-links-anchor" href="#">
-          <i class="icon fa-brands fa-facebook"></i>
-        </a>  
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- End contact  us  -->
-
-
-
-
-    <!-- Start Breadcrumb -->
-    <div class="main-breadcrumb">
-      <button class="up-btn">
-        <img class="svg" src="images/breadcrumb/up-btn.svg" alt="" />
-      </button>
-      <div class="container-fluid">
-        <div class="breadcrumb-parent">
-          <div class="container">
-            <div class="breadcrumb-content">
-              <ul class="breadcrumb-ul">
-                <li class="breadcrumb-ul-li">
-                  <a class="breadcrumb-anchor" href="index.html">الرئيسية </a>
-                </li>
-                <li class="breadcrumb-ul-li">
-                  <a class="breadcrumb-anchor" href="index.html">الخدمات </a>
-                </li>
-                <li class="breadcrumb-ul-li active-li">
-                  <span class="breadcrumb-current breadcrumb-anchor">
-                    الشعارات والتصميم الجرافيكي
-                  </span>
-                </li>
-              </ul>
-              <a href="#" class="siteMap">خريطة الموقع</a>
+      <div class="free-book-sec">
+        <div class="book-content">
+          <img class="svg" src="images/footer/Book.svg" alt="" />
+          <div class="book-cont-desc">
+            <h3 class="book-title">
+              كتاب مجاني: كيف تختار المنتج المناسب للمتجر الإلكتروني؟
+            </h3>
+            <p class="book-para">
+              المنتج هو جوهر المتجر الإلكتروني، اذا اخترت المنتج المناسب
+              والمربح كل شئ بعد ذلك سهل
+            </p>
+            <div class="book-form">
+              <form>
+                <input class="book-input" type="text" placeholder="اكتب بريدك الإلكتروني*" />
+                <button class="download-book">حمل الكتاب مجاناً</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <div class="copyright-links-sec">
+        <div class="links-social-div">
+          <ul class="main-links-ul">
+            <li>
+              <a href="#">عن تسوق</a>
+            </li>
+            <li>
+              <a href="#">الأوراق الثبوتية</a>
+            </li>
+            <li>
+              <a href="#">بيان الخصوصية</a>
+            </li>
+            <li>
+              <a href="#">خريطة الموقع</a>
+            </li>
+            <li>
+              <a href="#">اتصل بنا</a>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="icon fa-brands fa-facebook"></i>
+            </a>
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="icon fa-brands fa-instagram"></i>
+            </a>
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="icon fa-brands fa-youtube"></i>
+            </a>
+            <a class="social-links-anchor" aria-label="social-media" href="#">
+              <i class="fa-brands icon fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright-text">
+        © 2021 تسوق | جميع الحقوق محفوظة | شركة مسجلة في وزارة التجارة
+        بالمملكة العربية السعودية تحت رقم 2942
+      </p>
     </div>
-    <!-- End Breadcrumb -->
-    <!-- Start Footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="footer-parent">
-          <div class="container">
-            <div class="desc-cont">
-              <h2 class="desc-cont-title">
-                محطة واحدة للتـزود بكل خدمات المتاجر الإلكترونية، المواقع
-                وتطبيقات الجوال … خدمـة 5 نجوم تُفصل على مقاسك
-              </h2>
-              <div class="desc-cont-contact">
-                <button class="tasawk-btn main-btn">تحدث الآن للمبيعات</button>
-                <p class="desc-para">
-                  في مكالمة تركز 100% على احتياجاتك بغض النظر عن تعاملك مع تسوق،
-                  يستمع عبد الله - مطور الأعمال التجارية، بخبرة تزيد عن 5 سنوات
-                  في المتاجر الالكترونية باهتمام لإحتياجاتك.
-                </p>
-              </div>
-            </div>
-            <div class="footer-nav">
-              <div class="footer-nav-item">
-                <h3 class="footer-nav-item-title">الخدمات الأكثر طلبا</h3>
-                <span class="footer-nav-item-span"
-                  >ما الذي تحتاج تنفيذة اليوم ؟</span
-                >
-                <ul class="footer-nav-ul">
-                  <li>
-                    <a href="#">تطبيقات الجوال</a>
-                  </li>
-                  <li>
-                    <a href="#">البرمجيات الخاصة</a>
-                  </li>
-                  <li>
-                    <a href="#">المتاجر الإلكترونية</a>
-                  </li>
-                  <li>
-                    <a href="#">مواقع الشركات</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-nav-item">
-                <h3 class="footer-nav-item-title">مشروعات تسوق</h3>
-                <span class="footer-nav-item-span"
-                  >نستثمر في أفكار نكمل بها خدمتك</span
-                >
-                <ul class="footer-nav-ul">
-                  <li>
-                    <a href="#"> دليل المتاجر</a>
-                  </li>
-                  <li>
-                    <a href="#"> متجر +</a>
-                  </li>
-                  <li>
-                    <a href="#">نسخة تسوق من أوبن كارت </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-nav-item">
-                <h3 class="footer-nav-item-title">أعمالنا السابقة</h3>
-                <span class="footer-nav-item-span"
-                  >وجبة دسمه من الأعمال المتنوعة منذ 2009</span
-                >
-                <ul class="footer-nav-ul">
-                  <li>
-                    <a href="#"> معرض الأعمال </a>
-                  </li>
-                  <li>
-                    <a href="#">ملف البورتفوليو .PDF</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-nav-item">
-                <h3 class="footer-nav-item-title">مدونة تسوق</h3>
-                <span class="footer-nav-item-span"
-                  >نشارك الكواليس وما نتعلمه كل يوم في عملنا</span
-                >
-                <ul class="footer-nav-ul">
-                  <li>
-                    <a href="#"> التجارة الإلكترونية </a>
-                  </li>
-                  <li>
-                    <a href="#">الاستشارات للنمو </a>
-                  </li>
-                  <li>
-                    <a href="#"> قصص العملاء </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="free-book-sec">
-          <div class="book-content">
-            <img class="svg" src="images/footer/Book.svg" alt="" />
-            <div class="book-cont-desc">
-              <h3 class="book-title">
-                كتاب مجاني: كيف تختار المنتج المناسب للمتجر الإلكتروني؟
-              </h3>
-              <p class="book-para">
-                المنتج هو جوهر المتجر الإلكتروني، اذا اخترت المنتج المناسب
-                والمربح كل شئ بعد ذلك سهل
-              </p>
-              <div class="book-form">
-                <form>
-                  <input
-                    class="book-input"
-                    type="text"
-                    placeholder="اكتب بريدك الإلكتروني*"
-                  />
-                  <button class="download-book">حمل الكتاب مجاناً</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="copyright-links-sec">
-          <div class="links-social-div">
-            <ul class="main-links-ul">
-              <li>
-                <a href="#">عن تسوق</a>
-              </li>
-              <li>
-                <a href="#">الأوراق الثبوتية</a>
-              </li>
-              <li>
-                <a href="#">بيان الخصوصية</a>
-              </li>
-              <li>
-                <a href="#">خريطة الموقع</a>
-              </li>
-              <li>
-                <a href="#">اتصل بنا</a>
-              </li>
-            </ul>
-            <div class="social-links">
-              <a class="social-links-anchor" href="#">
-                <i class="icon fa-brands fa-facebook"></i>
-              </a>
-              <a class="social-links-anchor" href="#">
-                <i class="icon fa-brands fa-instagram"></i>
-              </a>
-              <a class="social-links-anchor" href="#">
-                <i class="icon fa-brands fa-youtube"></i>
-              </a>
-              <a class="social-links-anchor" href="#">
-                <i class="fa-brands icon fa-x-twitter"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+  </footer>
+  <!-- End Footer -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
 
-        <p class="copyright-text">
-          © 2021 تسوق | جميع الحقوق محفوظة | شركة مسجلة في وزارة التجارة
-          بالمملكة العربية السعودية تحت رقم 2942
-        </p>
-      </div>
-    </footer>
-    <!-- End Footer -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/svg.js"></script> -->
+</body>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.marquee.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- <script src="js/svg.js"></script> -->
-  </body>
 </html>

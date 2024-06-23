@@ -277,6 +277,9 @@ header{
     }
 }
 
+input[type="search" i]::-webkit-search-cancel-button{
+    display: none;
+}
 
 .lower {
     margin-top: 8px;
