@@ -36,6 +36,12 @@ body {
     width: 100%;
   }
 }
+
+html[dir="ltr"]{
+  .preloader-progress{
+    direction: ltr;
+  }
+}
 /*preloader*/
 
 ::-webkit-scrollbar {
