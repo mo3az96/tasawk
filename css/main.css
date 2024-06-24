@@ -5965,7 +5965,7 @@ section {
 }
 .packages .text-cont p a {
   color: var(--primary-color);
-  color: red;
+  color: #CC3300;
 }
 
 .packages .item {
