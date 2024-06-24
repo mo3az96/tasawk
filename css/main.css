@@ -382,6 +382,10 @@ footer .desc-cont {
   display: flex;
   align-items: center;
 }
+.book-content .book-img {
+  width: 160px;
+  aspect-ratio: 1/1;
+}
 .book-content .book-title {
   color: var(--heading-color);
   font-size: 1.5rem;
@@ -1302,6 +1306,8 @@ section {
 }
 .main-breadcrumb .up-btn img {
   display: block;
+  width: 32px;
+  aspect-ratio: 1/1;
 }
 
 .breadcrumb-ul {
