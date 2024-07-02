@@ -33,6 +33,16 @@ $(document).ready(function () {
         });
       }
 
+      if($(window).width() < 992){
+        $(window).on("scroll" , function(){
+          if($(window).scrollTop() > 0){
+            $("header").addClass("fixed-header");
+          }
+            if ($(window).scrollTop() == 0) {
+              $("header").removeClass("fixed-header");
+            }
+        })
+      }
 
 
 

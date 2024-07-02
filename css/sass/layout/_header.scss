@@ -439,8 +439,10 @@ input[type="search" i]::-webkit-search-cancel-button {
   .header-main-nav-li {
     margin-inline-end: 0;
     margin-bottom: 25px;
-    width: 100%;
   }
+  .header-main-nav-li:nth-child(5) {
+  margin-inline-start: unset;
+}
   .tasawk-btn {
     margin-inline-start: 0;
     height: 40px;
@@ -544,11 +546,30 @@ input[type="search" i]::-webkit-search-cancel-button {
   .menu-item-has-children {
     line-height: normal;
   }
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    transition: all .3s;
+    border-bottom: 1px solid transparent;
+
+  }
+  body{
+    padding-top: 105.5px;
+  }
+  .fixed-header{
+    padding: 10px 0;
+    border-color:  #e6e6e6;
+  }
 }
 
 @include max-768 {
+  body{
+    padding-top: 76.91px;
+  }
   header {
-    padding: 7px 0;
+    padding: 10px 0;
   }
 
   .toTop {
