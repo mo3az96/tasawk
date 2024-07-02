@@ -5,7 +5,11 @@
         margin-bottom: 56px;
         width: 700px;
         margin-left: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-right: auto;
+        row-gap: 15px;
         h3 {
             width: 654px;
             color: $heading-color;
@@ -272,7 +276,6 @@
         min-width: 288px;
     }
     .table-responsive{
-        // padding-bottom: 20px;
         &::-webkit-scrollbar{
            display: none;
         }
@@ -294,7 +297,7 @@
 @include max-768 {
    
     .packages .text-cont h3{
-        font-size: 18px;
+        font-size: 22px;
         line-height: 1.6;
         margin-bottom: 10px;
     }

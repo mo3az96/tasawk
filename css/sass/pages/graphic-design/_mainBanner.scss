@@ -23,24 +23,31 @@
   
   .graphic-design-main {
     padding: 0;
-    // margin-top: -56px;
   }
   .top-header , .blog-top-header {
     position: absolute;
-    // position: sticky;
     top: 0;
     left: 0;
     transition: all ease-in-out 0.2s;
     z-index: 10;
     width: 100%;
     background-color: rgba(36, 21, 109, 0.6);
-    // height: 56px;
   }
   .main-parent {
     position: relative;
     overflow: hidden;
     height: 1200px;
     background-image: $basic-red;
+  }
+
+  .sticky-nav-logo{
+    display: none;
+    img{
+      width: 25px;
+    }
+  }
+  .topheader-cont .tasawk-btn{
+    display: none;
   }
   
   .topheader-cont {
@@ -51,10 +58,10 @@
     }
     display: flex;
     align-items: center;
-    justify-content: space-between;
     .top-header-list {
       display: flex;
       align-items: center;
+      margin-inline-start: auto;
     }
     li {
       margin-inline-end: 64px;
@@ -72,11 +79,14 @@
       margin-inline-end: 0;
     }
   }
+
+
   
   .main-banner-content {
     position: relative;
     z-index: 2;
-    margin-top: 152px;
+    padding-top: 152px;
+    padding-inline: 20px;
     .tasawk-btn {
       margin: auto;
       justify-content: center;
@@ -176,8 +186,27 @@
   }
   
   .fixed-topheader {
+    .topheader-cont .tasawk-btn{
+      height: 40px;
+    }
+    .topheader-cont .page-name{
+      font-size: 14px;
+    }
+    .topheader-cont li{
+      margin-inline-end: 40px;
+    }
+    .topheader-cont li:last-of-type{
+      margin-inline-end: 0;
+    }
     position: fixed;
     background-color: rgba(36, 21, 109, 0.9);
+    .sticky-nav-logo{
+      display: block;
+    }
+    .topheader-cont .tasawk-btn{
+      display: flex;
+      margin-inline-start: 30px;
+    }
   }
   .topheader-cont li a.active {
     color: $third-color;
@@ -208,7 +237,18 @@
   
   @include max-1200 {
     .topheader-cont li {
-      margin-inline-end: 45px;
+      margin-inline-end: 30px;
+    }
+    .fixed-topheader .topheader-cont li{
+      margin-inline-end: 12px;
+    }
+    .fixed-topheader .tasawk-btn-arrow-div{
+      width: 25px;
+    }
+    .fixed-topheader .topheader-cont .tasawk-btn{
+      width: 120px;
+      padding-inline-start: 12px;
+      margin-inline-start: 15px;
     }
     .svg-printing {
       bottom: 10px;

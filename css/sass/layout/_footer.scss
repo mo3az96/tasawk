@@ -1,7 +1,11 @@
 footer{
+    .footer-bg{
+        background-color: $secondary-color;
+    }
+     
     padding-bottom: 32px;
     .footer-parent{
-        background-color: $secondary-color;
+       
         padding-top: 80px;
         padding-bottom: 130px;
     }
@@ -24,6 +28,7 @@ footer{
 .desc-cont-contact{
     max-width: 288px;
     .tasawk-btn{
+        padding: 0;
         background-color: $primary-color;
         border-radius: 8px;
         margin-bottom: 16px;
@@ -157,9 +162,10 @@ footer{
 }
 
 .links-social-div{
+    flex-direction: column;
+    row-gap: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .main-links-ul{
     display: flex;
@@ -226,7 +232,6 @@ footer{
         width: 50%;
         height: 8px;
         background-color: $bglight-color;
-        // background-color: red;
         top: -7px;
         inset-inline-start: 0;
         z-index: 2;
@@ -237,18 +242,12 @@ footer{
         width: 50%;
         height: 8px;
         background-color: $bglight-color;
-        // background-color: red;
         bottom: -7px;
         inset-inline-end: 0;
         z-index: 2;
     }
 }
 
-// .free-book-holding{
-//     height: 275px;
-//     position: relative;
-//     background-color: $white-color;
-// }
 .copyright-links-sec{
     margin-bottom: 48px;
 }
@@ -263,6 +262,18 @@ footer{
 }
 .red{
     color: red;
+}
+
+.footer-logos{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 20px;
+    img{
+        max-width: 48px;
+    }
 }
 
 // media 
@@ -405,8 +416,7 @@ footer{
         &::after{
             content: "\f107";
             position: relative;
-            content: "\f107";
-            font-family: "Font Awesome 6 Free";
+            font-family: "Font Awesome 6 Pro";
             font-weight: 900;
             font-size: 16px;
             transition: all linear .2s;

@@ -9,7 +9,6 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        //  overflow: auto; 
         margin-inline-start: unset;
         column-gap: 0;
         row-gap: 32px;
@@ -55,14 +54,12 @@
     .js-marquee-wrapper {
       width: 100% !important;
       display: flex;
-    //   column-gap: 24px;
     }
     
     .js-marquee {
       display: flex;
       width: 100% !important;
       column-gap: 24px;
-    //   margin-inline-start: 24px;
     }
   }
 
@@ -101,11 +98,11 @@
     }
     .partners .slides-parent .block1 .block-anchor{
         width: 110px;
-        height: auto;
+        height: 110px;
     }
     .partners .slides-parent .block2 .block-anchor{
         width: 90px;
-        height: auto;
+        height: 90px;
     }
     .partners .freq-headline{
         width: 100%;

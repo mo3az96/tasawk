@@ -6,47 +6,46 @@ body {
 
 
 
-/*preloader*/
+// Start Preloader
 
-.preloader-progress {
-  pointer-events: none;
-  user-select: none;
+.preloader-container {
   position: fixed;
-  z-index: 1000;
   top: 0;
+  left: 0;
   width: 100%;
-  // height: 5px;
-  background-color: $white-color;
-  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  z-index: 1000;
+}
+
+.preloader {
+  width: 100%;
+  height: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  position: relative;
   overflow: hidden;
 }
 
-.progress-bar {
-  border-radius: 5px;
-  animation: progress 6s ease infinite;
-  padding: 2px;
-  background-color: $primary-color;
+.preloader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100%;
+  background-color: var(--primary-color);
+  animation: preloaderAnimation 3s infinite linear;
 }
-@keyframes progress {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
+
+@keyframes preloaderAnimation {
+  100% {
+    left: 100%;
   }
 }
 
-html[dir="ltr"]{
-  .preloader-progress{
-    direction: ltr;
-  }
-}
-/*preloader*/
+// End Preloader
 
 ::-webkit-scrollbar {
   width: 8px;
-  // height: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,3 +56,38 @@ html[dir="ltr"]{
 ::-webkit-scrollbar-track{
   background-color:  #eeeeee;
 }
+
+
+// back to top
+.toTop {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  display: flex;
+  border-radius: 5px;
+  right: 10px;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+   transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  transform: translateY(100px);
+  z-index: 2;
+
+  .icon {
+    font-size: 16px;
+    color: #fff;
+    transition: all linear 0.2s;
+  }
+}
+
+.showToTop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+

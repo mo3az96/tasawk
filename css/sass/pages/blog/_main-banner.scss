@@ -87,7 +87,6 @@
 .blog-index-main , .blog-article-main{
     .text-item{
         .title {
-            // width: 488px;
             color: $white-color;
             font-size: 32px;
             font-weight: 700;
@@ -95,7 +94,6 @@
             margin: 24px 0;
         }
         .desc{
-            // width: 487px;
             color: rgba(255,255,255,0.8);
             font-size: 20px;
             line-height: 32px;
@@ -351,7 +349,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50% , -50%);
-        // inset-inline-end: 13%;
     }
     .main-blog-items .img-item .comment1, .main-blog-items .img-item .comment2{
         width: 100px;

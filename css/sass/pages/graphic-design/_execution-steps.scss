@@ -88,7 +88,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    // justify-content: space-between;
   }
   .step-title {
     color: $heading-color;
@@ -115,7 +114,7 @@
     width: unset;
     height: unset;
     content: "\f107";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Pro";
     font-weight: 900;
     color: $heading-color;
     font-size: 16px;
@@ -178,7 +177,6 @@
       margin-bottom: 16px;
     }
     .item-anchor {
-      //   height: 86px;
       padding: 11px 17px;
       color: $white-color;
       font-size: 12px;
@@ -271,7 +269,6 @@
         display: inline-block;
         text-align: center;
         width: 140px;
-        // margin-bottom: -15px;
       }
       .item-title,
       .item-desc {

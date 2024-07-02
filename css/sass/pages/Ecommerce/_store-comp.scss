@@ -1,5 +1,10 @@
+
+
+.store-components{
+     background-color: $secondary-color;
+}
 .store-components-parent{
-    background-color: $secondary-color;
+   
     padding: 96px 0 ;
     .freq-headline{
         color: $white-color;
@@ -53,10 +58,6 @@
         width: 75px;
         height: 277px;
         margin-top: 28px;
-        // .feature-plus-img{
-        //     width: 100%;
-        //     height: 100%;
-        // }
     }
     .freq-item-title{
         color: $white-color;
@@ -132,6 +133,7 @@
         margin-right: auto;
         width: 173px;
         z-index: 1;
+        padding: 0;
         &:hover {
             background-color: $third-color;
             color: $text-color;
@@ -268,7 +270,6 @@
     .store-components-parent .general-item .public-item-desc{
         font-size: 16px;
         line-height: 1.6;
-        // height: 51.2px;
     }
     .store-components-parent{
         padding: 50px 0;
