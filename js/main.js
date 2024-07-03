@@ -4,18 +4,6 @@ $(window).on("load", function () {
 
 $(document).ready(function () {
 
-  // Back to top
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 200) {
-        $(".toTop").addClass("showToTop");
-      } else {
-        $(".toTop").removeClass("showToTop");
-      }
-    });
-
-    $(".toTop").click(function () {
-      $(window).scrollTop(0);
-    });
 
 // nested nav mobile
       if ($(window).width() <= 992) {

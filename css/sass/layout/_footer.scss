@@ -49,7 +49,6 @@ footer{
     }
 }
 .footer-nav , .search-nav{
-    max-width: 983px;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -163,15 +162,15 @@ footer{
 
 .links-social-div{
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 45px;
     display: flex;
     align-items: center;
 }
 .main-links-ul{
     display: flex;
     align-items: center;
+    column-gap: 40px;
     li{
-        margin-inline-end: 80px;
         line-height: 24px;
         &:hover{
             a{

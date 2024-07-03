@@ -100,6 +100,15 @@
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .softwareDiv-work-samples,
 .ecommerce-work-samples {
   .freq-div,
@@ -216,7 +225,7 @@
   .work-samples {
     padding-bottom: 0;
   }
-  .ecommerce-work-samples{
+  .ecommerce-work-samples {
     padding-top: 50px;
   }
 }

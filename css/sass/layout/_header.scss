@@ -1,6 +1,6 @@
 header {
   background-color: $white-color;
-  padding: 20px 0;
+  padding: 30px 0;
   position: relative;
 }
 .header-main-content {
@@ -451,6 +451,7 @@ input[type="search" i]::-webkit-search-cancel-button {
   }
   .header-main-nav-li .header-main-nav-a {
     font-size: 18px;
+    font-weight: 500;
   }
   .header-main-nav-li:nth-child(4) {
     margin-inline-start: 0;
@@ -556,7 +557,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 
   }
   body{
-    padding-top: 105.5px;
+    padding-top: 105.85px;
   }
   .fixed-header{
     padding: 10px 0;
@@ -572,10 +573,6 @@ input[type="search" i]::-webkit-search-cancel-button {
     padding: 10px 0;
   }
 
-  .toTop {
-    width: 35px;
-    height: 35px;
-  }
 
 
 

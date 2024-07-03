@@ -42,6 +42,8 @@
 
   .sticky-nav-logo{
     display: none;
+    align-items: center;
+    justify-content: center;
     img{
       width: 25px;
     }
@@ -201,7 +203,7 @@
     position: fixed;
     background-color: rgba(36, 21, 109, 0.9);
     .sticky-nav-logo{
-      display: block;
+      display: flex;
     }
     .topheader-cont .tasawk-btn{
       display: flex;
