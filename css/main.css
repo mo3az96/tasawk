@@ -1213,26 +1213,14 @@ input[type=search i]::-webkit-search-cancel-button {
     background-color: #fff;
     transition: 0.3s;
     z-index: 20;
-    -webkit-clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
-            clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
-    -webkit-clip-path: polygon(0 0, 47% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 47% 0, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 26% 0, 43% 44%, 0 44%);
-            clip-path: polygon(0 0, 26% 0, 43% 44%, 0 44%);
-    -webkit-clip-path: polygon(0 0, 26% 0, 36% 19%, 0 18%);
-            clip-path: polygon(0 0, 26% 0, 36% 19%, 0 18%);
-    -webkit-clip-path: polygon(0 0, 10% 0, 17% 8%, 0 8%);
-            clip-path: polygon(0 0, 10% 0, 17% 8%, 0 8%);
+    -webkit-clip-path: polygon(10.05% 5.1%, 12% 5.1%, 12% 5.1%, 5.05% 10.1%);
+            clip-path: polygon(10.05% 5.1%, 12% 5.1%, 12% 5.1%, 5.05% 10.1%);
   }
   .open-sidebar {
     opacity: 1;
     visibility: visible;
     -webkit-clip-path: polygon(101% -1%, 101% 101%, -1% 101%, -1% -1%);
             clip-path: polygon(101% -1%, 101% 101%, -1% 101%, -1% -1%);
-    -webkit-clip-path: polygon(0 0, 47% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 47% 0, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   .menu-item-has-children > a::after {
     font-size: 14px;
