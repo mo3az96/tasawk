@@ -89,13 +89,13 @@ $(document).ready(function () {
   // open and close sidebar
 
   $(".bars").on("click", function () {
-    $(".header-main-nav").addClass("open-sidebar");
-    $("body").addClass("overflow-hidden");
+    $(".line1").toggleClass("rotate-line1")
+    $(".line2").toggleClass("hide-line2")
+    $(".line3").toggleClass("rotate-line3")
+    $(".header-main-nav").toggleClass("open-sidebar");
+    $("body").toggleClass("overflow-hidden");
   });
-  $(".closeNavBtn , .nav-overlay").on("click", function () {
-    $(".header-main-nav").removeClass("open-sidebar");
-    $("body").removeClass("overflow-hidden");
-  });
+
 
   // open and close sidebar's (tasawk btn sales)
   $("nav .tasawk-btn").on("click", function () {
