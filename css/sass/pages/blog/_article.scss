@@ -166,16 +166,10 @@ strong {
   height: 344px;
   margin: 56px 0;
   width: 690px;
-  background-color: $secondary-color;
-  position: relative;
-  overflow: hidden;
   .img {
-    width: 340px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 .stages-list {
@@ -359,11 +353,7 @@ strong {
     margin-left: auto;
     margin-right: auto;
   }
-  .article-img-holder .img {
-    width: 350px;
-    height: 350px;
-    top: 1%;
-  }
+
   .my-32 {
     margin: 25px 0;
   }
