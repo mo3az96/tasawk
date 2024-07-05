@@ -1,7 +1,10 @@
 // execution steps section
 
+.execution-steps{
+      background-color: $secondary-color;
+
+}
 .execution-steps-parent {
-    background-color: $secondary-color;
     padding: 96px 0;
     .freq-headline {
       color: $white-color;

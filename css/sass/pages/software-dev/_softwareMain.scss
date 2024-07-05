@@ -1,20 +1,18 @@
-
-.software-dev-main{
-    .main-parent {
-        background-image: $basic-green;
-      }
+.software-dev-main {
+  .main-parent {
+    background-image: $basic-green;
+  }
 }
 
-
-.software-dev-main{
-  .page-heading{
+.software-dev-main {
+  .page-heading {
     width: 791px;
     margin: auto;
   }
 }
 
-.software-dev-main{
-  .svgs-parent{
+.software-dev-main {
+  .svgs-parent {
     .svg-ruler {
       position: absolute;
       top: 29%;
@@ -22,49 +20,49 @@
       width: 200px;
       height: 200px;
     }
-    .svg-search{
+    .svg-search {
       width: 270px;
       height: auto;
       bottom: 14%;
       position: absolute;
       inset-inline-end: 9%;
     }
-    .svg-testing-step{
+    .svg-testing-step {
       position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 379px;
-    inset-inline-end: 40px;
+      width: 280px;
+      height: 280px;
+      top: 379px;
+      inset-inline-end: 40px;
     }
-    .svg-Website{
+    .svg-Website {
       width: 650px;
       height: 650px;
       position: absolute;
       bottom: 16%;
       inset-inline-start: -10%;
     }
-    .svg-angle{
+    .svg-angle {
       position: absolute;
       top: 48%;
       inset-inline-end: 25%;
       width: 150px;
-      height: 150px
+      height: 150px;
     }
     .svg-codeBricks {
       position: absolute;
-    top: 54%;
-    inset-inline-end: 35%;
-    width: 300px;
-    height: 300px;
+      top: 54%;
+      inset-inline-end: 35%;
+      width: 300px;
+      height: 300px;
     }
-    .svg-complexcube{
+    .svg-complexcube {
       position: absolute;
       bottom: 5%;
       width: 300px;
       height: 300px;
       inset-inline-start: 7%;
     }
-    .svg-codecube{
+    .svg-codecube {
       position: absolute;
       bottom: 4%;
       inset-inline-start: 33%;
@@ -74,64 +72,66 @@
   }
 }
 
-
 @include max-1200 {
-  .software-dev-main{
-    .topheader-cont .page-name{
+  .software-dev-main {
+    .topheader-cont .page-name {
       font-size: 15px;
     }
   }
-  .software-dev-main .svgs-parent .svg-search{
+  .software-dev-main .svgs-parent .svg-search {
     bottom: 3%;
     inset-inline-end: -1%;
     width: 350px;
     height: 350px;
   }
-  .software-dev-main .svgs-parent .svg-codeBricks{
+  .software-dev-main .svgs-parent .svg-codeBricks {
     top: 51%;
     inset-inline-end: 36%;
     width: 250px;
     height: 250px;
   }
-  .software-dev-main .svgs-parent .svg-Website{
+  .software-dev-main .svgs-parent .svg-Website {
     width: 500px;
     height: 500px;
     bottom: 20%;
     inset-inline-start: -7%;
   }
-  .software-dev-main .svgs-parent .svg-codecube{
+  .software-dev-main .svgs-parent .svg-codecube {
     inset-inline-start: 38%;
   }
-  .software-dev-main .svgs-parent .svg-angle{
+  .software-dev-main .svgs-parent .svg-angle {
     top: 55%;
     inset-inline-end: 13%;
   }
-  
 }
 
-
 @include max-992 {
-  .software-dev-main .svgs-parent .svg-complexcube , .software-dev-main .svgs-parent .svg-search , .software-dev-main .svgs-parent .svg-codecube , .software-dev-main .svgs-parent .svg-angle{
+  .software-dev-main .svgs-parent .svg-complexcube,
+  .software-dev-main .svgs-parent .svg-search,
+  .software-dev-main .svgs-parent .svg-codecube,
+  .software-dev-main .svgs-parent .svg-angle {
     display: none;
   }
-  .software-dev-main .svgs-parent .svg-codeBricks{
+  .software-dev-main .svgs-parent .svg-codeBricks {
     inset-inline-end: 10%;
   }
 }
 
 @include max-768 {
-  .software-dev-main .svgs-parent .svg-ruler , .software-dev-main .svgs-parent .svg-codeBricks , .software-dev-main .svgs-parent .svg-testing-step{
+  .software-dev-main .svgs-parent .svg-ruler,
+  .software-dev-main .svgs-parent .svg-codeBricks,
+  .software-dev-main .svgs-parent .svg-testing-step {
     display: none;
   }
-  .software-dev-main .svgs-parent .svg-Website{
-    width: 250px;
-    height: 250px;
-    bottom: -8%;
+  .software-dev-main .svgs-parent .svg-Website {
+    width: 280px;
+    height: auto;
+    bottom: -5%;
     left: 50%;
     transform: translateX(-50%);
     inset-inline-start: unset;
   }
-  .software-dev-main .page-heading{
+  .software-dev-main .page-heading {
     width: 100%;
   }
 }

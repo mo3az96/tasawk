@@ -37,8 +37,16 @@ header {
   margin: 0;
 }
 
+.contact-div {
+  
+.tasawk-btn{
+padding-inline-start: 20px;
+}
+}
+
 .tasawk-btn {
-  padding-inline-start: 20px;
+    position: relative;
+  z-index: 15;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,29 +68,7 @@ header {
 
 }
 
-.search-btn {
-  width: 24px;
-  height: 24px;
-  img.search-btn-icon {
-    display: block;
-    width: 20px;
-  }
 
-  i.search-btn-icon {
-    color: $secondary-color;
-    font-size: 20px;
-    transform: scaleX(-1);
-    transition: color ease-in-out 0.2s;
-  }
-  i.fa-xmark {
-    font-size: 24px;
-  }
-  &:hover {
-    i.search-btn-icon {
-      color: $primary-color;
-    }
-  }
-}
 .tasawk-btn-arrow {
   font-size: 0.75rem;
   font-weight: 900;
@@ -119,8 +105,7 @@ header {
 // sub menu btn
 
 .tasawk-btn {
-  position: relative;
-  z-index: 15;
+
   .sub-menu {
     opacity: 0;
     visibility: hidden;
@@ -223,15 +208,8 @@ header {
 }
 
 
-.open-search-box {
-  opacity: 1;
-  visibility: visible;
-}
 
 
-input[type="search" i]::-webkit-search-cancel-button {
-  display: none;
-}
 
 .lower {
   margin-top: 8px;
@@ -261,7 +239,7 @@ input[type="search" i]::-webkit-search-cancel-button {
     display: block;
     height: 3px;
     background-color: var(--text-color);
-    transition: all .4s;
+    transition: all .3s;
   }
 
 }
@@ -285,9 +263,7 @@ input[type="search" i]::-webkit-search-cancel-button {
     display: block;
   }
 }
-.closeNavBtn-holder {
-  display: none;
-}
+
 
 .lower-spans-div {
   margin-inline-start: 8px;
@@ -321,7 +297,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 
 .menu-item-has-children {
   position: relative;
-  line-height: 96px;
+  line-height: 116px;
   padding: 0;
   > .header-main-nav-a {
     column-gap: 5px;
@@ -406,12 +382,6 @@ input[type="search" i]::-webkit-search-cancel-button {
 //
 // media query
 
-@include min-992 {
-  nav .tasawk-btn {
-    display: none;
-  }
-}
-
 @include max-1200 {
   .menu-item-has-children .sub-menu{
     inset-inline-start: 0;
@@ -439,7 +409,7 @@ input[type="search" i]::-webkit-search-cancel-button {
     margin-inline-end: auto;
   }
 
-  .top-header {
+  .page-top-header {
     display: none;
   }
 
@@ -464,7 +434,7 @@ input[type="search" i]::-webkit-search-cancel-button {
   .header-main-nav-li:nth-child(5) {
   margin-inline-start: unset;
 }
-  .tasawk-btn {
+ .contact-div .tasawk-btn {
     margin-inline-start: 0;
     height: 40px;
     padding-inline-start: 15px;
@@ -477,15 +447,7 @@ input[type="search" i]::-webkit-search-cancel-button {
   .header-main-nav-li:nth-child(4) {
     margin-inline-start: 0;
   }
-  .closeNavBtn-holder {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    .closeIcon {
-      font-size: 24px;
-      color: $text-color;
-    }
-  }
+
   header {
     padding: 20px 0;
   }
@@ -493,9 +455,6 @@ input[type="search" i]::-webkit-search-cancel-button {
     display: flex;
   }
 
-  nav .tasawk-btn {
-    display: flex;
-  }
   .header-main-nav {
     overflow-y: auto;
     position: fixed;
@@ -600,9 +559,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 
 
 
-  .footer-nav-item:last-of-type,
-  .search-nav-item:last-of-type,
-  .search-nav-item:nth-of-type(3) {
+  .footer-nav-item:last-of-type{
     margin-top: 0;
   }
 

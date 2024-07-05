@@ -48,21 +48,21 @@ footer{
         line-height: 20px;
     }
 }
-.footer-nav , .search-nav{
+.footer-nav{
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.footer-nav-item , .search-nav-item {
-    .footer-nav-item-title , .search-nav-item-title{
+.footer-nav-item {
+    .footer-nav-item-title{
         color: $white-color;
         font-size: 1rem;
         font-weight: 700;
         line-height: 24px;
         margin-bottom: 7px;
     }
-    .footer-nav-item-span ,  .search-nav-item-span{
+    .footer-nav-item-span {
         color: rgba(255,255,255,0.8);
         font-size: 0.75rem;
         line-height: 20px;
@@ -70,7 +70,7 @@ footer{
         margin-bottom: 28px;
     }
 }
-.footer-nav-ul , .search-nav-ul{
+.footer-nav-ul{
     li{
         margin-bottom: 27px;
         line-height: 24px;
@@ -307,10 +307,10 @@ footer{
     footer .footer-parent{
         padding-top: 60px;
     }
-    .footer-nav , .search-nav{
+    .footer-nav {
         flex-wrap: wrap;
     }
-    .footer-nav-item:last-of-type , .search-nav-item:last-of-type  ,.search-nav-item:nth-of-type(3) {
+    .footer-nav-item:last-of-type {
         margin-top: 20px;
     }
     .book-content .book-title{
@@ -344,7 +344,7 @@ footer{
     .mytitle-rotate::after  {
         transform: rotate(180deg);
     }
-    .footer-nav-ul li:last-of-type ,.search-nav-ul li:last-of-type {
+    .footer-nav-ul li:last-of-type {
         margin-bottom: 40px;
     }
     .book-content img {
@@ -354,7 +354,7 @@ footer{
    
    
 
-    .footer-nav-item:last-of-type ,.search-nav-item:last-of-type {
+    .footer-nav-item:last-of-type {
         margin-top: 0;
     }
     .book-content .book-title{
@@ -393,22 +393,26 @@ footer{
         text-align: center;
     }
    
-    .footer-nav , .search-nav{
+    .footer-nav {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .footer-nav-ul , .search-nav-ul{
+    .footer-nav-ul{
         display: none;
     }
-    .footer-nav-item , .search-nav-item{
+    .footer-nav-item {
         width: 100%;
     }
-    .footer-nav-item-title , .search-nav-item-title{
+    .footer-nav-item .footer-nav-item-span{
+        margin-bottom: 25px;
+    }
+    .footer-nav-item .footer-nav-item-title {
         cursor: pointer;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 4px;
         &::after{
             content: "\f107";
             position: relative;
