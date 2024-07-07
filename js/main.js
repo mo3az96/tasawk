@@ -18,6 +18,8 @@ if ($(window).width() > 992){
         $(".blog-top-header .topheader-cont .top-header-list").slideToggle(300);
         $(this).children(".icon").toggleClass("rotate");
       });
+      $(".big-menu .menu-item-has-children > a").removeAttr("href");
+
   }
 
 
@@ -108,7 +110,7 @@ if ($(window).width() > 992){
     $(".line1").toggleClass("rotate-line1")
     $(".line2").toggleClass("hide-line2")
     $(".line3").toggleClass("rotate-line3")
-    $(".header-main-nav").toggleClass("open-sidebar");
+    $(".navigation").toggleClass("open-sidebar");
     $("body").toggleClass("overflow-hidden");
   });
 

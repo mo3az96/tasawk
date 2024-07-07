@@ -1,12 +1,13 @@
 .integrated-eCommerce{
     overflow: visible;
+    background: linear-gradient(180deg, #3B279C 0%, $secondary-color 100%);
+   
 }
 .integrated-parent{
     padding-top: 73px;
     padding-bottom: 67px;
     height: 608px;
-     background: linear-gradient(180deg, #3B279C 0%, $secondary-color 100%);
-   
+     
     .tasawk-btn{
         justify-content: center;
         margin-top: 40px;

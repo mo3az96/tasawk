@@ -1,8 +1,15 @@
 // work samples
-
+.ecommerce-work-samples{
+background-color: $secondary-color;
+position: relative;
+margin-top: 100px;
+}
+.work-samples{
+background-color: $secondary-color;
+}
 .work-samples-parent {
   position: relative;
-  background-color: $secondary-color;
+  
   .freq-span {
     color: rgba(255, 255, 255, 0.8);
   }
@@ -88,14 +95,14 @@
 }
 
 .ecommerce-work-samples {
-  padding-top: 100px;
+  // padding-top: 100px;
   overflow: visible;
   .more-badge {
     width: 176px;
     height: 170px;
     position: absolute;
     top: -85px;
-    inset-inline-start: 92.5px;
+    inset-inline-start: 180px;
     z-index: 1;
   }
 }
