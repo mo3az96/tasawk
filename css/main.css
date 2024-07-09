@@ -8367,6 +8367,10 @@ strong {
   font-size: 16px;
   display: inline-block;
   text-align: center;
+  transition: all 0.2s;
+}
+.product-item .product-link:hover {
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 1200px) {
