@@ -279,6 +279,11 @@
 }
 
 @include max-992 {
+  .page-heading{
+    font-size: 40px;
+    line-height: 1.5;
+    width: 100%;
+  }
   .main-parent .svgs-parent {
     height: 900px;
   }
@@ -297,7 +302,8 @@
     height: 900px;
   }
   .main-banner-content {
-    margin-top: 90px;
+    margin-top: 0;
+    padding-top: 60px;
   }
 }
 
@@ -325,10 +331,10 @@
   }
   .page-heading {
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   .main-parent {
-    height: calc(100vh - 62px);
+    height: calc(100vh - 77.71px);
     .svgs-parent {
       height: calc(100vh - 62px);
     }

@@ -1,7 +1,6 @@
 
 .special-software{
     background-color: $secondary-color;
-
 }
 .special-software-parent{
     padding: 96px 0 ;
@@ -229,7 +228,7 @@
     }
     .bold-svg{
         top: 50px;
-        inset-inline-start: 57px;
+        inset-inline-start: 0;
     }
     .foun-sing-box{
         top: unset;
@@ -369,7 +368,7 @@
         bottom: 50px;
     }
     .svgs-box .php-svg{
-        inset-inline-end: 90px;
+        inset-inline-end: unset;
         top: 10px;
         left: 50%;
         transform: translateX(-50%);

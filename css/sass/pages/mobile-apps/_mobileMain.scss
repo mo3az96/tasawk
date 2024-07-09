@@ -1,0 +1,23 @@
+.mobile-apps-main {
+  .main-parent {
+    background-image: $basic-green;
+  }
+  .page-heading{
+    width: 791px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-desc{
+    width: 776px;
+}
+}
+
+@include max-992 {
+  .mobile-apps-main .page-heading{
+    width: 100%;
+  }
+  .mobile-apps-main .page-desc{
+    width: 100%;
+  }
+}
+

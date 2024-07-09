@@ -32,7 +32,7 @@
 // *************************************************************************************************
 //  Ecommerce page
 @import "./Ecommerce/ecommerceMain";
-@import "./Ecommerce/whyToStart";
+@import "./Ecommerce/ecommerceWhytostart";
 @import "./Ecommerce/store-comp";
 @import "./Ecommerce/importance";
 @import "./Ecommerce/hidden-costs";
@@ -50,3 +50,13 @@
 @import "./blog/integrated-eCommerce";
 @import "./blog/contactWithUs";
 @import "./blog/article";
+
+// *************************************************************************************************
+
+// Mobile apps page
+
+@import  "./mobile-apps/mobileMain" ;
+@import  "./mobile-apps/mobileWhytostart" ;
+@import  "./mobile-apps/products" ;
+@import  "./mobile-apps/prog-lang" ;
+@import  "./mobile-apps/mobileExecSteps" ;

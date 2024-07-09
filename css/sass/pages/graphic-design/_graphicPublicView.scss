@@ -1,7 +1,6 @@
 // public view section
-
 .public-view{
-  padding: 96px 0;
+  padding: 96px  0;
 }
 .myitems {
   display: flex;
@@ -51,8 +50,9 @@
 
 @include max-768 {
   .public-view{
-    padding: 50px 0 ;
-  }
+  padding: 50px  0;
+}
+
   .myitems {
     justify-content: center;
     align-items: center;

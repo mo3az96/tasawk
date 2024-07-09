@@ -11,7 +11,8 @@
   }
 }
 
-.software-dev-main {
+.software-dev-main,
+.mobile-apps-main {
   .svgs-parent {
     .svg-ruler {
       position: absolute;
@@ -78,59 +79,81 @@
       font-size: 15px;
     }
   }
-  .software-dev-main .svgs-parent .svg-search {
-    bottom: 3%;
-    inset-inline-end: -1%;
-    width: 350px;
-    height: 350px;
-  }
-  .software-dev-main .svgs-parent .svg-codeBricks {
-    top: 51%;
-    inset-inline-end: 36%;
-    width: 250px;
-    height: 250px;
-  }
-  .software-dev-main .svgs-parent .svg-Website {
-    width: 500px;
-    height: 500px;
-    bottom: 20%;
-    inset-inline-start: -7%;
-  }
-  .software-dev-main .svgs-parent .svg-codecube {
-    inset-inline-start: 38%;
-  }
-  .software-dev-main .svgs-parent .svg-angle {
-    top: 55%;
-    inset-inline-end: 13%;
+  .software-dev-main,
+  .mobile-apps-main {
+    .svgs-parent .svg-search {
+      bottom: 3%;
+      inset-inline-end: -1%;
+      width: 350px;
+      height: 350px;
+    }
+    .svgs-parent .svg-codeBricks {
+      top: 51%;
+      inset-inline-end: 36%;
+      width: 250px;
+      height: 250px;
+    }
+    .svgs-parent .svg-ruler {
+      top: 47%;
+    }
+    .svgs-parent .svg-Website {
+      width: 500px;
+      height: auto;
+      bottom: -5%;
+      inset-inline-start: -3%;
+    }
+    .svgs-parent .svg-codecube {
+      inset-inline-start: 38%;
+    }
+    .svgs-parent .svg-angle {
+      top: 55%;
+      inset-inline-end: 13%;
+    }
   }
 }
 
 @include max-992 {
-  .software-dev-main .svgs-parent .svg-complexcube,
-  .software-dev-main .svgs-parent .svg-search,
-  .software-dev-main .svgs-parent .svg-codecube,
-  .software-dev-main .svgs-parent .svg-angle {
-    display: none;
+  .software-dev-main .page-heading {
+    width: 100%;
   }
-  .software-dev-main .svgs-parent .svg-codeBricks {
-    inset-inline-end: 10%;
+  .software-dev-main,
+  .mobile-apps-main {
+    .svgs-parent {
+      .svg-complexcube,
+      .svg-search,
+      .svg-codecube,
+      .svg-angle {
+        display: none;
+      }
+      .svg-codeBricks {
+        inset-inline-end: 10%;
+        top: unset;
+        bottom: 5%;
+      }
+    }
   }
 }
 
 @include max-768 {
-  .software-dev-main .svgs-parent .svg-ruler,
-  .software-dev-main .svgs-parent .svg-codeBricks,
-  .software-dev-main .svgs-parent .svg-testing-step {
-    display: none;
+  .software-dev-main,
+  .mobile-apps-main {
+    .svgs-parent {
+      .svg-ruler,
+      .svg-codeBricks,
+      .svg-testing-step {
+        display: none;
+      }
+      .svg-Website {
+        width: 280px;
+        height: auto;
+        bottom: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        inset-inline-start: unset;
+      }
+    }
   }
-  .software-dev-main .svgs-parent .svg-Website {
-    width: 280px;
-    height: auto;
-    bottom: -5%;
-    left: 50%;
-    transform: translateX(-50%);
-    inset-inline-start: unset;
-  }
+
   .software-dev-main .page-heading {
     width: 100%;
   }

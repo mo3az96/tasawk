@@ -1,15 +1,15 @@
 // work samples
-.ecommerce-work-samples{
-background-color: $secondary-color;
-position: relative;
-margin-top: 100px;
+.ecommerce-work-samples {
+  background-color: $secondary-color;
+  position: relative;
+  margin-top: 100px;
 }
-.work-samples{
-background-color: $secondary-color;
+.work-samples {
+  background-color: $secondary-color;
 }
 .work-samples-parent {
   position: relative;
-  
+
   .freq-span {
     color: rgba(255, 255, 255, 0.8);
   }
@@ -101,8 +101,10 @@ background-color: $secondary-color;
     width: 176px;
     height: 170px;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: -85px;
-    inset-inline-start: 180px;
+    inset-inline-start: unset;
     z-index: 1;
   }
 }
@@ -124,7 +126,9 @@ background-color: $secondary-color;
     width: 220px;
   }
   .work-samples-parent .freq-div {
-    top: 121px;
+    // position: relative;
+    padding-top: 110px;
+    top: 0;
   }
   .freq-headline {
     font-size: 24px;
@@ -204,7 +208,8 @@ background-color: $secondary-color;
     margin-bottom: 40px;
   }
   .work-samples-parent {
-    padding: 70px 0 85px 0;
+    // padding: 50px 0 85px 0;
+    // padding-bottom: 85px;
     .swiper-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
@@ -227,12 +232,22 @@ background-color: $secondary-color;
     width: 100px;
     height: auto;
     top: -50px;
-    inset-inline-start: 40px;
+    /* inset-inline-start: 40px; */
+    right: 15px;
+    transform: unset;
+    left: unset;
   }
   .work-samples {
-    padding-bottom: 0;
+    // padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 85px;
   }
   .ecommerce-work-samples {
-    padding-top: 50px;
+    padding-top: 0;
+    padding-bottom: 85px;
+    margin-top: 50px;
+  }
+  .ecommerce-work-samples .work-samples-parent .freq-div {
+    padding-top: 60px;
   }
 }

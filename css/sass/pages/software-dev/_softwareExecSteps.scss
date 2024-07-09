@@ -213,7 +213,7 @@
 @include max-992 {
     .soft-execution-steps{
         .freq-quote-parent{
-            margin-bottom: 25px;
+            margin-bottom: 0;
         }
     }
     .quote-sec .employee-sec .img-hold{
@@ -369,6 +369,7 @@
     }
     .execution-steps-cont .step-item .desc{
         margin-inline-start: 12px;
+        width: 90%;
     }
     .execution-steps-cont .step-item .heading{
         padding: 12px 0;

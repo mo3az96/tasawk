@@ -187,7 +187,7 @@
 
   @include max-768 {
     .time-cost-sec{
-      padding-top: 50px;
+      padding: 50px 0;
     }
   
   .note {
@@ -226,8 +226,6 @@
     align-items: flex-start;
     margin-bottom: 15px;
   }
-  .time-cost-sec {
-    padding-bottom: 0;
-  }
+
 
 }

@@ -1,7 +1,6 @@
 
 .readyMade-software{
     background-color: rgba(234,231,249,0.6);
-
 }
 
 .readyMade-soft-parent{
@@ -94,8 +93,12 @@
 
 
 @include max-1200{
+    .more-services{
+        column-gap: 50px;
+    }
     .ready-soft-parent{
         width: 100%;
+        margin: 0;
     }
     .ready-soft-parent .myitems{
         padding-inline-start: 0;
@@ -106,6 +109,9 @@
     }
     .more-services .more-service-item p{
         width: 100%;
+    }
+    .ready-soft-parent .myitems .public-item-desc{
+        width: 85%;
     }
 }
 
@@ -130,10 +136,11 @@
         width: 140px;
     }
     .more-services .more-service-item{
-        padding-top: 30px;
+        padding-block: 30px;
         padding-inline-start: 35px;
         padding-inline-end: 15px;
-        height: 240px;
+        height: unset;
+        min-height: 240px;
     }
     .more-services{
         column-gap: 30px;
