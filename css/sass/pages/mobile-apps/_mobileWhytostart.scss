@@ -18,3 +18,10 @@
     }
   }
 }
+
+
+@include max-768{
+  .mobileApps-whytostart .quote-sec{
+    margin-top: 70px;
+  }
+}

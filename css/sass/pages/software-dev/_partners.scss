@@ -84,8 +84,8 @@
         height: 205px;
     }
     .slides-parent .block img{
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+       object-fit: contain;
     }
     .partners .slides-parent .block2 .block-anchor{
         width: 130px;
@@ -100,10 +100,12 @@
     .partners .slides-parent .block1 .block-anchor{
         width: 110px;
         height: 110px;
+        padding: 15px;
     }
     .partners .slides-parent .block2 .block-anchor{
         width: 90px;
         height: 90px;
+        padding: 10px;
     }
     .partners .freq-headline{
         width: 100%;
