@@ -41,7 +41,9 @@
     align-items: center;
     row-gap: 24px;
     img {
-      width: 80%;
+      // width: 80%;
+      object-fit: contain;
+      max-width: 100%;
     }
     .block-anchor {
       width: 100%;

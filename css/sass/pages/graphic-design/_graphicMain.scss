@@ -36,11 +36,14 @@
   display: flex;
   align-items: center;
 }
-.main-parent {
+ .main-parent {
   position: relative;
   overflow: hidden;
   height: 1200px;
+}
+.graphic-design-main  .main-parent{
   background-image: $basic-red;
+
 }
 
 .sticky-nav-logo {

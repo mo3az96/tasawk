@@ -46,20 +46,66 @@
     font-size: 16px;
     display: inline-block;
     text-align: center;
-    transition: all .2s;
-    &:hover{
+    transition: all 0.2s;
+    &:hover {
       color: var(--primary-color);
     }
   }
 }
 
+.products-parent {
+  .foundation-svg {
+    bottom: 0;
+  }
+  .lineFoundation-svg {
+    inset-inline-start: 90px;
+  }
+  .bold-svg {
+    inset-inline-start: 160px;
+  }
+}
+
 @include max-1200 {
+  .mobile-svg {
+    width: 240px;
+  }
+  .products-parent {
+    .arrow-svg {
+      inset-inline-end: 0;
+    }
+    .bold-svg {
+      inset-inline-start: 0;
+    }
+    .lineFoundation-svg {
+      inset-inline-start: 120px;
+    }
+  }
   .products-items {
     width: 100%;
     margin-top: 75px;
   }
 }
 @include max-992 {
+  .products-parent {
+    .bold-svg {
+      inset-inline-start: 200px;
+    }
+    .lineFoundation-svg {
+      inset-inline-end: 50px;
+      inset-inline-start: unset;
+      bottom: -30px;
+    }
+     .foundation-svg{
+      inset-inline-start: 170px;
+    }
+    .arrow-svg{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .mobile-svg{
+    width: 300px;
+  }
   .products-items {
     flex-wrap: wrap;
     justify-content: center;
@@ -75,8 +121,24 @@
 }
 
 @include max-768 {
+  .mobile-svg{
+    width: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  .products-parent .foundation-svg{
+    inset-inline-start: unset;
+    inset-inline-end: -15px;
+  }
+  .products-parent .lineFoundation-svg{
+    inset-inline-start: -15px;
+    inset-inline-end: unset;
+    bottom: -20px;
+   
+  }
   .products-parent {
-    padding-top: 50px ;
+    padding-top: 50px;
     padding-bottom: 60px;
   }
   .product-item {
@@ -103,10 +165,10 @@
       width: 220px;
       height: auto;
     }
-    .lineF-svg{
+    .lineF-svg {
       top: 50px;
     }
-    .line-svg{
+    .line-svg {
       top: 83px;
     }
   }
