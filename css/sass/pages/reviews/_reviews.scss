@@ -1,0 +1,107 @@
+.reviews-main {
+  .main-parent {
+    background-color: #4c34bb;
+    height: auto;
+    padding-bottom: 200px;
+  }
+  .main-banner-content {
+    padding-top: 100px;
+  }
+  .upper-cont .title {
+    width: 790px;
+    margin-inline: auto;
+    line-height: 72px;
+    margin-bottom: 0;
+  }
+  .upper-cont {
+    margin-bottom: 116px;
+  }
+}
+.reveiws-holder {
+  width: 966px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 138px;
+  .quote-sec .quote-box-div {
+    background-color: #fff;
+    padding-bottom: 66px;
+  }
+  .quote-sec {
+    margin-top: 0;
+    width: 100%;
+    .quote-box-div {
+      width: 100%;
+      padding-inline: 66px;
+      margin: 0;
+      height: auto;
+    }
+  }
+  .quote-sec .quote-box-div p {
+    width: 100%;
+  }
+}
+.reviewer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 40px;
+  row-gap: 10px;
+  .reviewer-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4938a1;
+  }
+  .reviewer-job {
+    font-size: 14px;
+    color: #e14e1d;
+  }
+}
+
+@include max-992 {
+  .reveiws-holder,
+  .reviews-main .upper-cont .title {
+    width: 100%;
+  }
+  .reveiws-holder {
+    row-gap: 70px;
+    .quote-sec .quote-box-div .quote-sign {
+      inset-inline-start: -18px;
+    }
+  }
+  .reveiws-holder .quote-sec .quote-box-div {
+    padding-inline: 15px;
+    padding-bottom: 30px;
+  }
+  .quote-sec .quote-box-div::after {
+    display: block;
+    inset-inline-start: -10px;
+    bottom: -7px;
+    height: 14px;
+    width: 105px;
+  }
+  .reveiws-holder .quote-sec .quote-box-div p{
+    text-align: start;
+    font-size: 17px;
+  }
+  .reviewer{
+    margin-top: 25px;
+    row-gap: 5px;
+  }
+  .reviewer .reviewer-name{
+    font-size: 15px;
+  }
+  .reviews-main .main-banner-content{
+    padding-top: 20px;
+  }
+  .reviews-main .upper-cont .title{
+    line-height: 1.6;
+  }
+  .reviews-main .upper-cont{
+    margin-bottom: 60px;
+  }
+  .reviews-main .main-parent{
+    padding-bottom: 80px;
+  }
+}

@@ -108,10 +108,6 @@
   .articles-parent {
     grid-template-columns: repeat(2, 1fr);
   }
-  .article-item .img-holder .item-img {
-    width: 350px;
-    height: 350px;
-  }
 }
 
 @include max-992 {
