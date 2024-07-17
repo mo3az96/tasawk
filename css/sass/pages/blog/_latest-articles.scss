@@ -27,8 +27,8 @@
     position: relative;
     // background: linear-gradient(180deg, #3b279c 0%, $secondary-color 100%);
     .item-img {
-     width: 100%;
-     object-fit: cover;
+      width: 100%;
+      object-fit: cover;
       height: auto;
     }
     .positioned-text {
@@ -64,7 +64,6 @@
     }
   }
 }
-
 
 .article-item .item-desc .title:hover {
   color: $primary-color;
@@ -140,7 +139,7 @@
     line-height: 1.5;
   }
   .article-item .item-desc .title {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-size: 15px;
   }
   .article-item .item-desc .desc {
@@ -148,15 +147,13 @@
   }
 
   .article-item .item-desc {
-    padding: 0 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 12px;
     min-height: unset;
   }
   .articles-parent {
     row-gap: 30px;
   }
   .article-item .img-holder {
-    height: 200px;
+    height: auto;
   }
 }

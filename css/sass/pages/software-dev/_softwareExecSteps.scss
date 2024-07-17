@@ -5,11 +5,10 @@
         width: 100%;
         .svg{
             width: 250px;
-            height: 250px;
+            // height: 250px;
         }
         .documenting-svg{
             width: 250px;
-            height: 250px;
             position: absolute;
             top: 0px;
             inset-inline-start: 100px;
@@ -102,7 +101,7 @@
         }
         .quote-sign{
             width: 120px;
-            height: 120px;
+            // height: 120px;
             top: -60px;
             position: absolute;
             inset-inline-start: -40px;
@@ -176,7 +175,7 @@
     }
     .soft-execution-steps .imgs-box .svg{
         width: 200px;
-        height: 200px;
+        // height: 200px;
     }
     .soft-execution-steps .imgs-box .testing-svg{
         top: 75px;
@@ -245,7 +244,7 @@
     }
     .quote-sec .quote-box-div .quote-sign {
         width: 100px;
-        height: 100px;
+        // height: 100px;
         top: -50px;
         inset-inline-start: -17px;
     }
@@ -309,7 +308,6 @@
     }
     .quote-sec .quote-box-div .quote-sign{
         width: 70px;
-        height: 70px;
         left: unset;
         top: -35px;
         inset-inline-start: -11px;
@@ -332,6 +330,7 @@
         font-size: 16px;
         line-height: 1.6;
         text-align: center;
+        margin-top: 20px;
     }
     .quote-sec .employee-sec .employee-role {
         margin-inline-start: 20px;

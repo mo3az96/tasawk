@@ -128,7 +128,8 @@
   .clients-review-swiper {
     margin-top: 90px;
     .swiper-button-next {
-      inset-inline-start: -71px;
+      left: -71px;
+      right: unset;
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -146,7 +147,8 @@
       }
     }
     .swiper-button-prev {
-      inset-inline-end: -71px;
+      right: -71px;
+      left: unset;
     }
   }
   
@@ -178,10 +180,10 @@
       width: 100%;
     }
     .clients-review-swiper .swiper-button-next {
-      inset-inline-start: -45px;
+      left: -45px;
     }
     .clients-review-swiper .swiper-button-prev {
-      inset-inline-end: -45px;
+      right: -45px;
     }
   }
   

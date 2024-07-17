@@ -49,7 +49,6 @@
       .thin {
         position: absolute;
         width: 850px;
-        height: 850px;
         inset-inline-end: -17%;
         top: -46px;
       }
@@ -57,12 +56,10 @@
         position: absolute;
         inset-inline-end: 0;
         width: 200px;
-        height: 200px;
         top: -10px;
       }
       .dollarSign {
         width: 230px;
-        height: 230px;
         top: -30px;
         inset-inline-start: 0;
       }
@@ -72,28 +69,30 @@
 
 @include max-1300 {
   .integrated-parent .items .img-item .thin {
-    width: 750px;
-    height: 750px;
-    top: 30px;
+    width: 700px;
+    top: 55px;
+    inset-inline-end: -12%;
   }
 }
 
 @include max-1200 {
   .integrated-parent .items .img-item .thin {
-    width: 700px;
-    height: 700px;
+    width: 650px;
     top: 60px;
+    inset-inline-end: -8%;
   }
   .integrated-parent .items .img-item .shipping {
-    inset-inline-end: -48px;
+    inset-inline-end: 0;
     top: 0px;
   }
   .integrated-parent .items .img-item .dollarSign {
     top: -15px;
   }
+
 }
 
 @include max-992 {
+
   .integrated-parent {
     height: auto;
   }
@@ -106,7 +105,6 @@
   }
   .integrated-parent .items .img-item .thin {
     width: 600px;
-    height: 600px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -150,13 +148,11 @@
   .integrated-parent .items .img-item .dollarSign,
   .integrated-parent .items .img-item .shipping {
     width: 150px;
-    height: 150px;
   }
   .integrated-parent .items .img-item .thin {
     width: 400px;
-    height: auto;
     top: 13%;
-    left: 0;
+    left: -15px;
     transform: unset;
   }
   .integrated-parent .items .img-item {

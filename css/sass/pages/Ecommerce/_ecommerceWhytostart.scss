@@ -54,7 +54,7 @@
   }
   .general-item .general-item-img {
     width: 96px;
-    height: 96px;
+    // height: 96px;
     filter: brightness(0) saturate(100%) invert(12%) sepia(31%) saturate(5747%)
       hue-rotate(242deg) brightness(93%) contrast(109%);
   }
@@ -117,7 +117,6 @@
   }
   .whyToStart .general-item .general-item-img {
     width: 80px;
-    height: 80px;
   }
   .whyToStart .myitems {
     margin-top: 45px;
@@ -132,7 +131,7 @@
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    min-height: 180px;
+    // min-height: 180px;
     margin-inline: auto;
     width: 300px;
   }
@@ -145,5 +144,8 @@
   }
   .whyToStart .quote-sec {
     margin-top: 65px;
+  }
+  .whyToStart .myitems .bg-item .left{
+    margin-top: 35px;
   }
 }

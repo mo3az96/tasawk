@@ -345,7 +345,7 @@ footer{
         transform: rotate(180deg);
     }
     .footer-nav-ul li:last-of-type {
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
     .book-content img {
         width: 130px;
@@ -399,12 +399,18 @@ footer{
     }
     .footer-nav-ul{
         display: none;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footer-nav-ul li{
+        margin-bottom: 20px;
     }
     .footer-nav-item {
         width: 100%;
+        margin-bottom: 25px;
     }
     .footer-nav-item .footer-nav-item-span{
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
     .footer-nav-item .footer-nav-item-title {
         cursor: pointer;
@@ -412,7 +418,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         &::after{
             content: "\f107";
             position: relative;
@@ -426,6 +432,7 @@ footer{
     footer .desc-cont{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
     }
     .desc-cont-title{
         text-align: center;

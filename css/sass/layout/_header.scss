@@ -379,6 +379,12 @@ padding-inline-start: 20px;
 }
 }
 
+ .navigation{
+   .container{
+      padding: 0;
+    }
+ }
+
 
 
 //
@@ -473,9 +479,7 @@ padding-inline-start: 20px;
     z-index: 20;
     // clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%) ;
     clip-path: polygon(10.05% 5.1%, 12% 5.1%, 12% 5.1%, 5.05% 10.1%);
-    .container{
-      padding: 0;
-    }
+   
   }
   .open-sidebar {
     opacity: 1;

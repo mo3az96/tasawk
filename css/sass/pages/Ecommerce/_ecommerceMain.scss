@@ -1,6 +1,6 @@
 .Ecommerce-main{
     .main-parent{
-        background-image: $basic-blue;
+        background-image: $hard-blue;
         height: 1176px;
     }
     .page-heading{
@@ -26,7 +26,6 @@
     }
     .general-item .general-item-img{
         width: 240px;
-        height: 240px;
     }
 }
 
@@ -59,11 +58,14 @@
     }
     .Ecommerce-main .main-parent{
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 }
 
 @include max-768 {
+    .Ecommerce-main .main-parent{
+      background-image:   linear-gradient(40deg, #4c34bb 0%, #24156d 84.45%, #4c34bb 84.45%, #24156d 100%);
+    }
     .Ecommerce-main .myitems .general-item{
        margin: 0;
     }
@@ -76,7 +78,6 @@
     }
     .Ecommerce-main .general-item .general-item-img{
         width: 130px;
-        height: 130px;
     }
     .Ecommerce-main .myitems{
         margin-top: 30px;

@@ -1,4 +1,5 @@
 // work samples
+
 .ecommerce-work-samples {
   background-color: $secondary-color;
   position: relative;
@@ -96,7 +97,8 @@
   }
 }
 
-.ecommerce-work-samples {
+.ecommerce-work-samples,
+.softwareDiv-work-samples {
   // padding-top: 100px;
   overflow: visible;
   .more-badge {
@@ -234,14 +236,17 @@
 }
 
 @include max-768 {
-  .ecommerce-work-samples .more-badge {
-    width: 100px;
-    height: auto;
-    top: -50px;
-    /* inset-inline-start: 40px; */
-    right: 15px;
-    transform: unset;
-    left: unset;
+  .ecommerce-work-samples,
+  .softwareDiv-work-samples {
+    .more-badge {
+      width: 100px;
+      height: auto;
+      top: -50px;
+      /* inset-inline-start: 40px; */
+      right: 15px;
+      transform: unset;
+      left: unset;
+    }
   }
   .work-samples {
     // padding-bottom: 0;
