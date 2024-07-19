@@ -142,62 +142,62 @@
     justify-content: space-between;
   }
   
-  .readmore-about-us {
-    .read-more-text {
-      width: 286px;
-      color: $white-color;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 40px;
-    }
-    .svg {
-      display: block;
-      width: 160px;
-    }
-    .readmore-about-us {
-      margin-top: 56px;
-    }
-    .item-span {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 20px;
-      text-align: right;
-    }
-    .item-title {
-      width: 487px;
-      color: $white-color;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 24px;
-      margin: 16px 0;
-    }
-    .item-desc {
-      width: 487px;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 16px;
-    }
-    .item-anchor {
-      padding: 11px 17px;
-      color: $white-color;
-      font-size: 12px;
-      display: inline-flex;
-      align-items: center;
-      line-height: 20px;
-      border-radius: 8px;
-      background-color: rgba(255, 255, 255, 0.1);
-      transition: ease-in-out 0.2s all;
-      &:hover {
-        background-color: $third-color;
-        color: $text-color;
-      }
-      .icon {
-        margin-inline-end: 5px;
-      }
-    }
-  }
+  // .readmore-about-us {
+  //   .read-more-text {
+  //     width: 286px;
+  //     color: $white-color;
+  //     font-size: 24px;
+  //     font-weight: 700;
+  //     line-height: 40px;
+  //   }
+  //   .svg {
+  //     display: block;
+  //     width: 160px;
+  //   }
+  //   .readmore-about-us {
+  //     margin-top: 56px;
+  //   }
+  //   .item-span {
+  //     color: rgba(255, 255, 255, 0.8);
+  //     font-size: 12px;
+  //     font-weight: 700;
+  //     line-height: 20px;
+  //     text-align: right;
+  //   }
+  //   .item-title {
+  //     width: 487px;
+  //     color: $white-color;
+  //     font-size: 16px;
+  //     font-weight: 700;
+  //     line-height: 24px;
+  //     margin: 16px 0;
+  //   }
+  //   .item-desc {
+  //     width: 487px;
+  //     color: rgba(255, 255, 255, 0.8);
+  //     font-size: 16px;
+  //     line-height: 24px;
+  //     margin-bottom: 16px;
+  //   }
+  //   .item-anchor {
+  //     padding: 11px 17px;
+  //     color: $white-color;
+  //     font-size: 12px;
+  //     display: inline-flex;
+  //     align-items: center;
+  //     line-height: 20px;
+  //     border-radius: 8px;
+  //     background-color: rgba(255, 255, 255, 0.1);
+  //     transition: ease-in-out 0.2s all;
+  //     &:hover {
+  //       background-color: $third-color;
+  //       color: $text-color;
+  //     }
+  //     .icon {
+  //       margin-inline-end: 5px;
+  //     }
+  //   }
+  // }
   
   @include max-992 {
     .steps-content {
@@ -261,34 +261,34 @@
       margin-top: 10px;
       row-gap: 10px;
     }
-    .readmore-about-us {
-      margin-top: 20px;
-      .read-more-text {
-        text-align: center;
-        width: 100%;
-        font-size: 18px;
-      }
-      .svg {
-        display: inline-block;
-        text-align: center;
-        width: 140px;
-      }
-      .item-title,
-      .item-desc {
-        width: 100%;
-        text-align: center;
-      }
-      .item-desc {
-        line-height: 1.5;
-        font-size: 15px;
-      }
-      .item-title {
-        line-height: 1.7;
-      }
-      .item-span {
-        display: block;
-        text-align: center;
-      }
-    }
+    // .readmore-about-us {
+    //   margin-top: 20px;
+    //   .read-more-text {
+    //     text-align: center;
+    //     width: 100%;
+    //     font-size: 18px;
+    //   }
+    //   .svg {
+    //     display: inline-block;
+    //     text-align: center;
+    //     width: 140px;
+    //   }
+    //   .item-title,
+    //   .item-desc {
+    //     width: 100%;
+    //     text-align: center;
+    //   }
+    //   .item-desc {
+    //     line-height: 1.5;
+    //     font-size: 15px;
+    //   }
+    //   .item-title {
+    //     line-height: 1.7;
+    //   }
+    //   .item-span {
+    //     display: block;
+    //     text-align: center;
+    //   }
+    // }
   }
   

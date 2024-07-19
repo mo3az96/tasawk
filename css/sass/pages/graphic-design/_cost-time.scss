@@ -9,7 +9,8 @@
   .logo-prints-item {
     padding-inline-start: 105px;
     padding-top: 48px;
-    height: 576px;
+    padding-bottom: 235px;
+    // height: 576px;
     width: 100%;
   }
   .logo-prints-item {
@@ -96,16 +97,25 @@
   .note {
     background-color: $white-color;
     width: 386px;
-    height: 95px;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 32px;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
+    .tasawk-btn{
+      justify-content: center;
+      &:hover{
+        background-color: var(--third-color);
+        color:var(--text-color);
+      }
+    }
     p {
-      width: 325px;
+      width: 100%;
       color: $text-color;
       font-size: 16px;
       line-height: 24px;
@@ -142,10 +152,10 @@
         display: none;
       }
       .bgDark {
-        padding-top: 30px;
+        padding-top: 35px;
       }
       .bgLight {
-        padding-bottom: 30px;
+        padding-bottom: 35px;
       }
       .logo-prints-item .price-sec {
         justify-content: center;
@@ -156,7 +166,6 @@
       .logo-prints-item {
         padding-left: 50px;
         padding-right: 50px;
-        height: 470px;
         .desc {
           width: 100%;
           text-align: center;
@@ -169,15 +178,17 @@
         margin-right: auto;
       }
       .note {
+        height: auto;
+        bottom: unset;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50% , -50%);
       }
       .bgDark {
-        padding-bottom: 100px;
+        padding-bottom: 150px;
       }
       .bgLight {
-        padding-top: 100px;
+        padding-top: 150px;
       }
       .logo-prints-item .price-sec .price {
         line-height: 1;
@@ -189,19 +200,20 @@
     .time-cost-sec{
       padding: 50px 0;
     }
+      .bgDark {
+        padding-bottom: 125px;
+      }
+      .bgLight {
+        padding-top: 125px;
+      }
   
   .note {
-    width: 92%;
+    width: 90%;
+    padding-inline: 10px;
   }
-  .logo-prints-item {
-    height: 460px;
-  }
-  .bgDark {
-    padding-bottom: 0;
-  }
-  .bgLight {
-    padding-top: 0;
-  }
+
+ 
+
   .logo-prints-item {
     padding-left: 15px;
     padding-right: 15px;
@@ -216,9 +228,7 @@
     font-size: 18px;
     margin: 15px 0;
   }
-  .bgLight {
-    padding-top: 90px;
-  }
+
  .list {
     width: auto;
   }

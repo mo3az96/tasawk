@@ -122,6 +122,22 @@
     
 }
 
+
+.components-list {
+  .checkmark {
+    &::after {
+      content: "";
+      background: url(../images/pages/blog/Right-Check.svg);
+      background-position: center center;
+      background-size: cover;
+      display: none;
+      height: 32px;
+      border-radius: 50%;
+      width: 32px;
+    }
+  }
+}
+
 .checkbox input:checked ~ .checkmark:after {
     display: block;
 }

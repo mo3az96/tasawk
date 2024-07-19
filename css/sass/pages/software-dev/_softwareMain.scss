@@ -1,6 +1,6 @@
 .software-dev-main {
   .main-parent {
-    background-image: $basic-green;
+    background-image: linear-gradient(32deg, #4c34bb 50%, #19bb58 85.45%, #4c34bb 85.45%, #19bb58 100%);
   }
 }
 
@@ -124,9 +124,7 @@
 }
 
 @include max-768 {
-  .software-dev-main .main-parent{
-    background-image: linear-gradient(40deg, #4c34bb 50%, #19bb58 84.45%, #4c34bb 84.45%, #19bb58 100%);
-  }
+
   .software-dev-main,
   .mobile-apps-main  , .home-main{
     .svgs-parent {

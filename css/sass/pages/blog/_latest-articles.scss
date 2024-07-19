@@ -34,8 +34,8 @@
     .positioned-text {
       z-index: 2;
       position: absolute;
-      top: 34px;
-      inset-inline-start: 40px;
+      top: 10px;
+      inset-inline-start: 10px;
       color: $text-color;
       font-size: 12px;
       line-height: 20px;
@@ -122,10 +122,7 @@
 }
 
 @include max-768 {
-  .article-item .img-holder .positioned-text {
-    top: 20px;
-    inset-inline-start: 20px;
-  }
+
 
   .articles-parent {
     grid-template-columns: 1fr;

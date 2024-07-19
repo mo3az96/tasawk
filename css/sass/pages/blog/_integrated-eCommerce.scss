@@ -78,8 +78,8 @@
 @include max-1200 {
   .integrated-parent .items .img-item .thin {
     width: 650px;
-    top: 60px;
-    inset-inline-end: -8%;
+   top: 90px;
+    inset-inline-end: -5%;
   }
   .integrated-parent .items .img-item .shipping {
     inset-inline-end: 0;
@@ -88,10 +88,10 @@
   .integrated-parent .items .img-item .dollarSign {
     top: -15px;
   }
-
 }
 
 @include max-992 {
+
 
   .integrated-parent {
     height: auto;

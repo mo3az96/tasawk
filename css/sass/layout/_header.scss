@@ -1,6 +1,6 @@
 header {
   background-color: $white-color;
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
 }
 .header-main-content {
@@ -81,7 +81,7 @@ padding-inline-start: 20px;
   transform: translate(-50%, -50%);
   z-index: 2;
   img {
-    width: 50px;
+    width: 45px;
   }
 }
 .contact-div {
@@ -234,22 +234,23 @@ padding-inline-start: 20px;
   display: none;
   flex-direction: column;
   align-items: center;
-  row-gap: 4px;
+  row-gap: 5px;
   .line{
+    flex-shrink: 0;
     width: 25px;
     display: block;
-    height: 3px;
+    height: 2px;
     background-color: var(--text-color);
     transition: all .3s;
   }
 
 }
 .rotate-line1{
-  transform: rotate(45deg) translateY(-1px) ;
+  transform: rotate(45deg) translateX(-2px) translateY(-2px) ;
   transform-origin: 0% 0%;
 }
 .rotate-line3{
-  transform: rotate(-45deg) translateY(2px) ;
+  transform: rotate(-45deg) translateX(0px) translateY(0px) ;
     transform-origin:  0 100%;
 }
 .bars .hide-line2{
@@ -408,6 +409,9 @@ padding-inline-start: 20px;
 }
 
 @include max-992 {
+  .navigation .container{
+    padding-inline: 12px;
+  }
   .contact-div {
     margin: 0;
   }
@@ -559,6 +563,9 @@ padding-inline-start: 20px;
 }
 
 @include max-768 {
+  .navigation .container{
+    padding-inline: 0;
+  }
   body{
     padding-top: 77.71px;
   }

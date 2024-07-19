@@ -2,7 +2,7 @@
   .main-parent {
     height: auto;
     padding-bottom: 150px;
-     background-image:$hard-blue;
+     background-image:  linear-gradient(32deg, #4c34bb 0%, #24156d 85.45%, #4c34bb 85.45%, #24156d 100%);
   }
   .upper-cont .article-img {
     width: 100px;
@@ -23,6 +23,9 @@
 }
 
 .contact-form-holder {
+   padding-top: 48px;
+  width: 400px;
+  margin-inline: auto;
   margin-bottom: 96px;
   [type="email"],
   [type="number"],
@@ -76,9 +79,7 @@
 
     font-size: 12px;
   }
-  margin-top: 48px;
-  width: 400px;
-  margin-inline: auto;
+ 
   .form {
     display: flex;
     flex-direction: column;
@@ -212,7 +213,8 @@
     }
     .contact-form-holder{
         max-width: 100%;
-        margin-top: 30px;
+        margin-top: 0;
+        padding: 0;
         margin-bottom: 60px;
     }
     .contact-methods-parent .contact-method img{
@@ -222,7 +224,6 @@
         height: auto;
     }
     .contact-main .main-parent{
-        background-image: linear-gradient(38.78deg, #4c34bb 0%, #4c34bb 92%, #24156d 85.46%, #4c34bb 100%);
         padding-bottom: 60px;
         padding-top: 15px;
     }

@@ -1,6 +1,6 @@
 // work samples
 
-.ecommerce-work-samples {
+.ecommerce-work-samples , .graphicDesign-worksamples {
   background-color: $secondary-color;
   position: relative;
   margin-top: 100px;
@@ -16,27 +16,32 @@
   }
   .freq-headline {
     color: $white-color;
+    width: 100%;
+    font-size: 24px;
   }
   .freq-desc {
     color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    font-size: 17px;
   }
   .freq-div {
     position: absolute;
     top: 96px;
     inset-inline-start: 71px;
-    width: 589px;
+    width: 220px;
   }
 }
 .slides-parent {
   width: 895px;
-  height: 1314px;
+  height: 1000px;
   overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
   margin-inline-start: auto;
   column-gap: 22px;
+ 
   .block {
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +49,7 @@
     img {
       // width: 80%;
       object-fit: contain;
+     
       max-width: 100%;
     }
     .block-anchor {
@@ -56,30 +62,35 @@
     }
   }
   .block3 {
-    height: 545px;
-    min-width: 182px;
-    overflow: hidden;
+    height: 100%;
+    width: 182px;
+    // overflow: hidden;
     align-self: flex-end;
     .block-anchor {
-      width: 182px;
+      width: 100%;
       height: 182px;
     }
   }
   .block2 {
-    min-width: 282px;
-    height: 700px;
+    width: 250px;
+    height: 100%;
     align-self: flex-end;
-    overflow: hidden;
+    // overflow: hidden;
     .block-anchor {
       width: 100%;
-      height: 282px;
+      height: 250px;
     }
   }
   .block1 {
     .block-anchor {
-      width: 385px;
-      height: 385px;
+      width: 350px;
+      height: 350px;
     }
+  }
+}
+.work-samples{
+   .block1-marquee{
+    width: 350px;
   }
 }
 
@@ -91,14 +102,16 @@
   .js-marquee {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     row-gap: 24px;
     margin-bottom: 24px !important ;
   }
 }
 
+
+
 .ecommerce-work-samples,
-.softwareDiv-work-samples {
+.softwareDiv-work-samples , .graphicDesign-worksamples {
   // padding-top: 100px;
   overflow: visible;
   .more-badge {
@@ -123,14 +136,9 @@
 }
 
 .softwareDiv-work-samples,
-.ecommerce-work-samples {
-  .freq-div,
-  .freq-headline,
-  .freq-desc {
+.ecommerce-work-samples , .graphicDesign-worksamples {
+  .freq-div {
     width: 220px;
-  }
-  .work-samples-parent .freq-div {
-    // position: relative;
     padding-top: 110px;
     top: 0;
   }
@@ -157,23 +165,34 @@
 }
 
 @include max-1200 {
+  .work-samples .block1-marquee{
+    width: 250px;
+  }
   .slides-parent {
-    width: 800px;
+    width: 575px;
   }
   .slides-parent .block1 .block-anchor {
-    width: 300px;
-    height: 300px;
-  }
-  .slides-parent .block2 {
-    min-width: 250px;
-    max-width: 250px;
-  }
-  .slides-parent .block2 .block-anchor {
+    width: 250px;
     height: 250px;
   }
+  .slides-parent .block3{
+    width: 120px;
+  }
+  .slides-parent .block2 {
+   width: 160px;
+  }
+  .slides-parent .block2 .block-anchor {
+    height: 160px;
+  }
   .slides-parent .block3 .block-anchor {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+  }
+  .softwareDiv-work-samples ,.graphicDesign-worksamples ,  .ecommerce-work-samples{
+    .freq-div{
+    inset-inline-start: 35px;
+
+    }
   }
 }
 .workSamples-swiper-parent {
@@ -181,6 +200,14 @@
 }
 
 @include max-992 {
+  .graphicDesign-worksamples{
+    .work-samples-parent{
+      padding-top: 60px;
+    }
+  }
+  .work-samples-parent{
+    padding-bottom: 100px;
+  }
   .slides-parent {
     display: none;
   }
@@ -254,11 +281,15 @@
     padding-bottom: 85px;
   }
   .ecommerce-work-samples {
-    padding-top: 0;
-    padding-bottom: 85px;
-    margin-top: 50px;
+   padding-bottom: 85px;
   }
   .ecommerce-work-samples .work-samples-parent .freq-div {
     padding-top: 60px;
+  }
+  .work-samples-parent{
+    padding-bottom: 0;
+  }
+  .graphicDesign-worksamples .work-samples-parent{
+    padding-top: 0;
   }
 }

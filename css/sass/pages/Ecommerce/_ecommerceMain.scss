@@ -1,6 +1,6 @@
 .Ecommerce-main{
     .main-parent{
-        background-image: $hard-blue;
+        background-image: linear-gradient(32deg, #4c34bb 0%, #24156d 85.45%, #4c34bb 85.45%, #24156d 100%);
         height: 1176px;
     }
     .page-heading{
@@ -63,9 +63,7 @@
 }
 
 @include max-768 {
-    .Ecommerce-main .main-parent{
-      background-image:   linear-gradient(40deg, #4c34bb 0%, #24156d 84.45%, #4c34bb 84.45%, #24156d 100%);
-    }
+   
     .Ecommerce-main .myitems .general-item{
        margin: 0;
     }

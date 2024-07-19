@@ -263,6 +263,8 @@ strong {
   padding: 96px 0;
   .more-articles-div {
     margin-top: 56px;
+    display: flex;
+    justify-content: center;
   }
   .more-articles-btn {
     padding: 15px 39px;
@@ -313,6 +315,9 @@ strong {
 }
 
 @include max-768 {
+  .more-articles-parent .more-articles-div{
+    margin-top: 40px;
+  }
   //  .article-item .item-desc {
   //   padding-inline: 12px;
   // }

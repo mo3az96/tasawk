@@ -12,20 +12,18 @@ $(document).ready( function () {
     });
   }
 
-  if ($(window).width() > 992) {
-    $(".blog-menu-btn").on("click", function () {
-      $(".top-header-list .nested-ul").slideToggle(300);
-      $(this).children(".icon").toggleClass("rotate");
-    });
-  }
+  $(".blog-menu-btn").on("click", function () {
+    $(".blog-top-header .topheader-cont").toggleClass("slideIt");
+    $(this).children(".icon").toggleClass("rotate");
+  });
 
-  if ($(window).width() < 992) {
-    $(".blog-menu-btn").on("click", function () {
-      $(".blog-top-header .topheader-cont .top-header-list").slideToggle(300);
-      $(this).children(".icon").toggleClass("rotate");
-    });
-    $(".big-menu .menu-item-has-children > a").removeAttr("href");
-  }
+  // if ($(window).width() < 992) {
+  //   $(".blog-menu-btn").on("click", function () {
+  //     $(".blog-top-header .topheader-cont .top-header-list").slideToggle(300);
+  //     $(this).children(".icon").toggleClass("rotate");
+  //   });
+  //   $(".big-menu .menu-item-has-children > a").removeAttr("href");
+  // }
 
   // nested nav mobile
   if ($(window).width() <= 992) {
@@ -170,25 +168,65 @@ $(document).ready( function () {
     },
   });
 
-  // thumbs swiper
-  var swiper = new Swiper(".thumbs-swiper", {
-    grabCursor: true,
-    slidesPerView: "auto",
+  // client Sildes Swiper
+  const softwareWorksamples = new Swiper(".software-worksamples .swiper", {
+    loop: true,
+    // autoplay: true,
+    speed: 800,
+    navigation: {
+      nextEl: ".software-worksamples .swiper-button-next",
+      prevEl: ".software-worksamples .swiper-button-prev",
+    },
+    pagination: {
+      el: ".software-worksamples .swiper-pagination",
+      clickable: true,
+    },
     breakpoints: {
       350: {
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
       768: {
-        spaceBetween: 40,
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
       992: {
-        spaceBetween: 50,
-      },
-      1200: {
-        spaceBetween: 75,
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
     },
   });
+
+    const mobileAppsWorksamples = new Swiper(
+      ".mobileApps-worksamples .swiper",
+      {
+        loop: true,
+        // autoplay: true,
+        speed: 800,
+        navigation: {
+          nextEl: ".mobileApps-worksamples .swiper-button-next",
+          prevEl: ".mobileApps-worksamples .swiper-button-prev",
+        },
+        pagination: {
+          el: ".mobileApps-worksamples .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      }
+    );
 
   // clients Review swiper
   const clientsReview = new Swiper(".clients-review .main-swiper", {
@@ -198,15 +236,16 @@ $(document).ready( function () {
       nextEl: ".clients-review  .swiper-button-next",
       prevEl: ".clients-review  .swiper-button-prev",
     },
-    thumbs: {
-      swiper: swiper,
-    },
 
     breakpoints: {
       350: {
         slidesPerView: 1,
         spaceBetween: 10,
       },
+    },
+    pagination: {
+      el: ".clients-review .swiper-pagination",
+      clickable: true,
     },
   });
 
@@ -238,6 +277,7 @@ $(document).ready( function () {
     delayBeforeStart: 0,
     direction: "up",
     duplicated: true,
+    startVisible: true,
   });
 
   // block 2 marquee
@@ -248,6 +288,7 @@ $(document).ready( function () {
     delayBeforeStart: 0,
     direction: "down",
     duplicated: true,
+    startVisible: true,
   });
 
   // block 3 marquee
@@ -258,19 +299,20 @@ $(document).ready( function () {
     delayBeforeStart: 0,
     direction: "up",
     duplicated: true,
+    startVisible: true,
   });
-
-  //************************************************************************************************
 
   //  partneres marquee
 
   $(" #partners .block1-marquee").marquee({
     duration: 35000,
+    // duration: 10000 ,
     // gap: 24,
     gap: 12,
     delayBeforeStart: 0,
     direction: "right",
     duplicated: true,
+    startVisible: true,
   });
 
   $(" #partners .block2-marquee").marquee({
@@ -279,6 +321,7 @@ $(document).ready( function () {
     delayBeforeStart: 0,
     direction: "right",
     duplicated: true,
+    startVisible: true,
   });
 
   const draggables = document.querySelectorAll(".draggable"),

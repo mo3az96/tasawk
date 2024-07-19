@@ -2,10 +2,9 @@
   overflow: visible;
 }
 
-  .blog-index-main .main-parent{
-  padding-bottom: 60px;
-
-  }
+.blog-index-main .main-parent {
+  padding-bottom: 90px;
+}
 
 .blog-top-header {
   .top-header-list {
@@ -20,9 +19,12 @@
     }
   }
   .topheader-cont {
-    padding-top: 24px;
+    max-height: 72px;
+    overflow: hidden;
+    padding: 24px 0;
     display: flex;
     align-items: flex-start;
+    transition: all 0.4s ease;
     justify-content: space-between;
     li {
       margin-inline-end: 0;
@@ -56,7 +58,7 @@
         left: 0;
         width: 100%;
         height: 4px;
-        width: 122.94px;
+        width: 100%;
         background: linear-gradient(211.61deg, #d29326 0%, #fbea82 100%);
       }
     }
@@ -86,39 +88,23 @@
 .blog-article-main {
   .main-parent {
     background-image: linear-gradient(
-      63.78deg,
+      32deg,
       #4c34bb 0%,
       #4c34bb 85.45%,
       #24156d 85.46%,
-     #4c34bb 100%
+      #4c34bb 100%
     );
-    height: 640px;
+    height: auto;
   }
 }
-
-.blog-index-main{
-   .main-parent{
-    height: auto;
-   }
+.blog-article-main {
+  .main-parent {
+    padding-bottom: 115px;
+  }
 }
-
 
 .rotate {
   transform: rotate(180deg);
-}
-.top-header-list .nested-ul {
-  // padding-top: 32px;
-  width: 100%;
-  display: none;
-
-  li {
-    display: inline-block;
-    margin: 40px 0;
-    margin-inline-end: 120px;
-  }
-  // display: flex;
-  // align-items: center;
-  // column-gap: 48px;
 }
 
 .blog-index-main,
@@ -191,6 +177,12 @@
   }
 }
 
+.blog-top-header .slideIt {
+  max-height: 250px;
+  transition: all .4s ease;
+  // overflow: visible;
+}
+
 @include max-1300 {
   .main-blog-items .img-item {
     height: 400px;
@@ -221,7 +213,7 @@
   .article-holder {
     display: flex;
     justify-content: center;
-    img{
+    img {
       width: 160px;
     }
     // width: 160px;
@@ -328,42 +320,39 @@
     font-size: 30px;
     line-height: 1.6;
   }
-  .blog-top-header .topheader-cont .top-header-list {
-    display: none;
-  }
   .blog-menu-btn {
     order: 2;
   }
   .blog-top-header .topheader-cont {
     flex-wrap: wrap;
+    max-height: 54px;
     padding-top: 15px;
+    // align-items: center;
+    padding-bottom: 0;
+  }
+  .blog-top-header .slideIt{
+    max-height: 650px;
+    padding-bottom: 25px;
   }
   .blog-top-header .topheader-cont .page-name {
     padding-bottom: 15px;
+    margin: 0;
   }
   .blog-index-main .main-banner-content {
     padding-top: 100px;
   }
   .blog-top-header .topheader-cont .top-header-list {
     order: 3;
-    padding: 20px 0;
-  }
-  .top-header-list .nested-ul {
-    display: flex;
+    padding-top: 20px;
+    row-gap: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
-  .top-header-list .nested-ul li {
-    margin: 0;
-  }
+
   .blog-top-header .top-header-list hr {
     margin-bottom: 20px;
   }
-  .blog-top-header .topheader-cont li {
-    margin-bottom: 20px;
-  }
-  .top-header-list .nested-ul li:last-of-type {
-    margin-bottom: 0;
-  }
+
 
   .main-blog-items .name-date {
     justify-content: center;
@@ -384,6 +373,7 @@
   }
   .text-item {
     text-align: center;
+    margin-top: 20px;
   }
   .main-blog-items .img-item {
     margin: auto;
@@ -391,10 +381,15 @@
 }
 
 @include max-768 {
+  .blog-top-header .slideIt {
+    max-height: 650px;
+    // overflow: visible;
+    padding-bottom: 25px;
+  }
 
- .main-item-cont .article-holder img{
-  width: 160px;
- }
+  .main-item-cont .article-holder img {
+    width: 160px;
+  }
   .blog-article-main .main-banner-content {
     padding-top: 65px;
   }
@@ -419,10 +414,9 @@
     height: 230px;
   }
 
-
- .blog-index-main,
+  .blog-index-main,
   .blog-article-main {
-     .main-banner-content {
+    .main-banner-content {
       padding-inline: 0;
     }
   }
@@ -431,8 +425,8 @@
       padding-top: 55px;
     }
   }
-  .blog-index-main{
-     .main-banner-content {
+  .blog-index-main {
+    .main-banner-content {
       padding-top: 100px;
     }
   }
@@ -442,7 +436,7 @@
     width: 100px;
     height: 100px;
   }
- 
+
   .main-blog-items .img-item .comment1 {
     top: 2%;
     inset-inline-end: 27%;
