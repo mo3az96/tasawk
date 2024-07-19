@@ -200,11 +200,11 @@
 }
 
 @include max-992 {
-  .graphicDesign-worksamples{
-    .work-samples-parent{
-      padding-top: 60px;
-    }
-  }
+  // .graphicDesign-worksamples{
+  //   .work-samples-parent{
+  //     padding-top: 60px;
+  //   }
+  // }
   .work-samples-parent{
     padding-bottom: 100px;
   }
@@ -263,6 +263,7 @@
 }
 
 @include max-768 {
+
   .ecommerce-work-samples,
   .softwareDiv-work-samples {
     .more-badge {

@@ -111,7 +111,7 @@
 }
 .clients-review-swiper {
   .swiper-pagination {
-    display: flex;
+    display: none;
     justify-content: center;
   }
   .swiper-pagination-bullet {
@@ -218,6 +218,9 @@
 @include max-768 {
   .clients-review-swiper {
     margin-top: 30px;
+  }
+  .clients-review-swiper .swiper-pagination{
+    display: flex;
   }
   .logo-prints-item .list li p {
     font-size: 15px;

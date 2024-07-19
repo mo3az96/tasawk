@@ -138,6 +138,9 @@
 }
 
 @include max-992 {
+    .stage-item .stage-num::after{
+        bottom: -10px;
+    }
     .stages-parent{
         grid-template-columns: 1fr;
         row-gap: 40px;

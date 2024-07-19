@@ -107,6 +107,9 @@
     width: 200px;
     height: 205px;
   }
+  #partners .js-marquee-wrapper{
+    width: unset !important;
+  }
   .slides-parent .block img {
     max-width: 100%;
     object-fit: contain;
@@ -121,6 +124,7 @@
   .partners .slides-parent .block {
     column-gap: 20px;
   }
+
   .partners .slides-parent .block1 .block-anchor {
     width: 110px;
     height: 110px;
@@ -144,5 +148,8 @@
   #partners .js-marquee {
     width: max-content !important;
     column-gap: 20px;
+  }
+    .ecommerce-paretners{
+    padding-bottom: 30px;
   }
 }

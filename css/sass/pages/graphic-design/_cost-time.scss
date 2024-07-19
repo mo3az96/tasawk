@@ -146,6 +146,7 @@
   @include max-992 {
     .logo-prints-parent {
         flex-direction: column;
+        margin-top: 45px;
       }
       .bgLight::after,
       .bgDark::before {

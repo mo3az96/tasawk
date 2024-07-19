@@ -86,6 +86,10 @@
 }
 
 @include max-992 {
+  .questions .questions-parent .question-item{
+    height: auto;
+    padding-bottom: 240px;
+  }
   .questions .questions-parent .question-item p {
     font-size: 16px;
   }

@@ -35,6 +35,7 @@
 .page-top-header .top-header-list {
   display: flex;
   align-items: center;
+  column-gap: 64px;
 }
  .main-parent {
   position: relative;
@@ -67,7 +68,6 @@
     font-weight: 700;
   }
   li {
-    margin-inline-end: 64px;
     padding: 16px 0;
     a {
       transition: color ease-in-out 0.2s;
@@ -212,9 +212,7 @@
   .topheader-cont .page-name {
     font-size: 14px;
   }
-  .topheader-cont li {
-    margin-inline-end: 40px;
-  }
+
   .topheader-cont li:last-of-type {
     margin-inline-end: 0;
   }
@@ -256,12 +254,10 @@
 }
 
 @include max-1200 {
-  .topheader-cont li {
-    margin-inline-end: 30px;
-  }
-  .fixed-topheader .topheader-cont li {
-    margin-inline-end: 12px;
-  }
+.page-top-header .top-header-list{
+  column-gap: 40px;
+}
+
   .fixed-topheader .tasawk-btn-arrow-div {
     width: 25px;
   }

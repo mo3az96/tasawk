@@ -21,7 +21,7 @@
     .general-item .general-item-img{
         margin: auto;
         width: 160px;
-        height: 160px;
+        // height: 160px;
     }
     .general-item .public-item-desc{
         width: 284px;
@@ -93,7 +93,7 @@
         row-gap: unset;
         .general-item-img{
             width: 400px;
-            height: 400px;
+            // height: 400px;
         }
     }
     .check{
@@ -194,6 +194,9 @@
 }
 
 @include max-992{
+    .full-commerce-proj .myitems .general-item-img{
+        width: 320px;
+    }
     .full-commerce-proj .versus{
         width: 55px;
         height: 55px ; 

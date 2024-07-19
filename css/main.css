@@ -1018,7 +1018,7 @@ header {
 
 .big-menu .menu-item-has-children {
   position: relative;
-  line-height: 116px;
+  line-height: 100px;
   padding: 0;
 }
 .big-menu .menu-item-has-children > a {
@@ -1046,7 +1046,7 @@ header {
 .big-menu .menu-item-has-children:hover .sub-menu {
   opacity: 1;
   visibility: visible;
-  top: 101%;
+  top: 100%;
 }
 .big-menu .menu-item-has-children .sub-menu {
   width: 290px;
@@ -1716,7 +1716,7 @@ section {
 }
 
 .clients-review-swiper .swiper-pagination {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 .clients-review-swiper .swiper-pagination-bullet {
@@ -1819,6 +1819,9 @@ section {
 @media only screen and (max-width: 768px) {
   .clients-review-swiper {
     margin-top: 30px;
+  }
+  .clients-review-swiper .swiper-pagination {
+    display: flex;
   }
   .logo-prints-item .list li p {
     font-size: 15px;
@@ -2027,6 +2030,7 @@ section {
 @media only screen and (max-width: 992px) {
   .logo-prints-parent {
     flex-direction: column;
+    margin-top: 45px;
   }
   .bgLight::after,
   .bgDark::before {
@@ -2464,6 +2468,8 @@ section {
 .page-top-header .top-header-list {
   display: flex;
   align-items: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
 }
 
 .main-parent {
@@ -2496,7 +2502,6 @@ section {
   font-weight: 700;
 }
 .page-top-header .topheader-cont li {
-  margin-inline-end: 64px;
   padding: 16px 0;
 }
 .page-top-header .topheader-cont li a {
@@ -2651,9 +2656,6 @@ section {
 .fixed-topheader .topheader-cont .page-name {
   font-size: 14px;
 }
-.fixed-topheader .topheader-cont li {
-  margin-inline-end: 40px;
-}
 .fixed-topheader .topheader-cont li:last-of-type {
   margin-inline-end: 0;
 }
@@ -2692,11 +2694,9 @@ section {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .topheader-cont li {
-    margin-inline-end: 30px;
-  }
-  .fixed-topheader .topheader-cont li {
-    margin-inline-end: 12px;
+  .page-top-header .top-header-list {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .fixed-topheader .tasawk-btn-arrow-div {
     width: 25px;
@@ -3046,9 +3046,6 @@ section {
 }
 
 @media only screen and (max-width: 992px) {
-  .graphicDesign-worksamples .work-samples-parent {
-    padding-top: 60px;
-  }
   .work-samples-parent {
     padding-bottom: 100px;
   }
@@ -3721,6 +3718,9 @@ section {
     width: 200px;
     height: 205px;
   }
+  #partners .js-marquee-wrapper {
+    width: unset !important;
+  }
   .slides-parent .block img {
     max-width: 100%;
     -o-object-fit: contain;
@@ -3761,6 +3761,9 @@ section {
     width: max-content !important;
     -moz-column-gap: 20px;
          column-gap: 20px;
+  }
+  .ecommerce-paretners {
+    padding-bottom: 30px;
   }
 }
 .special-software {
@@ -4922,6 +4925,7 @@ section {
     padding-left: 15px;
     padding-right: 15px;
     margin-inline: auto;
+    margin-top: 10px;
     width: 300px;
   }
   .whyToStart {
@@ -4961,7 +4965,6 @@ section {
 .store-components-parent .general-item .general-item-img {
   margin: auto;
   width: 160px;
-  height: 160px;
 }
 .store-components-parent .general-item .public-item-desc {
   width: 284px;
@@ -5035,7 +5038,6 @@ section {
 }
 .full-commerce-proj .myitems .general-item-img {
   width: 400px;
-  height: 400px;
 }
 .full-commerce-proj .check {
   width: 35px;
@@ -5130,6 +5132,9 @@ section {
   }
 }
 @media only screen and (max-width: 992px) {
+  .full-commerce-proj .myitems .general-item-img {
+    width: 320px;
+  }
   .full-commerce-proj .versus {
     width: 55px;
     height: 55px;
@@ -6079,6 +6084,9 @@ section {
   .packages-details .payment-holder {
     width: 100%;
   }
+  .packages {
+    padding-top: 70px;
+  }
 }
 .questions {
   padding-top: 96px;
@@ -6162,6 +6170,10 @@ section {
   }
 }
 @media only screen and (max-width: 992px) {
+  .questions .questions-parent .question-item {
+    height: auto;
+    padding-bottom: 240px;
+  }
   .questions .questions-parent .question-item p {
     font-size: 16px;
   }
@@ -6980,6 +6992,9 @@ section {
   }
 }
 @media only screen and (max-width: 992px) {
+  .stage-item .stage-num::after {
+    bottom: -10px;
+  }
   .stages-parent {
     grid-template-columns: 1fr;
     row-gap: 40px;
@@ -8681,6 +8696,7 @@ strong {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .home-work-samples nav {
   margin-top: 40px;
@@ -8799,6 +8815,8 @@ strong {
     min-width: -moz-max-content;
     min-width: max-content;
     height: 50px;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
   }
   .home-main .svgs-parent .svg-Website {
     bottom: 0;

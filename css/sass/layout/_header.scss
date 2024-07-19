@@ -300,7 +300,7 @@ padding-inline-start: 20px;
 .big-menu{
 .menu-item-has-children {
   position: relative;
-  line-height: 116px;
+  line-height: 100px;
   padding: 0;
    > a {
     color:var(--text-color);
@@ -327,7 +327,7 @@ padding-inline-start: 20px;
     .sub-menu {
       opacity: 1;
       visibility: visible;
-      top: 101%;
+      top: 100%;
     }
   }
   .sub-menu {
