@@ -275,7 +275,7 @@ $(document).ready( function () {
 
   // block 1 marquee
 
-  $(" #workSamples .block1-marquee").marquee({
+  $(" #workSamples .block1").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,
@@ -286,7 +286,7 @@ $(document).ready( function () {
 
   // block 2 marquee
 
-  $("#workSamples .block2-marquee").marquee({
+  $("#workSamples .block2").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,
@@ -297,7 +297,7 @@ $(document).ready( function () {
 
   // block 3 marquee
 
-  $(" #workSamples .block3-marquee").marquee({
+  $(" #workSamples .block3").marquee({
     duration: 23000,
     gap: 50,
     delayBeforeStart: 0,

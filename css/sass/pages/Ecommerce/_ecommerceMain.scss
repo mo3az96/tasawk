@@ -30,6 +30,11 @@
 }
 
 
+.Ecommerce-main .fixed-topheader .top-header-list{
+    column-gap: 40px;
+}
+
+
 @include max-1300{
     .Ecommerce-main .myitems {
         width: 100%;
@@ -38,6 +43,9 @@
 }
 
 @include max-1200{
+    .Ecommerce-main .fixed-topheader .top-header-list{
+    column-gap: 12px;
+}
     .Ecommerce-main .myitems .general-item{
         width: 100%;
     }

@@ -22,6 +22,8 @@
 .graphic-design-main {
   padding: 0;
 }
+
+
 .page-top-header,
 .blog-top-header {
   position: absolute;
@@ -252,8 +254,17 @@
     top: 400px;
   }
 }
+.software-dev-main .fixed-topheader .top-header-list{
+  column-gap: 45px;
+}
 
 @include max-1200 {
+  .graphic-design-main .fixed-topheader .top-header-list{
+  column-gap: 20px;
+}
+  .software-dev-main .fixed-topheader .top-header-list{
+    column-gap: 10px;
+  }
 .page-top-header .top-header-list{
   column-gap: 40px;
 }

@@ -121,6 +121,10 @@
 }
 
 @include max-768 {
+
+  .gradient-partners .block1-marquee::after, .gradient-partners .block1-marquee::before, .gradient-partners .block2-marquee::after, .gradient-partners .block2-marquee::before{
+    width: 100px;
+  }
   .partners .slides-parent .block {
     column-gap: 20px;
   }

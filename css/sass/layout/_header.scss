@@ -412,6 +412,9 @@ padding-inline-start: 20px;
   .navigation .container{
     padding-inline: 12px;
   }
+  .rotate-line3{
+     transform: (-45deg) translateX(-1px) translateY(0px);
+  }
   .contact-div {
     margin: 0;
   }
@@ -564,7 +567,7 @@ padding-inline-start: 20px;
 
 @include max-768 {
   .navigation .container{
-    padding-inline: 0;
+    padding-inline: 20px;
   }
   body{
     padding-top: 77.71px;
@@ -601,4 +604,8 @@ padding-inline-start: 20px;
 }
 
 
-
+@include max-576 {
+  .navigation .container{
+    padding-inline: 0;
+  }
+}

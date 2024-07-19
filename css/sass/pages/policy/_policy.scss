@@ -1,3 +1,5 @@
+
+
 .policy-main{
     .main-parent{
         background-color: #4C34BB;
@@ -41,6 +43,10 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.policy-main .fixed-topheader .top-header-list{
+    column-gap: 40px;
 }
 .policy-holder{
     width: 791px;
@@ -97,6 +103,15 @@
     }
 }
 
+@include max-1200 {
+     .policy-main .page-top-header .top-header-list{
+        column-gap: 25px;
+    }
+     .policy-main .fixed-topheader .top-header-list{
+        column-gap: 10px;
+    }
+   
+}
 
 @include max-992 {
     .policy-holder{

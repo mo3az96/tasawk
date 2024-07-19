@@ -1,3 +1,10 @@
+.mobileApps-worksamples{
+  margin-bottom: 200px;
+}
+.software-worksamples{
+  margin-bottom: 200px;
+}
+
 .soft-work-samples{
         background-color: #4c34bb;
     padding-top: 100px;
@@ -72,9 +79,15 @@
 }
 
 @include max-768 {
+  .software-worksamples{
+    margin-bottom: 100px;
+  }
   .softwareDiv-work-samples .work-samples-parent .freq-div {
     margin-bottom: 45px;
     padding-top: 60px;
+  }
+  .mobileApps-worksamples{
+    margin-bottom: 100px;
   }
   .softwareDiv-work-samples .freq-desc,
   .ecommerce-work-samples .freq-desc {
