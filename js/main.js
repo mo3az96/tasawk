@@ -325,7 +325,7 @@ $(document).ready(function () {
     duration: 35000,
     // duration: 10000 ,
     // gap: 24,
-    gap: 12,
+    gap: 24,
     delayBeforeStart: 0,
     direction: "right",
     duplicated: true,
