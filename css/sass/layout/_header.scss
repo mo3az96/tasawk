@@ -79,6 +79,7 @@ header {
   z-index: 2;
   img {
     width: 45px;
+    transition: all .3s;
   }
 }
 .contact-div {
@@ -388,9 +389,13 @@ header {
 }
 
 .body-home-header .home-fixedheader {
+  padding: 12px 0;
   border-color: #e6e6e6;
   .big-menu .menu-item-has-children .sub-menu {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  }
+  .logo-img img{
+    width: 35px;
   }
 }
 

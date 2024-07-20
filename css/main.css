@@ -815,6 +815,7 @@ header {
 }
 .logo-img img {
   width: 45px;
+  transition: all 0.3s;
 }
 
 .contact-div {
@@ -1113,10 +1114,14 @@ header {
 }
 
 .body-home-header .home-fixedheader {
+  padding: 12px 0;
   border-color: #e6e6e6;
 }
 .body-home-header .home-fixedheader .big-menu .menu-item-has-children .sub-menu {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+}
+.body-home-header .home-fixedheader .logo-img img {
+  width: 35px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -4704,9 +4709,9 @@ section {
 .soft-work-samples .work-item {
   width: 100%;
   padding: 30px;
-  border: 1px solid #e6e6e6;
 }
 .soft-work-samples .work-item img {
+  display: block;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
