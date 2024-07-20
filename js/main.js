@@ -3,6 +3,7 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
+  // Add fixed header to pages index and reviews
   if ($(window).width() > 992) {
     $(window).on("scroll", function () {
       if ($("body").hasClass("body-home-header")) {
@@ -19,6 +20,11 @@ $(document).ready(function () {
   if ($(window).width() < 992) {
     $("body").removeClass("body-home-header");
   }
+
+  // *************************************************************
+
+  // Fire Select2
+
   if ($(".myselect").length > 0) {
     // fire select2
     $(".myselect").select2();
@@ -28,18 +34,14 @@ $(document).ready(function () {
     });
   }
 
+  // *************************************************************
+// (blog-index & blog-article) topheader slide 
   $(".blog-menu-btn").on("click", function () {
     $(".blog-top-header .topheader-cont").toggleClass("slideIt");
     $(this).children(".icon").toggleClass("rotate");
   });
 
-  // if ($(window).width() < 992) {
-  //   $(".blog-menu-btn").on("click", function () {
-  //     $(".blog-top-header .topheader-cont .top-header-list").slideToggle(300);
-  //     $(this).children(".icon").toggleClass("rotate");
-  //   });
-  //   $(".big-menu .menu-item-has-children > a").removeAttr("href");
-  // }
+
 
   // nested nav mobile
   if ($(window).width() <= 992) {
@@ -57,6 +59,8 @@ $(document).ready(function () {
     });
   }
 
+
+  // Fixed header in mobile
   if ($(window).width() < 992) {
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 0) {
@@ -67,6 +71,8 @@ $(document).ready(function () {
       }
     });
   }
+
+
 
   function addClassToSvgImages() {
     const svgImages = document.querySelectorAll('img[src$=".svg"]');
@@ -84,7 +90,7 @@ $(document).ready(function () {
     (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
   );
 
-  // top header
+  // Fixed top header
   $(window).on("scroll resize", function () {
     if ($(window).width() > 992 && $(window).scrollTop() > 136) {
       $(".page-top-header").addClass("fixed-topheader");
@@ -126,12 +132,7 @@ $(document).ready(function () {
     $("body").toggleClass("overflow-hidden");
   });
 
-  // open and close sidebar's (tasawk btn sales)
-  $("nav .tasawk-btn").on("click", function () {
-    $(".sub-menu").slideToggle(400);
-    $(".tasawk-btn-arrow-div").toggleClass("rotate-icon_change-bg");
-  });
-
+ 
   // ************************************************************************************************
 
   //************************************************************************************************
@@ -244,6 +245,7 @@ $(document).ready(function () {
   // clients Review swiper
   const clientsReview = new Swiper(".clients-review .main-swiper", {
     loop: true,
+    autoplay : true ,
     speed: 800,
     navigation: {
       nextEl: ".clients-review  .swiper-button-next",
@@ -266,6 +268,7 @@ $(document).ready(function () {
   const homeClientsReviews = new Swiper(".home-clients-review .swiper", {
     loop: true,
     speed: 800,
+    autoplay : true ,
     navigation: {
       nextEl: ".home-clients-review .swiper-button-next",
       prevEl: ".home-clients-review .swiper-button-prev",
@@ -323,8 +326,6 @@ $(document).ready(function () {
 
   $(" #partners .block1-marquee").marquee({
     duration: 35000,
-    // duration: 10000 ,
-    // gap: 24,
     gap: 24,
     delayBeforeStart: 0,
     direction: "right",
