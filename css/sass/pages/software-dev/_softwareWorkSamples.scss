@@ -1,20 +1,26 @@
 .mobileApps-worksamples{
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 .software-worksamples{
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .soft-work-samples{
-        background-color: #4c34bb;
-    padding-top: 100px;
-    padding-bottom: 132px;
-    .freq-span , .freq-desc{
-        color: rgba(255, 255, 255, 0.8);
-    }
-    .freq-headline{
-        color: #fff;
-    }
+  .more-holder .desc {
+    color: var(--text-color);
+  }
+  .moreworks-link:hover{
+    color: var(--text-color);
+  }
+        // background-color: #4c34bb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // .freq-span , .freq-desc{
+    //     color: rgba(255, 255, 255, 0.8);
+    // }
+    // .freq-headline{
+    //     color: #fff;
+    // }
     .mySwiper-parent{
         margin-top: 50px;
         position: relative;
@@ -25,21 +31,23 @@
         justify-content: center;
     }
     .swiper-pagination-bullet{
-        opacity: 0.4;
+        opacity: 0.3;
         background-color: #000;
     }
     .swiper-pagination-bullet-active{
         opacity: 1;
-        background-color: #fff;
+        background-color: var(--text-color);
     }
     .swiper-button-next, .swiper-button-prev{
         display: none;
     }
     .work-item{
         width: 100%;
+        padding: 30px;
+        border: 1px solid #e6e6e6;
         img{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }

@@ -180,7 +180,7 @@ strong {
 
 .stages-list {
   li {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     display: flex;
     align-items: flex-start;
     .svg {
@@ -255,7 +255,6 @@ strong {
 }
 
 .more-articles {
-  margin-bottom: 96px;
   background-color: rgba(243, 242, 251, 0.8);
 }
 
@@ -330,9 +329,7 @@ strong {
   .stages-list li:last-of-type {
     margin-bottom: 50px;
   }
-  .more-articles {
-    margin-bottom: 60px;
-  }
+
   .article-img-holder {
     width: 100%;
   }
