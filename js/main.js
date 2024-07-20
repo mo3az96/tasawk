@@ -162,7 +162,7 @@ $(document).ready(function () {
   // client Sildes Swiper
   const clientSildesSwiper = new Swiper(".workSamples-swiper .swiper", {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 800,
     navigation: {
       nextEl: ".workSamples-swiper .swiper-button-next",
@@ -187,7 +187,7 @@ $(document).ready(function () {
   // client Sildes Swiper
   const softwareWorksamples = new Swiper(".software-worksamples .swiper", {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 800,
     navigation: {
       nextEl: ".software-worksamples .swiper-button-next",
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
   const mobileAppsWorksamples = new Swiper(".mobileApps-worksamples .swiper", {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 800,
     navigation: {
       nextEl: ".mobileApps-worksamples .swiper-button-next",

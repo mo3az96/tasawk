@@ -3731,7 +3731,6 @@ section {
 }
 
 #partners .js-marquee-wrapper {
-  width: 100% !important;
   display: flex;
 }
 #partners .js-marquee {
