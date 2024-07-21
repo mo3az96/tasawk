@@ -4786,88 +4786,88 @@ section {
     padding-bottom: 30px;
   }
 }
-.Ecommerce-main .main-parent {
+.ecommerce-main .main-parent {
   background-image: linear-gradient(32deg, #4c34bb 0%, #24156d 85.45%, #4c34bb 85.45%, #24156d 100%);
   height: 1176px;
 }
-.Ecommerce-main .page-heading {
+.ecommerce-main .page-heading {
   width: 791px;
   margin-left: auto;
   margin-right: auto;
 }
-.Ecommerce-main .myitems {
+.ecommerce-main .myitems {
   width: 1159px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 62px;
        column-gap: 62px;
 }
-.Ecommerce-main .myitems .general-item {
+.ecommerce-main .myitems .general-item {
   margin-inline-end: 0;
   width: 345px;
 }
-.Ecommerce-main .myitems .general-item .freq-item-title {
+.ecommerce-main .myitems .general-item .freq-item-title {
   color: var(--white-color);
 }
-.Ecommerce-main .general-item .public-item-desc {
+.ecommerce-main .general-item .public-item-desc {
   color: rgba(255, 255, 255, 0.8);
 }
-.Ecommerce-main .general-item .general-item-img {
+.ecommerce-main .general-item .general-item-img {
   width: 240px;
 }
 
-.Ecommerce-main .fixed-topheader .top-header-list {
+.ecommerce-main .fixed-topheader .top-header-list {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
 
 @media only screen and (max-width: 1300px) {
-  .Ecommerce-main .myitems {
+  .ecommerce-main .myitems {
     width: 100%;
     -moz-column-gap: 43px;
          column-gap: 43px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .Ecommerce-main .fixed-topheader .top-header-list {
+  .ecommerce-main .fixed-topheader .top-header-list {
     -moz-column-gap: 12px;
          column-gap: 12px;
   }
-  .Ecommerce-main .myitems .general-item {
+  .ecommerce-main .myitems .general-item {
     width: 100%;
   }
-  .Ecommerce-main .myitems .general-item .freq-item-title {
+  .ecommerce-main .myitems .general-item .freq-item-title {
     font-size: 22px;
   }
 }
 @media only screen and (max-width: 992px) {
-  .Ecommerce-main .page-heading {
+  .ecommerce-main .page-heading {
     width: 100%;
   }
-  .Ecommerce-main .myitems {
+  .ecommerce-main .myitems {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
   }
-  .Ecommerce-main .main-parent {
+  .ecommerce-main .main-parent {
     height: auto;
     padding-bottom: 60px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .Ecommerce-main .myitems .general-item {
+  .ecommerce-main .myitems .general-item {
     margin: 0;
   }
-  .Ecommerce-main .main-banner-content .container {
+  .ecommerce-main .main-banner-content .container {
     padding: 0;
   }
-  .Ecommerce-main .myitems {
+  .ecommerce-main .myitems {
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
-  .Ecommerce-main .general-item .general-item-img {
+  .ecommerce-main .general-item .general-item-img {
     width: 130px;
   }
-  .Ecommerce-main .myitems {
+  .ecommerce-main .myitems {
     margin-top: 30px;
   }
 }
