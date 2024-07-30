@@ -115,11 +115,14 @@
 .work-pics .img-holder {
   display: flex;
   aspect-ratio: 1;
+  border-radius: 2px;
 }
 .work-pics .img-holder img {
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 2px;
+
 }
 /* Media */
 
