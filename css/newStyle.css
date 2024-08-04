@@ -209,6 +209,7 @@
 .company-websites-main .general-item .public-item-desc {
   font-size: 20px;
   line-height: 32px;
+  width: 100%;
 }
 
 .company-websites-main .main-banner-content .tasawk-btn{
@@ -260,6 +261,8 @@
 }
 
 
+
+
 @media screen and (max-width : 992px) {
   .freq-quote-holder{
     flex-direction : column ;
@@ -303,4 +306,40 @@
   }
  
 
+}
+
+
+/*******************************************************************************************/
+
+/* Hosting Page */
+
+/* .hosting-main  .general-item:nth-of-type(2) .general-item-img{
+  width : 130px ;
+} */
+
+.hosting-main .main-parent{
+  background-image: linear-gradient(32deg, #4C34BB 0%, #1FB2CA 85.45%, #4C34BB 85.45%, #1FB2CA 100%);
+}
+
+.hosting-whytostart .general-item .general-item-img{
+  max-width: 84px;
+  width: auto;
+  max-height: 70px;
+}
+
+.hosting-packages{
+  padding-top: 70px;
+  margin-bottom: 100px;
+}
+
+
+@media screen and (max-width : 768px) {
+  .hosting-whytostart .general-item .general-item-img{
+    max-width : 65px;
+    max-height : 60px;
+  }
+  .hosting-packages{
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
 }
