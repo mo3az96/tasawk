@@ -313,9 +313,9 @@
 
 /* Hosting Page */
 
-/* .hosting-main  .general-item:nth-of-type(2) .general-item-img{
+.hosting-main  .general-item:nth-of-type(2) .general-item-img{
   width : 130px ;
-} */
+}
 
 .hosting-main .main-parent{
   background-image: linear-gradient(32deg, #4C34BB 0%, #1FB2CA 85.45%, #4C34BB 85.45%, #1FB2CA 100%);
@@ -341,5 +341,8 @@
   .hosting-packages{
     margin-bottom: 0;
     padding-top: 20px;
+  }
+  .hosting-main .general-item:nth-of-type(2) .general-item-img{
+    width: 85px;
   }
 }
