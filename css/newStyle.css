@@ -466,7 +466,118 @@
   .main-banner-content .links-wrapper {
     flex-direction: column;
   }
-  .not-found-main .main-banner-content{
+  .not-found-main .main-banner-content {
     padding-bottom: 50px;
+  }
+}
+
+/* mobile apps edit */
+
+.mobile-apps-main .svg-mobile {
+  width: 592px;
+  height: 592px;
+  position: absolute;
+  top: 33%;
+  inset-inline-start: -2%;
+}
+
+.mobile-apps-main .svg-testing {
+  width: 165px;
+  position: absolute;
+  bottom: 8%;
+  inset-inline-end: 14%;
+}
+
+.mobile-apps-main .svg-react {
+  position: absolute;
+  width: 198px;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile-apps-main .svg-flutter {
+  position: absolute;
+  width: 217px;
+  top: 55%;
+  inset-inline-end: 39%;
+}
+.mobile-apps-main .svg-customized {
+  width: 346px;
+  inset-inline-end: 6%;
+  top: 43%;
+  position: absolute;
+}
+.mobile-apps-main .svgs-parent .svg-codeBricks {
+  position: absolute;
+  top: unset;
+  inset-inline-end: unset;
+  bottom: 3%;
+  inset-inline-start: 11%;
+  width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile-apps-main .svg-customized {
+    width: 300px;
+  }
+  .mobile-apps-main .svg-mobile {
+    width: 400px;
+    height: 400px;
+
+    top: 45%;
+    inset-inline-start: 3%;
+  }
+  .mobile-apps-main .svg-testing {
+    inset-inline-end: 6%;
+  }
+  .mobile-apps-main .svg-react {
+    transform: translateX(-80%);
+  }
+  .mobile-apps-main .svg-flutter {
+    width: 190px;
+  }
+  .mobile-apps-main .svg-ruler {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-apps-main .svgs-parent .svg-codeBricks {
+    display: none;
+  }
+  .mobile-apps-main .svg-react {
+    transform: unset;
+  }
+  .mobile-apps-main .svg-mobile {
+    top: 35%;
+  }
+  .mobile-apps-main .svg-react {
+    bottom: 5%;
+    inset-inline-start: 13%;
+  }
+  .mobile-apps-main .svg-flutter {
+    top: unset;
+    bottom: 10%;
+    inset-inline-end: 30%;
+  }
+  .mobile-apps-main .svg-testing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-apps-main .svg-customized,
+  .mobile-apps-main .svg-flutter,
+  .mobile-apps-main .svg-react {
+    display: none;
+  }
+  .mobile-apps-main .svg-mobile {
+    top: unset;
+    bottom: -30px;
+    width: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    inset-inline-start: unset;
+    height: auto;
   }
 }
